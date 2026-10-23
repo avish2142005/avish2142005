@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="rosterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040710" />
+      <stop offset="100%" stop-color="#071120" />
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="330" rx="6" fill="url(#rosterBg)" />
+  <rect width="920" height="330" rx="6" fill="none" stroke="#162942" stroke-width="1.5" />
+
+  <g transform="translate(24, 25)">
+    
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 1 &#8226; WHITE WALKERS</text>
+      
+      <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">LEGACY CRUST &amp; DEPRECATION</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: CRYOGENIC CODE FREEZE</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; SLAIN WITH VALYRIAN PYTHON</text>
+      </g>
+    </g>
+    <g transform="translate(292, 0)">
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 2 &#8226; THE NIGHT KING</text>
+      
+      <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">RACE CONDITIONS &amp; MEMORY LEAKS</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: INFINITE RECURSIVE HORDE</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; SHATTERED WITH OS KERNELS</text>
+      </g>
+    </g>
+    <g transform="translate(584, 0)">
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 3 &#8226; RAMSAY BOLTON</text>
+      
+      <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">SPAGHETTI LOGIC &amp; CHAOS</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: VICIOUS UNTYPED CODEBASES</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; FED TO TYPESCRIPT STRICT MODE</text>
+      </g>
+    </g>
+    <g transform="translate(0, 135)">
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 4 &#8226; LANNISTER LEGION</text>
+      
+      <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">HEAVY TECH DEBT ACCRUAL</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: GOLD-BACKED COMPLEXITY</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; REFACTORED CLEAN &amp; LEAN</text>
+      </g>
+    </g>
+    <g transform="translate(292, 135)">
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 5 &#8226; THE IRON FLEET</text>
+      
+      <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">NETWORK LATENCY &amp; DROP-OFFS</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: HIGH PACKET STORMS</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; SUB-MS FAST API SHIELDS</text>
+      </g>
+    </g>
+    <g transform="translate(584, 135)">
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 6 &#8226; CERSEI'S WILDFIRE</text>
+      
+      <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">PRODUCTION CRASH EMERGENCIES</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: VOLATILE SYSTEM BLOWOUT</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; CI/CD &amp; DOCKER FORTIFICATIONS</text>
+      </g>
+    </g>
+  </g>
+</svg>

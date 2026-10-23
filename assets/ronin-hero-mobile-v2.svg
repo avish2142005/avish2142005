@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients: Castle Black & Northern Frost -->
+    <linearGradient id="gotHeroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#03060b" />
+      <stop offset="35%" stop-color="#070d18" />
+      <stop offset="70%" stop-color="#0b1626" />
+      <stop offset="100%" stop-color="#030509" />
+    </linearGradient>
+
+    <!-- Valyrian Steel Blade Gradient -->
+    <linearGradient id="valyrianSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#64748b" />
+      <stop offset="70%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+
+    <!-- Northern Frost Ice Blue Gradient -->
+    <linearGradient id="iceFrostGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Iron Throne / Valyrian Gold Gradient -->
+    <linearGradient id="ironGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Radiant Ambient Frost Auras -->
+    <radialGradient id="heroFrostAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32" />
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#03060b" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="direwolfGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters for Magical Valyrian Glow -->
+    <filter id="iceGlowFilter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="runicGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Castle Wall / Frost Grid Pattern -->
+    <pattern id="frostGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#16253b" stroke-width="0.8" opacity="0.6" />
+      <circle cx="48" cy="48" r="1.2" fill="#38bdf8" opacity="0.3" />
+    </pattern>
+
+    <style>
+      @keyframes runeGlowPulse {
+        0%, 100% { opacity: 0.65; filter: drop-shadow(0 0 4px #38bdf8); }
+        50% { opacity: 1; filter: drop-shadow(0 0 14px #7dd3fc); }
+      }
+      @keyframes frostLaserScan {
+        0% { stroke-dashoffset: 4400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes snowDrift {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+        50% { opacity: 0.85; transform: translateY(260px) translateX(30px); }
+        100% { transform: translateY(520px) translateX(-20px); opacity: 0.1; }
+      }
+      @keyframes bladeGleam {
+        0% { transform: translateX(-300px); opacity: 0; }
+        40% { opacity: 0.8; }
+        70% { opacity: 0.8; }
+        100% { transform: translateX(1800px); opacity: 0; }
+      }
+      .rune-pulse { animation: runeGlowPulse 4s ease-in-out infinite; }
+      .laser-border {
+        stroke-dasharray: 260 4140;
+        animation: frostLaserScan 8s linear infinite;
+      }
+      .snow-flake-1 { animation: snowDrift 9s linear infinite; }
+      .snow-flake-2 { animation: snowDrift 13s linear infinite 3s; }
+      .snow-flake-3 { animation: snowDrift 11s linear infinite 6s; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1600" height="520" fill="url(#gotHeroBg)" />
+  <rect width="1600" height="520" fill="url(#frostGrid)" />
+
+  <!-- Ambient Light Wells -->
+  <circle cx="280" cy="260" r="340" fill="url(#direwolfGlow)" />
+  <circle cx="1200" cy="240" r="420" fill="url(#heroFrostAura)" />
+
+  <!-- Decorative Valyrian Perimeter Border -->
+  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#1e324f" stroke-width="1.5" />
+  <rect x="22" y="22" width="1556" height="476" rx="4" fill="none" stroke="#0e1e32" stroke-width="1" />
+  <!-- Moving Frost Edge Laser -->
+  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#38bdf8" stroke-width="2.5" class="laser-border" filter="url(#iceGlowFilter)" />
+
+  <!-- Corner Runes (Ancient Northern Seals) -->
+  <g fill="none" stroke="#38bdf8" stroke-width="1.5" class="rune-pulse">
+    <!-- Top-Left Corner -->
+    <path d="M 16 60 L 60 16 M 16 35 L 35 16 M 16 16 L 90 16 M 16 16 L 16 90" />
+    <circle cx="38" cy="38" r="4" fill="#38bdf8" />
+    <!-- Top-Right Corner -->
+    <path d="M 1584 60 L 1540 16 M 1584 35 L 1565 16 M 1584 16 L 1510 16 M 1584 16 L 1584 90" />
+    <circle cx="1562" cy="38" r="4" fill="#38bdf8" />
+    <!-- Bottom-Left Corner -->
+    <path d="M 16 460 L 60 504 M 16 485 L 35 504 M 16 504 L 90 504 M 16 504 L 16 430" />
+    <circle cx="38" cy="482" r="4" fill="#38bdf8" />
+    <!-- Bottom-Right Corner -->
+    <path d="M 1584 460 L 1540 504 M 1584 485 L 1565 504 M 1584 504 L 1510 504 M 1584 504 L 1584 430" />
+    <circle cx="1562" cy="482" r="4" fill="#38bdf8" />
+  </g>
+
+  <!-- Left Emblematics: House Stark Direwolf Crest & Longclaw Sword -->
+  <g transform="translate(130, 90)">
+    <!-- Shield Outline -->
+    <path d="M 150 20 L 260 65 L 240 240 Q 150 340 150 360 Q 150 340 60 240 L 40 65 Z" fill="#08101e" stroke="#253e63" stroke-width="2" />
+    <path d="M 150 32 L 246 72 L 228 230 Q 150 322 150 340 Q 150 322 72 230 L 54 72 Z" fill="#0c172a" stroke="#38bdf8" stroke-width="1.2" opacity="0.8" />
+
+    <!-- Direwolf Sigil Vector (Stylized House Stark Wolf Head) -->
+    <g transform="translate(150, 185) scale(0.95)">
+      <!-- Wolf Head Path -->
+      <path d="M 0 -85 L 22 -60 L 48 -68 L 38 -35 L 68 -20 L 82 10 L 60 25 L 75 55 L 42 62 L 30 85 L 5 72 L -5 72 L -30 85 L -42 62 L -75 55 L -60 25 L -82 10 L -68 -20 L -38 -35 L -48 -68 L -22 -60 Z" fill="#132034" stroke="#94a3b8" stroke-width="2" />
+      <!-- Snout & Eyes -->
+      <path d="M -30 -10 L 0 -45 L 30 -10 L 18 35 L 0 52 L -18 35 Z" fill="#1c2d46" stroke="#38bdf8" stroke-width="1.5" />
+      <polygon points="-24,-8 -12,-16 -16, -2" fill="#38bdf8" filter="url(#runicGlow)" />
+      <polygon points="24,-8 12,-16 16, -2" fill="#38bdf8" filter="url(#runicGlow)" />
+      <!-- Fangs -->
+      <polygon points="-12,28 -7,40 -2,28" fill="#f8fafc" />
+      <polygon points="12,28 7,40 2,28" fill="#f8fafc" />
+    </g>
+
+    <!-- Longclaw Crossguard & Pommel (The White Wolf) -->
+    <g transform="translate(150, 10)">
+      <!-- Blade tip pointing up -->
+      <line x1="0" y1="-30" x2="0" y2="350" stroke="#f8fafc" stroke-width="3" filter="url(#iceGlowFilter)" />
+      <line x1="-1" y1="-30" x2="-1" y2="350" stroke="#38bdf8" stroke-width="1" />
+      <!-- Guard -->
+      <line x1="-55" y1="18" x2="55" y2="18" stroke="#94a3b8" stroke-width="4.5" stroke-linecap="round" />
+      <circle cx="-55" cy="18" r="4" fill="#38bdf8" />
+      <circle cx="55" cy="18" r="4" fill="#38bdf8" />
+      <!-- Grip -->
+      <rect x="-4" y="-18" width="8" height="34" rx="2" fill="#1e293b" stroke="#64748b" stroke-width="1" />
+      <!-- Direwolf Head Pommel -->
+      <circle cx="0" cy="-24" r="10" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5" />
+      <circle cx="-3" cy="-25" r="1.5" fill="#e11d48" />
+      <circle cx="3" cy="-25" r="1.5" fill="#e11d48" />
+    </g>
+
+    <!-- Seal Banner Under Crest -->
+    <rect x="40" y="375" width="220" height="30" rx="3" fill="#080e18" stroke="#38bdf8" stroke-width="1.2" />
+    <text x="150" y="395" text-anchor="middle" font-family="'Cinzel', 'Palatino', 'Georgia', serif" font-size="12" font-weight="900" fill="#38bdf8" letter-spacing="3">HOUSE STARK OF WINTERFELL</text>
+  </g>
+
+  <!-- Center & Right Identity Hierarchy -->
+  <g transform="translate(480, 85)">
+    <!-- Realm Top Category -->
+    <g transform="translate(0, 25)">
+      <rect x="0" y="0" width="280" height="26" rx="3" fill="#0b1728" stroke="#38bdf8" stroke-width="1" />
+      <circle cx="14" cy="13" r="4" fill="#38bdf8" filter="url(#iceGlowFilter)" />
+      <text x="32" y="18" font-family="'Courier New', Consolas, monospace" font-size="11.5" font-weight="800" fill="#7dd3fc" letter-spacing="2">SEVEN KINGDOMS // THE NORTH</text>
+    </g>
+
+    <!-- Main Identity Title: AVISH KUMAR -->
+    <g transform="translate(0, 105)">
+      <!-- Backdrop glow -->
+      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', 'Palatino', 'Georgia', serif" font-size="64" font-weight="900" fill="#38bdf8" letter-spacing="5" opacity="0.3" filter="url(#runicGlow)">AVISH KUMAR</text>
+      <!-- Main Metallic Text -->
+      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', 'Palatino', 'Georgia', serif" font-size="64" font-weight="900" fill="url(#valyrianSteel)" letter-spacing="5">AVISH KUMAR</text>
+    </g>
+
+    <!-- Subtitle: THE KING IN THE NORTH & LORD COMMANDER -->
+    <g transform="translate(4, 150)">
+      <text x="0" y="0" font-family="'Cinzel', 'Georgia', serif" font-size="21" font-weight="700" fill="url(#iceFrostGrad)" letter-spacing="3.5">KING IN THE NORTH &#8226; LORD COMMANDER OF CODE</text>
+    </g>
+
+    <!-- Valyrian Steel Blade Divider Bar -->
+    <g transform="translate(0, 172)">
+      <line x1="0" y1="0" x2="880" y2="0" stroke="#1e3350" stroke-width="2" />
+      <line x1="0" y1="0" x2="520" y2="0" stroke="#38bdf8" stroke-width="2.5" filter="url(#iceGlowFilter)" />
+      <!-- Central Gem -->
+      <polygon points="520,-6 526,0 520,6 514,0" fill="#7dd3fc" />
+    </g>
+
+    <!-- The Night's Watch Oath Monologue -->
+    <g transform="translate(2, 215)">
+      <text x="0" y="0" font-family="'Georgia', serif" font-style="italic" font-size="16" fill="#cbd5e1" letter-spacing="1">"Night gathers, and now my watch begins. I am the sword in the darkness.</text>
+      <text x="0" y="26" font-family="'Georgia', serif" font-style="italic" font-size="16" fill="#94a3b8" letter-spacing="1">I am the watcher on the walls. I am the shield that guards the realms of open source."</text>
+    </g>
+
+    <!-- Tactical Telemetry Metric Badges (Grid of 4) -->
+    <g transform="translate(0, 280)">
+      <!-- Box 1: Castle Black HQ -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="200" height="60" rx="4" fill="#08101d" stroke="#1d3352" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="60" fill="#38bdf8" />
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#64748b" letter-spacing="1.5">ROYAL STRONGHOLD</text>
+        <text x="16" y="44" font-family="'Cinzel', serif" font-size="16" font-weight="800" fill="#f8fafc">WINTERFELL</text>
+      </g>
+
+      <!-- Box 2: Valyrian Weaponry -->
+      <g transform="translate(220, 0)">
+        <rect x="0" y="0" width="200" height="60" rx="4" fill="#08101d" stroke="#1d3352" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="60" fill="#38bdf8" />
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#64748b" letter-spacing="1.5">ANCESTRAL BLADE</text>
+        <text x="16" y="44" font-family="'Cinzel', serif" font-size="16" font-weight="800" fill="url(#valyrianSteel)">LONGCLAW [S+]</text>
+      </g>
+
+      <!-- Box 3: Motto -->
+      <g transform="translate(440, 0)">
+        <rect x="0" y="0" width="210" height="60" rx="4" fill="#08101d" stroke="#1d3352" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="60" fill="#e11d48" />
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fda4af" letter-spacing="1.5">ANCIENT MOTTO</text>
+        <text x="16" y="44" font-family="'Cinzel', serif" font-size="15" font-weight="800" fill="#f8fafc">WINTER IS COMING</text>
+      </g>
+
+      <!-- Box 4: Citadel Clearance -->
+      <g transform="translate(670, 0)">
+        <rect x="0" y="0" width="210" height="60" rx="4" fill="#08101d" stroke="#1d3352" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="60" fill="#f59e0b" />
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fde047" letter-spacing="1.5">CITADEL RANK</text>
+        <text x="16" y="44" font-family="'Cinzel', serif" font-size="16" font-weight="800" fill="url(#ironGold)">HIGH ARCHITECT</text>
+      </g>
+    </g>
+
+    <!-- GitHub Handle Link Pin -->
+    <g transform="translate(0, 365)">
+      <rect x="0" y="0" width="310" height="32" rx="3" fill="#0c172a" stroke="#38bdf8" stroke-width="1" />
+      <text x="15" y="21" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#38bdf8">&gt; GITHUB.COM/AVISH2142005</text>
+      <circle cx="290" cy="16" r="4" fill="#10b981" />
+    </g>
+  </g>
+
+  <!-- Animated Snow Particles Layer -->
+  <g fill="#e0f2fe" opacity="0.6">
+    <circle cx="200" cy="80" r="1.8" class="snow-flake-1" />
+    <circle cx="450" cy="40" r="2.2" class="snow-flake-2" />
+    <circle cx="700" cy="110" r="1.5" class="snow-flake-3" />
+    <circle cx="950" cy="60" r="2.0" class="snow-flake-1" />
+    <circle cx="1200" cy="90" r="1.6" class="snow-flake-2" />
+    <circle cx="1400" cy="30" r="2.5" class="snow-flake-3" />
+    <circle cx="320" cy="160" r="1.9" class="snow-flake-2" />
+    <circle cx="850" cy="200" r="1.4" class="snow-flake-3" />
+    <circle cx="1300" cy="180" r="2.1" class="snow-flake-1" />
+  </g>
+</svg>

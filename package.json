@@ -1,0 +1,14 @@
+{
+  "name": "avish2142005-game-of-thrones",
+  "version": "2.0.0",
+  "description": "Lord Commander // King in the North GitHub Profile Command Center for Avish Kumar (@avish2142005)",
+  "scripts": {
+    "test": "node scripts/validate-assets.js",
+    "sync": "node scripts/sync-github-stats.js",
+    "validate": "node scripts/validate-assets.js",
+    "generate": "node scripts/generate-got-theme.js",
+    "preview": "node preview-server.js"
+  },
+  "author": "Avish Kumar (@avish2142005)",
+  "license": "MIT"
+}
