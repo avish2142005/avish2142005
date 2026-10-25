@@ -2,10 +2,10 @@
   <defs>
     <!-- Background Gradients: Castle Black & Northern Frost -->
     <linearGradient id="gotHeroBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#03060b" />
-      <stop offset="35%" stop-color="#070d18" />
-      <stop offset="70%" stop-color="#0b1626" />
-      <stop offset="100%" stop-color="#030509" />
+      <stop offset="0%" stop-color="#02050b" />
+      <stop offset="35%" stop-color="#060c18" />
+      <stop offset="70%" stop-color="#091426" />
+      <stop offset="100%" stop-color="#020408" />
     </linearGradient>
 
     <!-- Valyrian Steel Blade Gradient -->
@@ -17,18 +17,25 @@
       <stop offset="100%" stop-color="#f8fafc" />
     </linearGradient>
 
-    <!-- Northern Frost Ice Blue Gradient -->
+    <!-- Northern Frost Ice Blue Gradient (Wolf) -->
     <linearGradient id="iceFrostGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="50%" stop-color="#7dd3fc" />
       <stop offset="100%" stop-color="#0284c7" />
     </linearGradient>
 
-    <!-- Iron Throne / Valyrian Gold Gradient -->
+    <!-- Iron Throne / Valyrian Gold Gradient (Lion) -->
     <linearGradient id="ironGold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f59e0b" />
       <stop offset="50%" stop-color="#fde047" />
       <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Sky / Storm Cyan Gradient (Eagle) -->
+    <linearGradient id="skyEagleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#67e8f9" />
+      <stop offset="100%" stop-color="#8b5cf6" />
     </linearGradient>
 
     <!-- Radiant Ambient Frost Auras -->
@@ -39,6 +46,10 @@
     </radialGradient>
     <radialGradient id="direwolfGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="lionGoldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35" />
       <stop offset="100%" stop-color="#000" stop-opacity="0" />
     </radialGradient>
 
@@ -54,7 +65,7 @@
 
     <!-- Castle Wall / Frost Grid Pattern -->
     <pattern id="frostGrid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#16253b" stroke-width="0.8" opacity="0.6" />
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#142236" stroke-width="0.8" opacity="0.6" />
       <circle cx="48" cy="48" r="1.2" fill="#38bdf8" opacity="0.3" />
     </pattern>
 
@@ -72,12 +83,6 @@
         50% { opacity: 0.85; transform: translateY(260px) translateX(30px); }
         100% { transform: translateY(520px) translateX(-20px); opacity: 0.1; }
       }
-      @keyframes bladeGleam {
-        0% { transform: translateX(-300px); opacity: 0; }
-        40% { opacity: 0.8; }
-        70% { opacity: 0.8; }
-        100% { transform: translateX(1800px); opacity: 0; }
-      }
       .rune-pulse { animation: runeGlowPulse 4s ease-in-out infinite; }
       .laser-border {
         stroke-dasharray: 260 4140;
@@ -93,13 +98,14 @@
   <rect width="1600" height="520" fill="url(#gotHeroBg)" />
   <rect width="1600" height="520" fill="url(#frostGrid)" />
 
-  <!-- Ambient Light Wells -->
-  <circle cx="280" cy="260" r="340" fill="url(#direwolfGlow)" />
-  <circle cx="1200" cy="240" r="420" fill="url(#heroFrostAura)" />
+  <!-- Ambient Light Wells (Wolf, Lion, Eagle) -->
+  <circle cx="260" cy="260" r="320" fill="url(#direwolfGlow)" />
+  <circle cx="1300" cy="200" r="360" fill="url(#lionGoldGlow)" />
+  <circle cx="800" cy="240" r="420" fill="url(#heroFrostAura)" />
 
   <!-- Decorative Valyrian Perimeter Border -->
-  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#1e324f" stroke-width="1.5" />
-  <rect x="22" y="22" width="1556" height="476" rx="4" fill="none" stroke="#0e1e32" stroke-width="1" />
+  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#1a2f4c" stroke-width="1.5" />
+  <rect x="22" y="22" width="1556" height="476" rx="4" fill="none" stroke="#0e1a2c" stroke-width="1" />
   <!-- Moving Frost Edge Laser -->
   <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#38bdf8" stroke-width="2.5" class="laser-border" filter="url(#iceGlowFilter)" />
 
@@ -110,124 +116,129 @@
     <circle cx="38" cy="38" r="4" fill="#38bdf8" />
     <!-- Top-Right Corner -->
     <path d="M 1584 60 L 1540 16 M 1584 35 L 1565 16 M 1584 16 L 1510 16 M 1584 16 L 1584 90" />
-    <circle cx="1562" cy="38" r="4" fill="#38bdf8" />
+    <circle cx="1562" cy="38" r="4" fill="#f59e0b" />
     <!-- Bottom-Left Corner -->
     <path d="M 16 460 L 60 504 M 16 485 L 35 504 M 16 504 L 90 504 M 16 504 L 16 430" />
-    <circle cx="38" cy="482" r="4" fill="#38bdf8" />
+    <circle cx="38" cy="482" r="4" fill="#06b6d4" />
     <!-- Bottom-Right Corner -->
     <path d="M 1584 460 L 1540 504 M 1584 485 L 1565 504 M 1584 504 L 1510 504 M 1584 504 L 1584 430" />
     <circle cx="1562" cy="482" r="4" fill="#38bdf8" />
   </g>
 
-  <!-- Left Emblematics: House Stark Direwolf Crest & Longclaw Sword -->
-  <g transform="translate(130, 90)">
+  <!-- Left Emblematics: Tri-Sigil Heraldic Crest (Wolf, Lion, Eagle Vector) -->
+  <g transform="translate(130, 85)">
     <!-- Shield Outline -->
-    <path d="M 150 20 L 260 65 L 240 240 Q 150 340 150 360 Q 150 340 60 240 L 40 65 Z" fill="#08101e" stroke="#253e63" stroke-width="2" />
-    <path d="M 150 32 L 246 72 L 228 230 Q 150 322 150 340 Q 150 322 72 230 L 54 72 Z" fill="#0c172a" stroke="#38bdf8" stroke-width="1.2" opacity="0.8" />
+    <path d="M 150 20 L 260 65 L 240 240 Q 150 340 150 360 Q 150 340 60 240 L 40 65 Z" fill="#060c18" stroke="#1e3a5f" stroke-width="2" />
+    <path d="M 150 32 L 246 72 L 228 230 Q 150 322 150 340 Q 150 322 72 230 L 54 72 Z" fill="#0a1424" stroke="#38bdf8" stroke-width="1.2" opacity="0.8" />
 
-    <!-- Direwolf Sigil Vector (Stylized House Stark Wolf Head) -->
-    <g transform="translate(150, 185) scale(0.95)">
-      <!-- Wolf Head Path -->
-      <path d="M 0 -85 L 22 -60 L 48 -68 L 38 -35 L 68 -20 L 82 10 L 60 25 L 75 55 L 42 62 L 30 85 L 5 72 L -5 72 L -30 85 L -42 62 L -75 55 L -60 25 L -82 10 L -68 -20 L -38 -35 L -48 -68 L -22 -60 Z" fill="#132034" stroke="#94a3b8" stroke-width="2" />
-      <!-- Snout & Eyes -->
-      <path d="M -30 -10 L 0 -45 L 30 -10 L 18 35 L 0 52 L -18 35 Z" fill="#1c2d46" stroke="#38bdf8" stroke-width="1.5" />
-      <polygon points="-24,-8 -12,-16 -16, -2" fill="#38bdf8" filter="url(#runicGlow)" />
-      <polygon points="24,-8 12,-16 16, -2" fill="#38bdf8" filter="url(#runicGlow)" />
-      <!-- Fangs -->
-      <polygon points="-12,28 -7,40 -2,28" fill="#f8fafc" />
-      <polygon points="12,28 7,40 2,28" fill="#f8fafc" />
+    <!-- Central Tri-Sigil Vector Artwork -->
+    <!-- 1. The Wolf (Top) -->
+    <g transform="translate(150, 110)">
+      <path d="M 0 -45 L 14 -30 L 28 -34 L 20 -15 L 36 -6 L 42 10 L 30 18 L 38 32 L 20 36 L 14 48 L 0 40 L -14 48 L -20 36 L -38 32 L -30 18 L -42 10 L -36 -6 L -20 -15 L -28 -34 L -14 -30 Z" fill="#112236" stroke="#38bdf8" stroke-width="1.8" />
+      <polygon points="-12,-4 -6,-8 -8,-1" fill="#7dd3fc" />
+      <polygon points="12,-4 6,-8 8,-1" fill="#7dd3fc" />
+      <circle cx="0" cy="20" r="3" fill="#38bdf8" />
     </g>
 
-    <!-- Longclaw Crossguard & Pommel (The White Wolf) -->
-    <g transform="translate(150, 10)">
-      <!-- Blade tip pointing up -->
-      <line x1="0" y1="-30" x2="0" y2="350" stroke="#f8fafc" stroke-width="3" filter="url(#iceGlowFilter)" />
-      <line x1="-1" y1="-30" x2="-1" y2="350" stroke="#38bdf8" stroke-width="1" />
-      <!-- Guard -->
-      <line x1="-55" y1="18" x2="55" y2="18" stroke="#94a3b8" stroke-width="4.5" stroke-linecap="round" />
-      <circle cx="-55" cy="18" r="4" fill="#38bdf8" />
-      <circle cx="55" cy="18" r="4" fill="#38bdf8" />
-      <!-- Grip -->
-      <rect x="-4" y="-18" width="8" height="34" rx="2" fill="#1e293b" stroke="#64748b" stroke-width="1" />
-      <!-- Direwolf Head Pommel -->
-      <circle cx="0" cy="-24" r="10" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5" />
-      <circle cx="-3" cy="-25" r="1.5" fill="#e11d48" />
-      <circle cx="3" cy="-25" r="1.5" fill="#e11d48" />
+    <!-- 2. The Lion (Bottom Left) -->
+    <g transform="translate(105, 220)">
+      <circle cx="0" cy="0" r="32" fill="#14170e" stroke="#f59e0b" stroke-width="1.5" />
+      <!-- Lion Mane & Face Vector -->
+      <path d="M 0 -22 C 14 -22 22 -10 22 4 C 22 16 12 24 0 24 C -12 24 -22 16 -22 4 C -22 -10 -14 -22 0 -22 Z" fill="#241f0d" stroke="#fbbf24" stroke-width="1.2" />
+      <path d="M -8 -4 L 0 -12 L 8 -4 L 6 8 L 0 12 L -6 8 Z" fill="#f59e0b" />
+      <circle cx="-5" cy="-2" r="1.5" fill="#fff" />
+      <circle cx="5" cy="-2" r="1.5" fill="#fff" />
     </g>
+
+    <!-- 3. The Eagle (Bottom Right) -->
+    <g transform="translate(195, 220)">
+      <circle cx="0" cy="0" r="32" fill="#08151c" stroke="#06b6d4" stroke-width="1.5" />
+      <!-- Eagle Beak & Eye Vector -->
+      <path d="M -16 -12 L 8 -18 L 18 -6 L 8 16 L -10 18 L -18 6 Z" fill="#0f2634" stroke="#67e8f9" stroke-width="1.2" />
+      <!-- Hooked Beak -->
+      <path d="M 8 -4 Q 22 2 16 16 Q 10 12 8 8 Z" fill="#f59e0b" stroke="#fde047" stroke-width="1" />
+      <circle cx="0" cy="-4" r="2.5" fill="#fbbf24" />
+      <circle cx="0" cy="-4" r="1" fill="#030712" />
+    </g>
+
+    <!-- Longclaw Valyrian Steel Blade (Axis of the Triad) -->
+    <line x1="150" y1="20" x2="150" y2="350" stroke="#f8fafc" stroke-width="2.5" filter="url(#iceGlowFilter)" />
+    <line x1="149" y1="20" x2="149" y2="350" stroke="#38bdf8" stroke-width="0.8" />
 
     <!-- Seal Banner Under Crest -->
-    <rect x="40" y="375" width="220" height="30" rx="3" fill="#080e18" stroke="#38bdf8" stroke-width="1.2" />
-    <text x="150" y="395" text-anchor="middle" font-family="'Cinzel', 'Palatino', 'Georgia', serif" font-size="12" font-weight="900" fill="#38bdf8" letter-spacing="3">HOUSE STARK OF WINTERFELL</text>
+    <rect x="30" y="375" width="240" height="30" rx="3" fill="#060c18" stroke="#38bdf8" stroke-width="1.2" />
+    <text x="150" y="395" text-anchor="middle" font-family="'Cinzel', 'Palatino', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="2">TRI-APEX ARCHITECT // S+</text>
   </g>
 
   <!-- Center & Right Identity Hierarchy -->
   <g transform="translate(480, 85)">
-    <!-- Realm Top Category -->
+    <!-- Realm Top Category Badge -->
     <g transform="translate(0, 25)">
-      <rect x="0" y="0" width="280" height="26" rx="3" fill="#0b1728" stroke="#38bdf8" stroke-width="1" />
+      <rect x="0" y="0" width="340" height="26" rx="3" fill="#081424" stroke="#38bdf8" stroke-width="1" />
       <circle cx="14" cy="13" r="4" fill="#38bdf8" filter="url(#iceGlowFilter)" />
-      <text x="32" y="18" font-family="'Courier New', Consolas, monospace" font-size="11.5" font-weight="800" fill="#7dd3fc" letter-spacing="2">SEVEN KINGDOMS // THE NORTH</text>
+      <text x="32" y="18" font-family="'Courier New', monospace" font-size="11" font-weight="800" fill="#7dd3fc" letter-spacing="2">TRI-CHARACTER DOMINANCE // WESTEROS</text>
     </g>
 
     <!-- Main Identity Title: AVISH KUMAR -->
     <g transform="translate(0, 105)">
       <!-- Backdrop glow -->
-      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', 'Palatino', 'Georgia', serif" font-size="64" font-weight="900" fill="#38bdf8" letter-spacing="5" opacity="0.3" filter="url(#runicGlow)">AVISH KUMAR</text>
+      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="#38bdf8" letter-spacing="5" opacity="0.3" filter="url(#runicGlow)">AVISH KUMAR</text>
       <!-- Main Metallic Text -->
-      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', 'Palatino', 'Georgia', serif" font-size="64" font-weight="900" fill="url(#valyrianSteel)" letter-spacing="5">AVISH KUMAR</text>
+      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="url(#valyrianSteel)" letter-spacing="5">AVISH KUMAR</text>
     </g>
 
-    <!-- Subtitle: THE KING IN THE NORTH & LORD COMMANDER -->
+    <!-- Subtitle: THE TRI-APEX ARCHITECT // WOLF • LION • EAGLE -->
     <g transform="translate(4, 150)">
-      <text x="0" y="0" font-family="'Cinzel', 'Georgia', serif" font-size="21" font-weight="700" fill="url(#iceFrostGrad)" letter-spacing="3.5">KING IN THE NORTH &#8226; LORD COMMANDER OF CODE</text>
+      <text x="0" y="0" font-family="'Cinzel', serif" font-size="20" font-weight="700" fill="url(#iceFrostGrad)" letter-spacing="3">TRI-APEX ARCHITECT &#8226; WOLF &#8226; LION &#8226; EAGLE</text>
     </g>
 
-    <!-- Valyrian Steel Blade Divider Bar -->
+    <!-- Tri-Color Valyrian Divider Bar -->
     <g transform="translate(0, 172)">
-      <line x1="0" y1="0" x2="880" y2="0" stroke="#1e3350" stroke-width="2" />
-      <line x1="0" y1="0" x2="520" y2="0" stroke="#38bdf8" stroke-width="2.5" filter="url(#iceGlowFilter)" />
-      <!-- Central Gem -->
-      <polygon points="520,-6 526,0 520,6 514,0" fill="#7dd3fc" />
+      <line x1="0" y1="0" x2="880" y2="0" stroke="#162942" stroke-width="2" />
+      <line x1="0" y1="0" x2="260" y2="0" stroke="#38bdf8" stroke-width="2.5" filter="url(#iceGlowFilter)" />
+      <line x1="260" y1="0" x2="520" y2="0" stroke="#f59e0b" stroke-width="2.5" />
+      <line x1="520" y1="0" x2="720" y2="0" stroke="#06b6d4" stroke-width="2.5" />
+      <polygon points="520,-6 526,0 520,6 514,0" fill="#fde047" />
     </g>
 
-    <!-- The Night's Watch Oath Monologue -->
+    <!-- The Tri-Character Creed Monologue -->
     <g transform="translate(2, 215)">
-      <text x="0" y="0" font-family="'Georgia', serif" font-style="italic" font-size="16" fill="#cbd5e1" letter-spacing="1">"Night gathers, and now my watch begins. I am the sword in the darkness.</text>
-      <text x="0" y="26" font-family="'Georgia', serif" font-style="italic" font-size="16" fill="#94a3b8" letter-spacing="1">I am the watcher on the walls. I am the shield that guards the realms of open source."</text>
+      <text x="0" y="0" font-family="'Georgia', serif" font-style="italic" font-size="15.5" fill="#f8fafc" letter-spacing="1">"Endurance of the Direwolf. Dominion of the Golden Lion. Omniscience of the High Eagle.</text>
+      <text x="0" y="26" font-family="'Georgia', serif" font-style="italic" font-size="15.5" fill="#94a3b8" letter-spacing="1">Forging low-level OS kernels, sovereign full-stack citadels, and cognitive AI architectures."</text>
     </g>
 
-    <!-- Tactical Telemetry Metric Badges (Grid of 4) -->
+    <!-- Tactical Telemetry Badges (The 3 Characters + Rank) -->
     <g transform="translate(0, 280)">
-      <!-- Box 1: Castle Black HQ -->
+      <!-- Box 1: The Wolf (Systems) -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="200" height="60" rx="4" fill="#08101d" stroke="#1d3352" stroke-width="1.2" />
+        <rect x="0" y="0" width="200" height="60" rx="4" fill="#060e1a" stroke="#1b3658" stroke-width="1.2" />
         <rect x="0" y="0" width="4" height="60" fill="#38bdf8" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#64748b" letter-spacing="1.5">ROYAL STRONGHOLD</text>
-        <text x="16" y="44" font-family="'Cinzel', serif" font-size="16" font-weight="800" fill="#f8fafc">WINTERFELL</text>
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#38bdf8" letter-spacing="1">🐺 THE WOLF</text>
+        <text x="16" y="44" font-family="'Cinzel', serif" font-size="15" font-weight="800" fill="#f8fafc">SYSTEMS // AquaOS</text>
       </g>
 
-      <!-- Box 2: Valyrian Weaponry -->
+      <!-- Box 2: The Lion (Full Stack) -->
       <g transform="translate(220, 0)">
-        <rect x="0" y="0" width="200" height="60" rx="4" fill="#08101d" stroke="#1d3352" stroke-width="1.2" />
-        <rect x="0" y="0" width="4" height="60" fill="#38bdf8" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#64748b" letter-spacing="1.5">ANCESTRAL BLADE</text>
-        <text x="16" y="44" font-family="'Cinzel', serif" font-size="16" font-weight="800" fill="url(#valyrianSteel)">LONGCLAW [S+]</text>
-      </g>
-
-      <!-- Box 3: Motto -->
-      <g transform="translate(440, 0)">
-        <rect x="0" y="0" width="210" height="60" rx="4" fill="#08101d" stroke="#1d3352" stroke-width="1.2" />
-        <rect x="0" y="0" width="4" height="60" fill="#e11d48" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fda4af" letter-spacing="1.5">ANCIENT MOTTO</text>
-        <text x="16" y="44" font-family="'Cinzel', serif" font-size="15" font-weight="800" fill="#f8fafc">WINTER IS COMING</text>
-      </g>
-
-      <!-- Box 4: Citadel Clearance -->
-      <g transform="translate(670, 0)">
-        <rect x="0" y="0" width="210" height="60" rx="4" fill="#08101d" stroke="#1d3352" stroke-width="1.2" />
+        <rect x="0" y="0" width="200" height="60" rx="4" fill="#0d1109" stroke="#5a3d08" stroke-width="1.2" />
         <rect x="0" y="0" width="4" height="60" fill="#f59e0b" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fde047" letter-spacing="1.5">CITADEL RANK</text>
-        <text x="16" y="44" font-family="'Cinzel', serif" font-size="16" font-weight="800" fill="url(#ironGold)">HIGH ARCHITECT</text>
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fbbf24" letter-spacing="1">🦁 THE LION</text>
+        <text x="16" y="44" font-family="'Cinzel', serif" font-size="15" font-weight="800" fill="#f8fafc">FULL-STACK CASTLES</text>
+      </g>
+
+      <!-- Box 3: The Eagle (AI) -->
+      <g transform="translate(440, 0)">
+        <rect x="0" y="0" width="210" height="60" rx="4" fill="#05121a" stroke="#0e5a6f" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="60" fill="#06b6d4" />
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#67e8f9" letter-spacing="1">🦅 THE EAGLE</text>
+        <text x="16" y="44" font-family="'Cinzel', serif" font-size="15" font-weight="800" fill="#f8fafc">AI ORACLE // Nutri-ai</text>
+      </g>
+
+      <!-- Box 4: Citadel Rank -->
+      <g transform="translate(670, 0)">
+        <rect x="0" y="0" width="210" height="60" rx="4" fill="#080e1c" stroke="#253856" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="60" fill="#10b981" />
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#34d399" letter-spacing="1">⚔️ CITADEL GRADE</text>
+        <text x="16" y="44" font-family="'Cinzel', serif" font-size="15" font-weight="800" fill="url(#valyrianSteel)">TRI-APEX MASTER</text>
       </g>
     </g>
 
@@ -239,7 +250,7 @@
     </g>
   </g>
 
-  <!-- Animated Snow Particles Layer -->
+  <!-- Animated Celestial Dust Layer -->
   <g fill="#e0f2fe" opacity="0.6">
     <circle cx="200" cy="80" r="1.8" class="snow-flake-1" />
     <circle cx="450" cy="40" r="2.2" class="snow-flake-2" />

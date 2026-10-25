@@ -1,14 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 86" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
     <linearGradient id="gotHdrBg_04" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#060c18" />
-      <stop offset="50%" stop-color="#0a1426" />
-      <stop offset="100%" stop-color="#04070e" />
-    </linearGradient>
-    <linearGradient id="gotHdrLaser_04" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284c7" />
-      <stop offset="50%" stop-color="#7dd3fc" />
-      <stop offset="100%" stop-color="#38bdf8" />
+      <stop offset="0%" stop-color="#040914" />
+      <stop offset="50%" stop-color="#081224" />
+      <stop offset="100%" stop-color="#03060c" />
     </linearGradient>
     <filter id="hdrGlow_04" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="3" result="blur" />
@@ -35,20 +30,23 @@
   <g transform="translate(20, 20)">
     <rect x="0" y="0" width="70" height="46" rx="3" fill="#0c182c" stroke="#38bdf8" stroke-width="1.5" />
     <path d="M 0 0 L 10 0 L 0 10 Z" fill="#38bdf8" />
-    <text x="35" y="30" text-anchor="middle" font-family="'Cinzel', 'Courier New', monospace" font-size="20" font-weight="900" fill="#38bdf8">04</text>
+    <text x="35" y="30" text-anchor="middle" font-family="'Cinzel', monospace" font-size="20" font-weight="900" fill="#38bdf8">04</text>
   </g>
 
   <!-- Main Title & Hierarchy -->
   <g transform="translate(108, 32)">
-    <text x="0" y="0" font-family="'Cinzel', 'Palatino', serif" font-size="20" font-weight="900" fill="#f8fafc" letter-spacing="2.5">WATCH ON THE WALL // CODE CADENCE</text>
-    <text x="0" y="24" font-family="'Courier New', Consolas, monospace" font-size="11.5" font-weight="700" fill="#7dd3fc" letter-spacing="1.5">UNBROKEN NIGHT SENTINEL VIGILANCE</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc" letter-spacing="2.5">WATCH ON THE WALL // SENTINEL CADENCE</text>
+    <text x="0" y="24" font-family="'Courier New', monospace" font-size="11.5" font-weight="700" fill="#7dd3fc" letter-spacing="1.5">UNBROKEN NIGHT SENTINEL VIGILANCE</text>
   </g>
 
-  <!-- Direwolf Sigil Embellishment (Right) -->
+  <!-- Tri-Sigil Embellishment (Right: Wolf, Lion, Eagle Vector) -->
   <g transform="translate(850, 43)">
-    <circle cx="0" cy="0" r="22" fill="#0c182c" stroke="#1e3a5f" stroke-width="1.5" />
-    <!-- Mini Wolf Head -->
-    <path d="M 0 -12 L 6 -6 L 12 -4 L 6 3 L 8 10 L 0 7 L -8 10 L -6 3 L -12 -4 L -6 -6 Z" fill="#38bdf8" opacity="0.9" filter="url(#hdrGlow_04)" />
+    <circle cx="0" cy="0" r="22" fill="#0a1424" stroke="#1e3a5f" stroke-width="1.5" />
+    <!-- Triad Glyph Points -->
+    <circle cx="0" cy="-8" r="3" fill="#38bdf8" />
+    <circle cx="-7" cy="6" r="3" fill="#f59e0b" />
+    <circle cx="7" cy="6" r="3" fill="#06b6d4" />
+    <polygon points="0,-8 7,6 -7,6" fill="none" stroke="#64748b" stroke-width="0.8" />
   </g>
 
   <!-- Valyrian Blade Underline -->

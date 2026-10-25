@@ -1,32 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 32" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="valBladeGrad_fwd" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
-      <stop offset="30%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#f8fafc" />
-      <stop offset="70%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    <linearGradient id="divBlade_fwd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050a16" />
+      <stop offset="25%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="75%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#050a16" />
     </linearGradient>
-    <filter id="valGlow_fwd" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
-
-  <g >
-    <!-- Central Blade Line -->
-    <line x1="80" y1="16" x2="840" y2="16" stroke="url(#valBladeGrad_fwd)" stroke-width="2" filter="url(#valGlow_fwd)" />
-    <line x1="160" y1="16" x2="760" y2="16" stroke="#f8fafc" stroke-width="1" />
-
-    <!-- Center Longclaw Pommel (Direwolf Emblem) -->
-    <g transform="translate(460, 16)">
-      <polygon points="0,-10 10,0 0,10 -10,0" fill="#0c182c" stroke="#38bdf8" stroke-width="1.5" />
-      <polygon points="0,-6 6,0 0,6 -6,0" fill="#f8fafc" />
-      <circle cx="0" cy="0" r="1.5" fill="#e11d48" />
-    </g>
-
-    <!-- Side Runes -->
-    <circle cx="280" cy="16" r="3" fill="#38bdf8" />
-    <circle cx="640" cy="16" r="3" fill="#38bdf8" />
+  <rect width="920" height="32" fill="none" />
+  <line x1="20" y1="16" x2="900" y2="16" stroke="url(#divBlade_fwd)" stroke-width="1.8" />
+  
+  <!-- Central Tri-Sigil Gem -->
+  <g transform="translate(460, 16)">
+    <polygon points="0,-8 8,0 0,8 -8,0" fill="#ffffff" />
+    <circle cx="-16" cy="0" r="3" fill="#38bdf8" />
+    <circle cx="0" cy="0" r="2.5" fill="#f59e0b" />
+    <circle cx="16" cy="0" r="3" fill="#06b6d4" />
   </g>
 </svg>

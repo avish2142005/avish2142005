@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
     <linearGradient id="telBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040813" />
-      <stop offset="50%" stop-color="#081122" />
-      <stop offset="100%" stop-color="#03050a" />
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#081426" />
     </linearGradient>
   </defs>
 
@@ -12,87 +11,74 @@
 
   <!-- Top Banner -->
   <g transform="translate(24, 20)">
-    <rect x="0" y="0" width="872" height="42" rx="4" fill="#0b172a" stroke="#38bdf8" stroke-width="1.2" />
+    <rect x="0" y="0" width="872" height="42" rx="4" fill="#081424" stroke="#38bdf8" stroke-width="1.2" />
     <circle cx="24" cy="21" r="5" fill="#38bdf8" />
-    <text x="42" y="26" font-family="'Cinzel', serif" font-size="14" font-weight="900" fill="#f8fafc" letter-spacing="2">WEIRWOOD TELEMETRY ENGINE &#8226; AVISH KUMAR (@AVISH2142005)</text>
+    <text x="42" y="26" font-family="'Cinzel', serif" font-size="14" font-weight="900" fill="#f8fafc" letter-spacing="2">TRI-APEX TELEMETRY ENGINE &#8226; AVISH KUMAR (@AVISH2142005)</text>
     <text x="840" y="26" text-anchor="end" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#10b981">LIVE // WATCH ACTIVE</text>
   </g>
 
-  <!-- 3 Big Metric Columns -->
+  <!-- 3 Big Metric Columns (Wolf, Lion, Eagle) -->
   <g transform="translate(24, 80)">
-    <!-- Column 1: Repositories & Valyrian Codebases -->
+    <!-- Column 1: 🐺 THE WOLF DOMAIN (Systems) -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="276" height="260" rx="4" fill="#08101e" stroke="#1b304f" stroke-width="1.2" />
-      <rect x="0" y="0" width="276" height="34" rx="4" fill="#0e1d35" />
-      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#38bdf8" letter-spacing="1">THE CITADEL ARCHIVES</text>
+      <rect x="0" y="0" width="276" height="260" rx="4" fill="#060e1a" stroke="#1e3a5f" stroke-width="1.2" />
+      <rect x="0" y="0" width="276" height="34" rx="4" fill="#0c1d34" />
+      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#38bdf8" letter-spacing="1">🐺 THE WOLF // SYSTEMS</text>
 
       <g transform="translate(20, 60)" font-family="'Courier New', monospace">
-        <text x="0" y="0" font-size="11" fill="#94a3b8">PUBLIC REPOSITORIES</text>
-        <text x="0" y="32" font-family="'Cinzel', serif" font-size="36" font-weight="900" fill="#f8fafc">5</text>
+        <text x="0" y="0" font-size="11" fill="#94a3b8">FLAGSHIP KERNEL</text>
+        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">AquaOS Core</text>
         
-        <text x="0" y="70" font-size="11" fill="#94a3b8">PRIMARY SYSTEMS</text>
-        <text x="0" y="90" font-size="12" font-weight="800" fill="#38bdf8">&#8226; AquaOS (Python)</text>
-        <text x="0" y="110" font-size="12" font-weight="800" fill="#7dd3fc">&#8226; Nutri-ai (TypeScript)</text>
-        <text x="0" y="130" font-size="12" font-weight="800" fill="#38bdf8">&#8226; Live Markdown (TS)</text>
-        <text x="0" y="150" font-size="12" font-weight="800" fill="#7dd3fc">&#8226; first-flaskapp (Flask)</text>
-        <text x="0" y="170" font-size="12" font-weight="800" fill="#38bdf8">&#8226; avish2142005 (Profile)</text>
+        <text x="0" y="65" font-size="11" fill="#94a3b8">CHARACTER TRAITS</text>
+        <text x="0" y="85" font-size="12" font-weight="800" fill="#38bdf8">&#8226; OS Memory Abstractions</text>
+        <text x="0" y="105" font-size="12" font-weight="800" fill="#7dd3fc">&#8226; POSIX Process Isolation</text>
+        <text x="0" y="125" font-size="12" font-weight="800" fill="#38bdf8">&#8226; Python Low-Level Engine</text>
+        <text x="0" y="145" font-size="12" font-weight="800" fill="#7dd3fc">&#8226; Linux Shell &amp; Bash Tools</text>
+
+        <rect x="0" y="165" width="236" height="24" rx="2" fill="#08182b" stroke="#38bdf8" stroke-width="0.8" />
+        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#38bdf8">&gt; ZERO MEMORY LEAKS</text>
       </g>
     </g>
 
-    <!-- Column 2: Code Weapons & Languages -->
+    <!-- Column 2: 🦁 THE LION DOMAIN (Full-Stack) -->
     <g transform="translate(298, 0)">
-      <rect x="0" y="0" width="276" height="260" rx="4" fill="#08101e" stroke="#1b304f" stroke-width="1.2" />
-      <rect x="0" y="0" width="276" height="34" rx="4" fill="#0e1d35" />
-      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#38bdf8" letter-spacing="1">VALYRIAN ARSENAL</text>
+      <rect x="0" y="0" width="276" height="260" rx="4" fill="#0d1109" stroke="#5a3d08" stroke-width="1.2" />
+      <rect x="0" y="0" width="276" height="34" rx="4" fill="#241a05" />
+      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#f59e0b" letter-spacing="1">🦁 THE LION // CITADELS</text>
 
       <g transform="translate(20, 60)" font-family="'Courier New', monospace">
-        <text x="0" y="0" font-size="11" fill="#94a3b8">DOMINANT CODE WEAPONS</text>
+        <text x="0" y="0" font-size="11" fill="#94a3b8">SOVEREIGN FORTRESS</text>
+        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">Live Markdown</text>
         
-        <g transform="translate(0, 24)">
-          <text x="0" y="0" font-size="11" font-weight="800" fill="#f8fafc">PYTHON</text>
-          <text x="210" y="0" font-size="11" font-weight="800" fill="#38bdf8">48%</text>
-          <rect x="0" y="6" width="236" height="6" rx="2" fill="#0f223a" />
-          <rect x="0" y="6" width="113" height="6" rx="2" fill="#38bdf8" />
-        </g>
+        <text x="0" y="65" font-size="11" fill="#94a3b8">CHARACTER TRAITS</text>
+        <text x="0" y="85" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Real-time AST Parsing</text>
+        <text x="0" y="105" font-size="12" font-weight="800" fill="#fde047">&#8226; TypeScript &amp; React 19</text>
+        <text x="0" y="125" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Postgres &amp; MongoDB</text>
+        <text x="0" y="145" font-size="12" font-weight="800" fill="#fde047">&#8226; High-Scale Architectures</text>
 
-        <g transform="translate(0, 60)">
-          <text x="0" y="0" font-size="11" font-weight="800" fill="#f8fafc">TYPESCRIPT</text>
-          <text x="210" y="0" font-size="11" font-weight="800" fill="#0284c7">36%</text>
-          <rect x="0" y="6" width="236" height="6" rx="2" fill="#0f223a" />
-          <rect x="0" y="6" width="85" height="6" rx="2" fill="#0284c7" />
-        </g>
-
-        <g transform="translate(0, 96)">
-          <text x="0" y="0" font-size="11" font-weight="800" fill="#f8fafc">JAVASCRIPT &amp; WEB</text>
-          <text x="210" y="0" font-size="11" font-weight="800" fill="#38bdf8">16%</text>
-          <rect x="0" y="6" width="236" height="6" rx="2" fill="#0f223a" />
-          <rect x="0" y="6" width="38" height="6" rx="2" fill="#38bdf8" />
-        </g>
-
-        <text x="0" y="145" font-size="10.5" fill="#64748b">&gt; STACK: React, Flask, Node, Linux</text>
-        <text x="0" y="165" font-size="10.5" fill="#64748b">&gt; PATTERN: Zero-Debt &#8226; Clean Architecture</text>
+        <rect x="0" y="165" width="236" height="24" rx="2" fill="#1f1504" stroke="#f59e0b" stroke-width="0.8" />
+        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#f59e0b">&gt; PRODUCTION DOMINION</text>
       </g>
     </g>
 
-    <!-- Column 3: The Watch & King's Status -->
+    <!-- Column 3: 🦅 THE EAGLE DOMAIN (AI & Telemetry) -->
     <g transform="translate(596, 0)">
-      <rect x="0" y="0" width="276" height="260" rx="4" fill="#08101e" stroke="#1b304f" stroke-width="1.2" />
-      <rect x="0" y="0" width="276" height="34" rx="4" fill="#0e1d35" />
-      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#38bdf8" letter-spacing="1">THE NIGHT GATHERS</text>
+      <rect x="0" y="0" width="276" height="260" rx="4" fill="#04121a" stroke="#0e5a6f" stroke-width="1.2" />
+      <rect x="0" y="0" width="276" height="34" rx="4" fill="#0b2332" />
+      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#06b6d4" letter-spacing="1">🦅 THE EAGLE // ORACLE</text>
 
       <g transform="translate(20, 60)" font-family="'Courier New', monospace">
-        <text x="0" y="0" font-size="11" fill="#94a3b8">REALM WATCH STATUS</text>
-        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#10b981">VIGILANT ON THE WALL</text>
+        <text x="0" y="0" font-size="11" fill="#94a3b8">STRATOSPHERIC AI</text>
+        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">Nutri-ai Model</text>
 
-        <g transform="translate(0, 65)">
-          <text x="0" y="0" font-size="11" fill="#94a3b8">VALYRIAN STEEL PURITY</text>
-          <text x="0" y="26" font-family="'Cinzel', serif" font-size="24" font-weight="900" fill="url(#valyrianSteel)">GRADE S+ (FLAWLESS)</text>
-        </g>
+        <text x="0" y="65" font-size="11" fill="#94a3b8">CHARACTER TRAITS</text>
+        <text x="0" y="85" font-size="12" font-weight="800" fill="#67e8f9">&#8226; Cognitive Diagnostics</text>
+        <text x="0" y="105" font-size="12" font-weight="800" fill="#a5f3fc">&#8226; Sub-ms RESTful APIs</text>
+        <text x="0" y="125" font-size="12" font-weight="800" fill="#67e8f9">&#8226; Machine Intelligence</text>
+        <text x="0" y="145" font-size="12" font-weight="800" fill="#a5f3fc">&#8226; Real-Time Telemetry</text>
 
-        <g transform="translate(0, 130)">
-          <rect x="0" y="0" width="236" height="34" rx="3" fill="#0c182c" stroke="#38bdf8" stroke-width="1" />
-          <text x="118" y="22" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8">WINTER HAS ARRIVED</text>
-        </g>
+        <rect x="0" y="165" width="236" height="24" rx="2" fill="#041822" stroke="#06b6d4" stroke-width="0.8" />
+        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#06b6d4">&gt; HIGH-ALTITUDE PRECISION</text>
       </g>
     </g>
   </g>

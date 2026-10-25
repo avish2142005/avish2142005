@@ -462,9 +462,9 @@ function getPreviewHtml(readmeMd) {
   <!-- Top Action Header -->
   <header class="top-bar">
     <div class="brand-group">
-      <div class="brand-sigil">🐺</div>
+      <div class="brand-sigil">🐺 🦁 🦅</div>
       <div>
-        <div class="brand-title">HOUSE STARK // VALYRIAN CITADEL</div>
+        <div class="brand-title">TRI-APEX ARCHITECT // WOLF • LION • EAGLE</div>
         <div class="brand-subtitle">avish2142005 / README.md &bull; Live Preview</div>
       </div>
     </div>
@@ -486,13 +486,13 @@ function getPreviewHtml(readmeMd) {
         <div class="user-handle">avish2142005</div>
       </div>
       <div class="user-bio">
-        "Lord Commander of Code &amp; King in the North. Engineering resilient Python kernels, TypeScript ecosystems &amp; cognitive AI systems."
+        "Tri-Apex Architect of Code. Unifying Low-Level OS Kernels (Wolf), Sovereign Full-Stack Citadels (Lion), and Cognitive AI Telemetry (Eagle)."
       </div>
       <ul class="user-details">
-        <li>🏰 <strong>Keep:</strong> Winterfell // The North</li>
-        <li>⚔️ <strong>Blade:</strong> Longclaw (Valyrian Steel)</li>
-        <li>📜 <strong>Repositories:</strong> 5 Public Fortresses</li>
-        <li>🛡️ <strong>Watch:</strong> Vigilant on the Wall</li>
+        <li>🐺 <strong>The Wolf:</strong> AquaOS Kernel Engine</li>
+        <li>🦁 <strong>The Lion:</strong> Live Markdown Fortress</li>
+        <li>🦅 <strong>The Eagle:</strong> Nutri-ai Cognitive Models</li>
+        <li>👑 <strong>Mastery:</strong> Tri-Apex Grade S+</li>
       </ul>
     </aside>
 

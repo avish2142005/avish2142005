@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
     <linearGradient id="trophyBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050a16" />
-      <stop offset="100%" stop-color="#081326" />
+      <stop offset="0%" stop-color="#040812" />
+      <stop offset="100%" stop-color="#071120" />
     </linearGradient>
   </defs>
 
@@ -11,48 +11,48 @@
 
   <g transform="translate(24, 25)">
     <!-- 4 Trophies Cards -->
-    <!-- 01: Repositories -->
+    <!-- 01: The Wolf Feat -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#08101d" stroke="#1e3557" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="28">🏰</text>
-      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">5</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8">STRONGHOLDS</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">PUBLIC REPOSITORIES</text>
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#060e1a" stroke="#1e3a5f" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="28">🐺</text>
+      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">AquaOS</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8">WOLF RESILIENCE</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">OS KERNEL &amp; POSIX</text>
       <line x1="20" y1="142" x2="180" y2="142" stroke="#162942" />
-      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">ALL ACTIVE &#8226; SHIPPED</text>
+      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">UNBROKEN KERNEL</text>
     </g>
 
-    <!-- 02: Valyrian Steel Grade -->
+    <!-- 02: The Lion Feat -->
     <g transform="translate(224, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#08101d" stroke="#1e3557" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="28">⚔️</text>
-      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">S+</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8">VALYRIAN GRADE</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">CODE REFINEMENT</text>
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#0d1109" stroke="#5a3d08" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="28">🦁</text>
+      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Markdown</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#f59e0b">LION DOMINION</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">FULL-STACK CASTLE</text>
       <line x1="20" y1="142" x2="180" y2="142" stroke="#162942" />
-      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#38bdf8">LONGCLAW TEMPERED</text>
+      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#fbbf24">SUB-MS AST PARSING</text>
     </g>
 
-    <!-- 03: The Wall Watch -->
+    <!-- 03: The Eagle Feat -->
     <g transform="translate(448, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#08101d" stroke="#1e3557" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="28">🛡️</text>
-      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">100%</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8">VIGILANCE RATING</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">SYSTEM AVAILABILITY</text>
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#04121a" stroke="#0e5a6f" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="28">🦅</text>
+      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Nutri-ai</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#06b6d4">EAGLE VISION</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">COGNITIVE AI ORACLE</text>
       <line x1="20" y1="142" x2="180" y2="142" stroke="#162942" />
-      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">UNBROKEN SENTINEL</text>
+      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#06b6d4">DEEP MODEL DIAGNOSTICS</text>
     </g>
 
-    <!-- 04: Northern Conquest -->
+    <!-- 04: The Citadel S+ Master -->
     <g transform="translate(672, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#08101d" stroke="#1e3557" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="28">👑</text>
-      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">1st</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24">KING IN THE NORTH</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">ROYAL CITADEL DEGREE</text>
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#080e1a" stroke="#1e3557" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="28">⚔️</text>
+      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Grade S+</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#10b981">TRI-APEX MASTER</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">AVISH KUMAR</text>
       <line x1="20" y1="142" x2="180" y2="142" stroke="#162942" />
-      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#fbbf24">AVISH KUMAR</text>
+      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">ZERO TECHNICAL DEBT</text>
     </g>
   </g>
 </svg>

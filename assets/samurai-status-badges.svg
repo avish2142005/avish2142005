@@ -4,60 +4,59 @@
       <stop offset="0%" stop-color="#0284c7" />
       <stop offset="100%" stop-color="#38bdf8" />
     </linearGradient>
-    <linearGradient id="starkPillSilver" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#475569" />
-      <stop offset="100%" stop-color="#94a3b8" />
+    <linearGradient id="lionPillGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#f59e0b" />
     </linearGradient>
-    <linearGradient id="starkPillGreen" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#059669" />
+    <linearGradient id="eaglePillCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0e7490" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="citadelPillEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
       <stop offset="100%" stop-color="#10b981" />
-    </linearGradient>
-    <linearGradient id="starkPillGold" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d97706" />
-      <stop offset="100%" stop-color="#fbbf24" />
     </linearGradient>
   </defs>
 
-  <g transform="translate(6, 2)" font-family="'Cinzel', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="900" letter-spacing="1">
+  <g transform="translate(6, 2)" font-family="'Cinzel', Consolas, monospace" font-size="10.5" font-weight="900" letter-spacing="1">
     <!-- 01: IDENTITY -->
     <g transform="translate(0, 0)">
       <rect x="0" y="0" width="76" height="32" rx="3" fill="#080e18" stroke="#1e293b" stroke-width="1" />
-      <text x="38" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">WARRIOR</text>
+      <text x="38" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">ARCHITECT</text>
       <rect x="79" y="0" width="115" height="32" rx="3" fill="url(#starkPillBlue)" />
       <text x="136" y="20" text-anchor="middle" fill="#040711">AVISH KUMAR</text>
     </g>
 
-    <!-- 02: HOUSE -->
+    <!-- 02: WOLF -->
     <g transform="translate(206, 0)">
       <rect x="0" y="0" width="62" height="32" rx="3" fill="#080e18" stroke="#1e293b" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">HOUSE</text>
-      <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#starkPillSilver)" />
-      <text x="116" y="20" text-anchor="middle" fill="#03060f">STARK</text>
+      <text x="31" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">🐺 WOLF</text>
+      <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#starkPillBlue)" />
+      <text x="116" y="20" text-anchor="middle" fill="#03060f">SYSTEMS</text>
     </g>
 
-    <!-- 03: STATUS -->
+    <!-- 03: LION -->
     <g transform="translate(385, 0)">
-      <rect x="0" y="0" width="68" height="32" rx="3" fill="#080e18" stroke="#1e293b" stroke-width="1" />
-      <circle cx="14" cy="16" r="3.5" fill="#10b981" />
-      <text x="42" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">WATCH</text>
-      <rect x="71" y="0" width="86" height="32" rx="3" fill="url(#starkPillGreen)" />
-      <text x="114" y="20" text-anchor="middle" fill="#03060f">VIGILANT</text>
+      <rect x="0" y="0" width="62" height="32" rx="3" fill="#080e18" stroke="#1e293b" stroke-width="1" />
+      <text x="31" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">🦁 LION</text>
+      <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#lionPillGold)" />
+      <text x="116" y="20" text-anchor="middle" fill="#03060f">FULL-STACK</text>
     </g>
 
-    <!-- 04: KEEP -->
-    <g transform="translate(554, 0)">
-      <rect x="0" y="0" width="56" height="32" rx="3" fill="#080e18" stroke="#1e293b" stroke-width="1" />
-      <text x="28" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">KEEP</text>
-      <rect x="59" y="0" width="108" height="32" rx="3" fill="url(#starkPillBlue)" />
-      <text x="113" y="20" text-anchor="middle" fill="#040711">WINTERFELL</text>
+    <!-- 04: EAGLE -->
+    <g transform="translate(564, 0)">
+      <rect x="0" y="0" width="62" height="32" rx="3" fill="#080e18" stroke="#1e293b" stroke-width="1" />
+      <text x="31" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">🦅 EAGLE</text>
+      <rect x="65" y="0" width="98" height="32" rx="3" fill="url(#eaglePillCyan)" />
+      <text x="114" y="20" text-anchor="middle" fill="#040711">AI ORACLE</text>
     </g>
 
-    <!-- 05: STEEL -->
-    <g transform="translate(733, 0)">
+    <!-- 05: RANK -->
+    <g transform="translate(735, 0)">
       <rect x="0" y="0" width="68" height="32" rx="3" fill="#080e18" stroke="#1e293b" stroke-width="1" />
-      <text x="34" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">BLADE</text>
-      <rect x="71" y="0" width="102" height="32" rx="3" fill="url(#starkPillGold)" />
-      <text x="122" y="20" text-anchor="middle" fill="#03060f">VALYRIAN S+</text>
+      <text x="34" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">RANK</text>
+      <rect x="71" y="0" width="100" height="32" rx="3" fill="url(#citadelPillEmerald)" />
+      <text x="121" y="20" text-anchor="middle" fill="#03060f">TRI-APEX S+</text>
     </g>
   </g>
 </svg>

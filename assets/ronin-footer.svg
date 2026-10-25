@@ -7,27 +7,30 @@
     </linearGradient>
     <linearGradient id="footerGold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#f8fafc" />
-      <stop offset="100%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#06b6d4" />
     </linearGradient>
   </defs>
 
   <rect width="1600" height="240" fill="url(#footerBg)" />
   <line x1="0" y1="0" x2="1600" y2="0" stroke="#162942" stroke-width="1.5" />
-  <line x1="400" y1="0" x2="1200" y2="0" stroke="#38bdf8" stroke-width="2" />
+  <line x1="300" y1="0" x2="700" y2="0" stroke="#38bdf8" stroke-width="2" />
+  <line x1="700" y1="0" x2="1100" y2="0" stroke="#f59e0b" stroke-width="2" />
+  <line x1="1100" y1="0" x2="1300" y2="0" stroke="#06b6d4" stroke-width="2" />
 
-  <!-- Center Direwolf Crest -->
-  <g transform="translate(800, 65)">
-    <circle cx="0" cy="0" r="34" fill="#08101d" stroke="#38bdf8" stroke-width="1.5" />
-    <!-- Stylized Direwolf Head -->
-    <path d="M 0 -18 L 8 -10 L 18 -6 L 10 4 L 12 16 L 0 11 L -12 16 L -10 4 L -18 -6 L -8 -10 Z" fill="#f8fafc" />
-    <circle cx="0" cy="0" r="2" fill="#38bdf8" />
+  <!-- Center Tri-Sigil Vector Crest -->
+  <g transform="translate(800, 60)">
+    <circle cx="0" cy="0" r="32" fill="#08101d" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="-10" cy="-4" r="3.5" fill="#38bdf8" />
+    <circle cx="0" cy="8" r="3.5" fill="#f59e0b" />
+    <circle cx="10" cy="-4" r="3.5" fill="#06b6d4" />
+    <polygon points="-10,-4 10,-4 0,8" fill="none" stroke="#f8fafc" stroke-width="1" />
   </g>
 
   <!-- Royal Signature Text -->
-  <g transform="translate(800, 140)" text-anchor="middle">
-    <text x="0" y="0" font-family="'Cinzel', 'Palatino', serif" font-size="24" font-weight="900" fill="url(#footerGold)" letter-spacing="4">THE NORTH REMEMBERS &#8226; AVISH KUMAR</text>
-    <text x="0" y="32" font-family="'Georgia', serif" font-style="italic" font-size="14" fill="#94a3b8" letter-spacing="2">KING IN THE NORTH &#8226; WATCHER ON THE WALLS &#8226; GITHUB.COM/AVISH2142005</text>
-    <text x="0" y="58" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1">[ TRANSMISSION SEALED // WINTERFELL PROTOCOL 0x777 // VALYRIAN CODE ARMED ]</text>
+  <g transform="translate(800, 135)" text-anchor="middle">
+    <text x="0" y="0" font-family="'Cinzel', 'Palatino', serif" font-size="24" font-weight="900" fill="url(#footerGold)" letter-spacing="4">THE TRI-APEX REALM &#8226; AVISH KUMAR</text>
+    <text x="0" y="30" font-family="'Georgia', serif" font-style="italic" font-size="14" fill="#94a3b8" letter-spacing="2">🐺 THE PACK SURVIVES &#8226; 🦁 THE PRIDE REIGNS &#8226; 🦅 THE SKY WATCHES &#8226; GITHUB.COM/AVISH2142005</text>
+    <text x="0" y="56" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1">[ TRANSMISSION SEALED // TRI-APEX COMMAND PROTOCOL 0x777 // VALYRIAN CODE ARMED ]</text>
   </g>
 </svg>
