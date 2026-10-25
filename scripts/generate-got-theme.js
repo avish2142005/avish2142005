@@ -3,147 +3,25 @@ const path = require("path");
 
 const assetsDir = path.resolve(__dirname, "../assets");
 
-console.log("[generate-got-theme] Crafting Royal Golden Lion Theme (Professional Content + Tawny Gold Style) for Avish Kumar (@avish2142005)...");
+console.log("[generate-got-theme] Crafting AI Engineer Portfolio with Realistic Lion Logo (Royal Gold Theme) for Avish Kumar (@avish2142005)...");
 
-// -------------------------------------------------------------
-// REUSABLE VECTOR ASSET: Regal Golden Lion Artwork
-// Styled directly after the majestic lion photo with rich golden-tawny mane,
-// noble serene amber eyes, and regal commanding presence.
-// -------------------------------------------------------------
-function getVectorLionArt(x, y, scale = 1, showGlow = true) {
-  return `
-  <g transform="translate(${x}, ${y}) scale(${scale})">
-    ${showGlow ? `
-    <!-- Ambient Sunlit Golden Glow -->
-    <radialGradient id="lionSunGlow_${x}_${y}" cx="50%" cy="45%" r="50%">
-      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.45" />
-      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.2" />
-      <stop offset="80%" stop-color="#b45309" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
-    </radialGradient>
-    <circle cx="100" cy="110" r="160" fill="url(#lionSunGlow_${x}_${y})" />
-    ` : ''}
-
-    <!-- Mane Back Layer: Dark Tawny Espresso & Auburn Shadows -->
-    <path d="M 10 180 C -15 130 -20 70 5 20 C 30 -20 80 -45 135 -40 C 190 -45 235 -20 260 20 C 285 70 280 130 255 180 C 240 220 215 250 170 270 C 120 285 70 275 35 250 Z" fill="#261709" />
-    
-    <!-- Outer Mane Strands (Voluminous Tawny Auburn & Rich Bronze) -->
-    <g fill="#451a03">
-      <path d="M 25 20 L 5 -5 L 45 -15 L 85 -35 L 125 -42 L 155 -38 L 195 -25 L 235 -5 L 215 25 L 255 50 L 275 95 L 260 145 L 245 185 L 225 220 L 195 245 L 165 260 L 130 265 L 95 255 L 65 240 L 40 205 L 20 155 L 15 105 L 30 65 Z" />
-    </g>
-
-    <g fill="#78350f">
-      <path d="M 35 30 L 15 10 L 55 -5 L 95 -25 L 135 -30 L 170 -18 L 210 5 L 235 40 L 250 85 L 240 135 L 225 175 L 205 205 L 180 230 L 150 245 L 120 248 L 85 235 L 55 210 L 35 170 L 30 120 L 40 75 Z" />
-    </g>
-
-    <!-- Mid-Mane Flowing Golden Amber Locks -->
-    <g fill="#b45309">
-      <path d="M 50 45 L 35 30 L 70 12 L 110 -5 L 145 -8 L 180 8 L 205 35 L 220 75 L 215 120 L 205 160 L 185 190 L 165 215 L 135 225 L 105 220 L 75 200 L 55 165 L 48 120 L 55 80 Z" />
-    </g>
-
-    <g fill="#d97706">
-      <path d="M 65 60 L 50 48 L 80 30 L 115 15 L 145 15 L 175 30 L 195 55 L 205 90 L 200 130 L 185 165 L 165 190 L 140 205 L 115 205 L 90 190 L 70 160 L 62 120 L 68 85 Z" />
-    </g>
-
-    <!-- Sunlit Golden Top Mane Tufts -->
-    <g fill="#f59e0b">
-      <path d="M 80 35 L 105 15 L 135 10 L 160 22 L 175 45 L 185 75 L 175 110 L 160 140 L 140 160 L 115 165 L 95 150 L 82 120 L 80 80 Z" />
-      <path d="M 45 95 L 60 70 L 75 90 L 68 115 Z" />
-      <path d="M 195 95 L 210 75 L 220 100 L 205 120 Z" />
-    </g>
-
-    <!-- Flowing Hair Highlights (Fine Golden Wisps) -->
-    <g stroke="#fbbf24" stroke-width="1.4" opacity="0.85" stroke-linecap="round">
-      <line x1="100" y1="18" x2="85" y2="40" />
-      <line x1="120" y1="12" x2="110" y2="38" />
-      <line x1="145" y1="15" x2="135" y2="42" />
-      <line x1="165" y1="28" x2="155" y2="52" />
-      <line x1="75" y1="55" x2="60" y2="80" />
-      <line x1="185" y1="58" x2="175" y2="85" />
-      <line x1="65" y1="100" x2="52" y2="130" />
-      <line x1="195" y1="105" x2="185" y2="135" />
-      <line x1="85" y1="160" x2="75" y2="190" />
-      <line x1="170" y1="165" x2="160" y2="195" />
-      <line x1="115" y1="185" x2="105" y2="220" />
-      <line x1="140" y1="188" x2="135" y2="225" />
-    </g>
-
-    <!-- Lion Face Base (Tawny Tan & Sunlit Ochre) -->
-    <path d="M 85 85 C 80 65 110 55 135 55 C 160 55 190 65 185 85 C 190 105 185 130 180 150 C 165 170 145 178 135 178 C 125 178 105 170 90 150 C 85 130 80 105 85 85 Z" fill="#d97706" />
-    <path d="M 92 88 C 88 72 112 62 135 62 C 158 62 182 72 178 88 C 182 105 178 128 172 145 C 160 162 142 170 135 170 C 128 170 110 162 98 145 C 92 128 88 105 92 88 Z" fill="#ea580c" opacity="0.6" />
-
-    <!-- Forehead & Nose Bridge (Warm Ochre) -->
-    <polygon points="120,70 150,70 145,115 125,115" fill="#b45309" />
-    <polygon points="125,72 145,72 142,112 128,112" fill="#d97706" />
-
-    <!-- Noble Amber-Hazel Eyes (Calm, Regal & Serene) -->
-    <!-- Left Eye -->
-    <g transform="translate(108, 92)">
-      <ellipse cx="0" cy="0" rx="9" ry="6" fill="#1c1208" />
-      <ellipse cx="0" cy="0" rx="7" ry="5" fill="#f59e0b" />
-      <ellipse cx="0" cy="0" rx="5" ry="4" fill="#fbbf24" />
-      <circle cx="0" cy="0" r="3" fill="#090502" />
-      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" />
-      <!-- Eyelid contour -->
-      <path d="M -9 0 C -4 -6 4 -6 9 0" fill="none" stroke="#090502" stroke-width="1.8" />
-      <path d="M -9 0 C -4 4 4 4 9 0" fill="none" stroke="#261709" stroke-width="1" />
-    </g>
-
-    <!-- Right Eye -->
-    <g transform="translate(162, 92)">
-      <ellipse cx="0" cy="0" rx="9" ry="6" fill="#1c1208" />
-      <ellipse cx="0" cy="0" rx="7" ry="5" fill="#f59e0b" />
-      <ellipse cx="0" cy="0" rx="5" ry="4" fill="#fbbf24" />
-      <circle cx="0" cy="0" r="3" fill="#090502" />
-      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" />
-      <!-- Eyelid contour -->
-      <path d="M -9 0 C -4 -6 4 -6 9 0" fill="none" stroke="#090502" stroke-width="1.8" />
-      <path d="M -9 0 C -4 4 4 4 9 0" fill="none" stroke="#261709" stroke-width="1" />
-    </g>
-
-    <!-- White / Cream Eyebrow Accents -->
-    <path d="M 98 84 C 105 80 115 80 120 84" fill="none" stroke="#fef3c7" stroke-width="2.5" stroke-linecap="round" />
-    <path d="M 150 84 C 155 80 165 80 172 84" fill="none" stroke="#fef3c7" stroke-width="2.5" stroke-linecap="round" />
-
-    <!-- Lion Nose & Muzzle -->
-    <g transform="translate(135, 122)">
-      <!-- Nose Leather -->
-      <path d="M -15 0 C -12 -5 12 -5 15 0 C 12 12 0 16 0 16 C 0 16 -12 12 -15 0 Z" fill="#1f1309" stroke="#0d0703" stroke-width="1.2" />
-      <circle cx="-6" cy="4" r="2.5" fill="#0d0703" />
-      <circle cx="6" cy="4" r="2.5" fill="#0d0703" />
-      <path d="M 0 6 L 0 15" stroke="#0d0703" stroke-width="1.5" />
-    </g>
-
-    <!-- White / Cream Chin & Whiskers Pad -->
-    <path d="M 112 135 C 115 145 125 152 135 152 C 145 152 155 145 158 135 C 160 148 152 165 135 168 C 118 165 110 148 112 135 Z" fill="#fef3c7" />
-    <path d="M 120 152 C 125 160 135 164 135 164 C 135 164 145 160 150 152 C 145 158 135 160 135 160 C 135 160 125 158 120 152 Z" fill="#e2e8f0" />
-
-    <!-- Whisker Dots -->
-    <g fill="#451a03">
-      <circle cx="120" cy="142" r="1.2" />
-      <circle cx="125" cy="145" r="1.2" />
-      <circle cx="118" cy="148" r="1.2" />
-      <circle cx="150" cy="142" r="1.2" />
-      <circle cx="145" cy="145" r="1.2" />
-      <circle cx="152" cy="148" r="1.2" />
-    </g>
-
-    <!-- Chest Mane Cascading Down (Royal Tawny Golden Flow) -->
-    <path d="M 70 200 L 90 270 L 135 285 L 180 270 L 200 200 L 165 240 L 135 250 L 105 240 Z" fill="#78350f" />
-    <path d="M 90 220 L 110 275 L 135 282 L 160 275 L 180 220 L 150 250 L 135 255 L 120 250 Z" fill="#b45309" />
-    <path d="M 110 240 L 125 280 L 135 282 L 145 280 L 160 240 L 142 260 L 135 262 L 128 260 Z" fill="#f59e0b" />
-  </g>`;
+// Load the realistic free lion image and encode as base64 data URI for flawless embedded SVG rendering
+const lionPngPath = path.resolve(assetsDir, "got-sigil-lion.png");
+let lionDataUri = "";
+if (fs.existsSync(lionPngPath)) {
+  const lionBase64 = fs.readFileSync(lionPngPath).toString("base64");
+  lionDataUri = `data:image/png;base64,${lionBase64}`;
 }
 
 // -------------------------------------------------------------
 // 1. HERO BANNER: got-hero-banner.svg (and ronin-hero-v2.svg)
-// Professional Content // Royal Golden Lion Theme
+// AI Engineer Focus // Realistic Lion Logo
 // -------------------------------------------------------------
 function getHeroBannerSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
     <!-- Deep Espresso & Obsidian Canvas -->
-    <linearGradient id="regalCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="aiCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#070503" />
       <stop offset="35%" stop-color="#0e0a06" />
       <stop offset="70%" stop-color="#140f09" />
@@ -151,7 +29,7 @@ function getHeroBannerSvg() {
     </linearGradient>
 
     <!-- Royal Sunlit Gold Gradient -->
-    <linearGradient id="royalGold" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="aiRoyalGold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f59e0b" />
       <stop offset="40%" stop-color="#fbbf24" />
       <stop offset="70%" stop-color="#fde047" />
@@ -159,22 +37,27 @@ function getHeroBannerSvg() {
     </linearGradient>
 
     <!-- Metallic Platinum / Warm Ivory -->
-    <linearGradient id="platinumText" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="aiPlatinumText" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
       <stop offset="50%" stop-color="#fef3c7" />
       <stop offset="100%" stop-color="#cbd5e1" />
     </linearGradient>
 
-    <!-- Warm Amber Glow Filter -->
-    <filter id="royalGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <!-- Amber Glow Filter -->
+    <filter id="aiRoyalGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <pattern id="regalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="aiRegalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#24190e" stroke-width="0.8" opacity="0.6" />
       <circle cx="40" cy="40" r="1.2" fill="#f59e0b" opacity="0.3" />
     </pattern>
+
+    <!-- Circular Clip Path for Realistic Lion Logo -->
+    <clipPath id="heroRealisticLionClip">
+      <circle cx="180" cy="190" r="148" />
+    </clipPath>
 
     <style>
       @keyframes goldLaserTrace {
@@ -189,17 +72,17 @@ function getHeroBannerSvg() {
   </defs>
 
   <!-- Base Canvas -->
-  <rect width="1600" height="520" fill="url(#regalCanvasBg)" />
-  <rect width="1600" height="520" fill="url(#regalGrid)" />
+  <rect width="1600" height="520" fill="url(#aiCanvasBg)" />
+  <rect width="1600" height="520" fill="url(#aiRegalGrid)" />
 
-  <!-- Ambient Radiant Glow Well Behind Lion -->
-  <circle cx="280" cy="260" r="380" fill="#f59e0b" opacity="0.12" filter="url(#royalGlow)" />
-  <circle cx="1200" cy="180" r="320" fill="#fbbf24" opacity="0.08" filter="url(#royalGlow)" />
+  <!-- Ambient Radiant Glow Well Behind Lion Logo -->
+  <circle cx="280" cy="260" r="380" fill="#f59e0b" opacity="0.14" filter="url(#aiRoyalGlow)" />
+  <circle cx="1200" cy="180" r="320" fill="#fbbf24" opacity="0.08" filter="url(#aiRoyalGlow)" />
 
   <!-- Perimeter Royal Gold Borders -->
   <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#2e1f10" stroke-width="1.5" />
   <rect x="22" y="22" width="1556" height="476" rx="4" fill="none" stroke="#1c1208" stroke-width="1" />
-  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#f59e0b" stroke-width="2" class="laser-gold-border" filter="url(#royalGlow)" />
+  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#f59e0b" stroke-width="2" class="laser-gold-border" filter="url(#aiRoyalGlow)" />
 
   <!-- Classical Royal Corner Ornaments -->
   <g fill="none" stroke="#f59e0b" stroke-width="1.8">
@@ -216,88 +99,92 @@ function getHeroBannerSvg() {
     <circle cx="1562" cy="482" r="3.5" fill="#f59e0b" />
   </g>
 
-  <!-- LEFT HERO ARTWORK: The Majestic Royal Lion Vector Artwork -->
+  <!-- LEFT HERO ARTWORK: The Realistic Lion Logo In Royal Frame -->
   <g transform="translate(70, 70)">
-    <!-- Decorative Royal Crest Frame -->
-    <circle cx="180" cy="190" r="175" fill="none" stroke="#3d2914" stroke-width="1.5" />
-    <circle cx="180" cy="190" r="165" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="8 6" opacity="0.6" />
-    <circle cx="180" cy="190" r="150" fill="#120c06" stroke="#f59e0b" stroke-width="2" />
+    <!-- Decorative Royal Crest Frame Rings -->
+    <circle cx="180" cy="190" r="176" fill="none" stroke="#3d2914" stroke-width="1.5" />
+    <circle cx="180" cy="190" r="164" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.75" />
+    <circle cx="180" cy="190" r="152" fill="#120c06" stroke="#f59e0b" stroke-width="3" filter="url(#aiRoyalGlow)" />
 
-    <!-- Vector Lion Head Art -->
-    ${getVectorLionArt(50, 45, 1.05, true)}
+    <!-- REALISTIC LION IMAGE EMBEDDED WITH CIRCULAR CLIP -->
+    <g clip-path="url(#heroRealisticLionClip)">
+      <image href="${lionDataUri}" x="12" y="10" width="336" height="360" preserveAspectRatio="xMidYMid slice" />
+    </g>
+    <!-- Outer Beveled Gold Rim -->
+    <circle cx="180" cy="190" r="148" fill="none" stroke="#fbbf24" stroke-width="2" />
 
-    <!-- Professional Crest Seal Under Lion -->
+    <!-- Professional Seal Under Lion Logo -->
     <g transform="translate(60, 375)">
       <rect x="0" y="0" width="240" height="30" rx="3" fill="#140d06" stroke="#f59e0b" stroke-width="1.2" />
-      <text x="120" y="20" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="2">SOFTWARE ENGINEER // S+</text>
+      <text x="120" y="20" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="2">AI ENGINEER // GRADE S+</text>
     </g>
   </g>
 
-  <!-- RIGHT HERO HIERARCHY: 100% Professional Content in Royal Gold Styling -->
+  <!-- RIGHT HERO HIERARCHY: AI Engineer Focus in Royal Gold Styling -->
   <g transform="translate(540, 75)">
     <!-- Top Professional Title Badge -->
     <g transform="translate(0, 18)">
-      <rect x="0" y="0" width="450" height="28" rx="3" fill="#170f07" stroke="#f59e0b" stroke-width="1.2" />
+      <rect x="0" y="0" width="460" height="28" rx="3" fill="#170f07" stroke="#f59e0b" stroke-width="1.2" />
       <circle cx="16" cy="14" r="4.5" fill="#fbbf24" />
-      <text x="34" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="800" fill="#fde047" letter-spacing="2">SENIOR SYSTEMS &amp; FULL-STACK SOFTWARE ENGINEER</text>
+      <text x="34" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="800" fill="#fde047" letter-spacing="2">ARTIFICIAL INTELLIGENCE &amp; MACHINE LEARNING ENGINEER</text>
     </g>
 
     <!-- Main Identity Title: AVISH KUMAR -->
     <g transform="translate(0, 98)">
-      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="#f59e0b" letter-spacing="6" opacity="0.25" filter="url(#royalGlow)">AVISH KUMAR</text>
-      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="url(#platinumText)" letter-spacing="6">AVISH KUMAR</text>
+      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="#f59e0b" letter-spacing="6" opacity="0.25" filter="url(#aiRoyalGlow)">AVISH KUMAR</text>
+      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="url(#aiPlatinumText)" letter-spacing="6">AVISH KUMAR</text>
     </g>
 
-    <!-- Subtitle: Professional Engineering Disciplines -->
+    <!-- Subtitle: AI Engineering Disciplines -->
     <g transform="translate(4, 142)">
-      <text x="0" y="0" font-family="'Cinzel', serif" font-size="19" font-weight="800" fill="url(#royalGold)" letter-spacing="3">FULL-STACK ARCHITECT &#8226; SYSTEMS DEVELOPER &#8226; AI INTEGRATION</text>
+      <text x="0" y="0" font-family="'Cinzel', serif" font-size="19" font-weight="800" fill="url(#aiRoyalGold)" letter-spacing="3">AI ENGINEER &#8226; COGNITIVE ARCHITECTURES &#8226; APPLIED ML SYSTEMS</text>
     </g>
 
     <!-- Royal Gold Divider Bar -->
     <g transform="translate(0, 165)">
       <line x1="0" y1="0" x2="980" y2="0" stroke="#2e1f10" stroke-width="1.5" />
-      <line x1="0" y1="0" x2="420" y2="0" stroke="#f59e0b" stroke-width="2.5" filter="url(#royalGlow)" />
+      <line x1="0" y1="0" x2="420" y2="0" stroke="#f59e0b" stroke-width="2.5" filter="url(#aiRoyalGlow)" />
       <polygon points="420,-6 428,0 420,6 412,0" fill="#fde047" />
       <line x1="428" y1="0" x2="680" y2="0" stroke="#fef3c7" stroke-width="1.8" />
     </g>
 
-    <!-- Professional Mission & Engineering Philosophy -->
+    <!-- Professional Mission & AI Philosophy -->
     <g transform="translate(2, 206)">
-      <text x="0" y="0" font-family="'Georgia', serif" font-style="italic" font-size="15.5" fill="#f8fafc" letter-spacing="0.8">"Architecting resilient distributed systems, sub-millisecond REST APIs, and modern reactive web fortresses."</text>
-      <text x="0" y="26" font-family="'Georgia', serif" font-style="italic" font-size="15" fill="#d4d4d8" letter-spacing="0.6">Dedicated to uncompromising code purity, modular decoupled architecture, and zero technical debt.</text>
+      <text x="0" y="0" font-family="'Georgia', serif" font-style="italic" font-size="15.5" fill="#f8fafc" letter-spacing="0.8">"Engineering high-accuracy neural models, autonomous AI agents, and sub-millisecond inference pipelines."</text>
+      <text x="0" y="26" font-family="'Georgia', serif" font-style="italic" font-size="15" fill="#d4d4d8" letter-spacing="0.6">Unifying cognitive health intelligence, low-level execution kernels, and scalable microservice APIs.</text>
     </g>
 
-    <!-- 4 Professional Engineering Badges -->
+    <!-- 4 AI Engineering Badges -->
     <g transform="translate(0, 270)">
-      <!-- Badge 1: Core Stack -->
+      <!-- Badge 1: Core AI Stack -->
       <g transform="translate(0, 0)">
         <rect x="0" y="0" width="225" height="62" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
         <rect x="0" y="0" width="4" height="62" fill="#f59e0b" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fbbf24" letter-spacing="1">💻 CORE STACK</text>
-        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">TS &#8226; REACT &#8226; PYTHON</text>
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fbbf24" letter-spacing="1">🧠 CORE AI STACK</text>
+        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">PYTORCH &#8226; FASTAPI</text>
       </g>
 
-      <!-- Badge 2: Systems Architecture -->
+      <!-- Badge 2: AI Health Model -->
       <g transform="translate(245, 0)">
         <rect x="0" y="0" width="225" height="62" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
         <rect x="0" y="0" width="4" height="62" fill="#fef3c7" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fde047" letter-spacing="1">⚙️ SYSTEMS CORE</text>
-        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">AquaOS KERNEL</text>
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fde047" letter-spacing="1">🔬 HEALTH AI ORACLE</text>
+        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">Nutri-ai PLATFORM</text>
       </g>
 
-      <!-- Badge 3: AI Telemetry -->
+      <!-- Badge 3: Systems Architecture -->
       <g transform="translate(490, 0)">
         <rect x="0" y="0" width="225" height="62" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
         <rect x="0" y="0" width="4" height="62" fill="#d97706" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fbbf24" letter-spacing="1">🧠 AI COGNITION</text>
-        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">Nutri-ai MODELS</text>
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fbbf24" letter-spacing="1">⚙️ AI WORKLOAD KERNEL</text>
+        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">AquaOS POSIX CORE</text>
       </g>
 
       <!-- Badge 4: Production Rank -->
       <g transform="translate(735, 0)">
         <rect x="0" y="0" width="235" height="62" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
         <rect x="0" y="0" width="4" height="62" fill="#10b981" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#34d399" letter-spacing="1">🏆 PRODUCTION GRADE</text>
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#34d399" letter-spacing="1">🏆 INFERENCE GRADE</text>
         <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#fde047">ENTERPRISE S+</text>
       </g>
     </g>
@@ -314,6 +201,7 @@ function getHeroBannerSvg() {
 
 // -------------------------------------------------------------
 // 2. STATUS BADGES: got-status-badges.svg (and samurai-status-badges.svg)
+// AI Engineer Focus
 // -------------------------------------------------------------
 function getStatusBadgesSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 36" fill="none">
@@ -341,26 +229,26 @@ function getStatusBadgesSvg() {
       <text x="136" y="20" text-anchor="middle" fill="#090502">AVISH KUMAR</text>
     </g>
 
-    <!-- 02: SPECIALTY -->
+    <!-- 02: ROLE: AI ENGINEER -->
     <g transform="translate(206, 0)">
       <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">DOMAIN</text>
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">ROLE</text>
       <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#goldStatusGrad)" />
-      <text x="116" y="20" text-anchor="middle" fill="#090502">FULL-STACK</text>
+      <text x="116" y="20" text-anchor="middle" fill="#090502">AI ENGINEER</text>
     </g>
 
-    <!-- 03: ARCHITECTURE -->
+    <!-- 03: MODELS -->
     <g transform="translate(385, 0)">
       <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">SYSTEMS</text>
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">MODELS</text>
       <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#ivoryStatusGrad)" />
-      <text x="116" y="20" text-anchor="middle" fill="#090502">OS KERNELS</text>
+      <text x="116" y="20" text-anchor="middle" fill="#090502">DEEP LEARNING</text>
     </g>
 
-    <!-- 04: PERFORMANCE -->
+    <!-- 04: INFERENCE SPEED -->
     <g transform="translate(564, 0)">
       <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">LATENCY</text>
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">INFERENCE</text>
       <rect x="65" y="0" width="98" height="32" rx="3" fill="url(#goldStatusGrad)" />
       <text x="114" y="20" text-anchor="middle" fill="#090502">SUB-MS</text>
     </g>
@@ -433,27 +321,30 @@ function getGotSectionHeaderSvg(num, title, subtitle) {
 
 // -------------------------------------------------------------
 // 4. OPERATIVE DOSSIER: got-operative-dossier.svg (and operative-dossier-v2.svg)
-// 100% Professional Content // Royal Gold Theme
+// AI Engineer Credentials with Realistic Lion Logo
 // -------------------------------------------------------------
 function getOperativeDossierSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 490" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="regalDosBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="aiDosBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#070503" />
       <stop offset="50%" stop-color="#120c06" />
       <stop offset="100%" stop-color="#080503" />
     </linearGradient>
-    <radialGradient id="dosGoldAura" cx="50%" cy="50%" r="50%">
+    <radialGradient id="aiDosGoldAura" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
-    <filter id="regalDosGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="aiDosGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
+    <clipPath id="dosRealisticLionClip">
+      <circle cx="0" cy="0" r="82" />
+    </clipPath>
   </defs>
 
-  <rect width="920" height="490" rx="6" fill="url(#regalDosBg)" />
+  <rect width="920" height="490" rx="6" fill="url(#aiDosBg)" />
   <rect width="920" height="490" rx="6" fill="none" stroke="#2e1f10" stroke-width="1.5" />
   <rect width="910" height="480" x="5" y="5" rx="4" fill="none" stroke="#1c1208" stroke-width="1" />
 
@@ -465,92 +356,95 @@ function getOperativeDossierSvg() {
     <path d="M 915 455 L 915 485 L 885 485" />
   </g>
 
-  <!-- Left Column: Professional Credentials Intel Text -->
+  <!-- Left Column: AI Engineer Intel Text -->
   <g transform="translate(36, 45)">
     <!-- Header Stamp -->
     <rect x="0" y="0" width="380" height="28" rx="3" fill="#140d06" stroke="#f59e0b" stroke-width="1" />
-    <text x="14" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="900" fill="#fde047" letter-spacing="2">PROFESSIONAL DOSSIER // SOFTWARE ENGINEERING</text>
+    <text x="14" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="900" fill="#fde047" letter-spacing="2">AI ENGINEERING DOSSIER // MACHINE LEARNING</text>
 
     <!-- Name & Professional Title -->
     <text x="0" y="65" font-family="'Cinzel', 'Palatino', serif" font-size="28" font-weight="900" fill="#f8fafc" letter-spacing="2">AVISH KUMAR</text>
-    <text x="0" y="92" font-family="'Cinzel', serif" font-size="13" font-weight="700" fill="#fbbf24" letter-spacing="1.5">FULL-STACK SYSTEMS ARCHITECT &amp; SOFTWARE DEVELOPER</text>
+    <text x="0" y="92" font-family="'Cinzel', serif" font-size="13" font-weight="700" fill="#fbbf24" letter-spacing="1.5">AI ENGINEER &#8226; COGNITIVE SYSTEMS &amp; DEEP LEARNING</text>
 
-    <!-- Key-Value Professional Fields -->
+    <!-- Key-Value AI Engineering Fields -->
     <g transform="translate(0, 125)" font-family="'Courier New', monospace" font-size="12">
       <text x="0" y="0" fill="#a1a1aa" font-weight="800">PRIMARY FOCUS:</text>
-      <text x="150" y="0" fill="#f8fafc" font-weight="800">Full-Stack Web Architectures &amp; Low-Level Kernels</text>
+      <text x="150" y="0" fill="#f8fafc" font-weight="800">Deep Learning, Autonomous Agents &amp; ML Architecture</text>
 
       <text x="0" y="28" fill="#a1a1aa" font-weight="800">CORE ARSENAL:</text>
-      <text x="150" y="28" fill="#fde047" font-weight="800">TypeScript &#8226; Python &#8226; React 19 &#8226; Next.js &#8226; Docker</text>
+      <text x="150" y="28" fill="#fde047" font-weight="800">Python 3.12 &#8226; PyTorch &#8226; FastAPI &#8226; TypeScript &#8226; Docker</text>
 
-      <text x="0" y="56" fill="#a1a1aa" font-weight="800">SYSTEM FLAGSHIPS:</text>
-      <text x="150" y="56" fill="#ffffff" font-weight="800">AquaOS (Kernel) &#8226; Nutri-ai (AI) &#8226; Live Markdown</text>
+      <text x="0" y="56" fill="#a1a1aa" font-weight="800">FLAGSHIP PLATFORMS:</text>
+      <text x="150" y="56" fill="#ffffff" font-weight="800">Nutri-ai (Health AI) &#8226; AquaOS (AI Kernel Framework)</text>
 
-      <text x="0" y="84" fill="#a1a1aa" font-weight="800">BACKEND &amp; DB:</text>
-      <text x="150" y="84" fill="#fde047" font-weight="800">FastAPI &#8226; Flask &#8226; Node.js &#8226; PostgreSQL &#8226; MongoDB</text>
+      <text x="0" y="84" fill="#a1a1aa" font-weight="800">INFERENCE ENGINE:</text>
+      <text x="150" y="84" fill="#fde047" font-weight="800">Sub-ms Model Dispatch, RESTful Pipelines, Vector DBs</text>
 
       <text x="0" y="112" fill="#a1a1aa" font-weight="800">SYSTEM STANDARDS:</text>
-      <text x="150" y="112" fill="#ffffff" font-weight="800">Sub-ms Latency, POSIX Isolation, Strict Types</text>
+      <text x="150" y="112" fill="#ffffff" font-weight="800">Deterministic Concurrency, Zero Latency Drift, POSIX</text>
 
       <text x="0" y="140" fill="#a1a1aa" font-weight="800">ACTIVE DIRECTIVES:</text>
-      <text x="150" y="140" fill="#10b981" font-weight="800">2026 Production Deployments &amp; Enterprise Systems</text>
+      <text x="150" y="140" fill="#10b981" font-weight="800">2026 Production AI Multi-Agent Deployments</text>
     </g>
 
-    <!-- Professional Code Philosophy Box -->
+    <!-- AI Code Philosophy Box -->
     <g transform="translate(0, 310)">
       <rect x="0" y="0" width="530" height="95" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
       <rect x="0" y="0" width="4" height="95" fill="#f59e0b" />
-      <text x="18" y="24" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#fbbf24" letter-spacing="1">ENGINEERING CODE PHILOSOPHY:</text>
-      <text x="18" y="48" font-family="'Georgia', serif" font-style="italic" font-size="13" fill="#cbd5e1">"Writing resilient, self-documenting code with clear architectural boundaries.</text>
-      <text x="18" y="68" font-family="'Georgia', serif" font-style="italic" font-size="13" fill="#cbd5e1">Balancing low-level memory efficiency with seamless reactive UX."</text>
-      <text x="18" y="86" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#fde047">&gt; 100% PRODUCTION PURITY &#8226; ZERO TECHNICAL DEBT.</text>
+      <text x="18" y="24" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#fbbf24" letter-spacing="1">AI ENGINEERING PHILOSOPHY:</text>
+      <text x="18" y="48" font-family="'Georgia', serif" font-style="italic" font-size="13" fill="#cbd5e1">"Engineering deep learning systems with mathematical integrity.</text>
+      <text x="18" y="68" font-family="'Georgia', serif" font-style="italic" font-size="13" fill="#cbd5e1">Bridging cognitive reasoning models with sub-millisecond cloud pipelines."</text>
+      <text x="18" y="86" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#fde047">&gt; PRODUCTION INFERENCE PURITY &#8226; ZERO TECHNICAL DEBT.</text>
     </g>
   </g>
 
-  <!-- Right Column: Royal Lion Crest Seal -->
+  <!-- Right Column: Realistic Lion Logo Crest -->
   <g transform="translate(745, 225)">
-    <circle cx="0" cy="0" r="120" fill="url(#dosGoldAura)" />
+    <circle cx="0" cy="0" r="120" fill="url(#aiDosGoldAura)" />
     <circle cx="0" cy="0" r="100" fill="none" stroke="#2e1f10" stroke-width="1.5" />
     <circle cx="0" cy="0" r="92" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="14 6" />
-    <circle cx="0" cy="0" r="84" fill="#120c06" stroke="#f59e0b" stroke-width="2" filter="url(#regalDosGlow)" />
+    <circle cx="0" cy="0" r="84" fill="#120c06" stroke="#f59e0b" stroke-width="2.5" filter="url(#aiDosGlow)" />
 
-    <!-- Vector Lion Head Artwork Centered -->
-    ${getVectorLionArt(-68, -80, 0.58, false)}
+    <!-- REALISTIC LION IMAGE EMBEDDED WITH CIRCULAR CLIP -->
+    <g clip-path="url(#dosRealisticLionClip)">
+      <image href="${lionDataUri}" x="-95" y="-95" width="190" height="200" preserveAspectRatio="xMidYMid slice" />
+    </g>
+    <circle cx="0" cy="0" r="82" fill="none" stroke="#fbbf24" stroke-width="2" />
 
     <rect x="-95" y="125" width="190" height="28" rx="3" fill="#140d06" stroke="#f59e0b" stroke-width="1.2" />
-    <text x="0" y="144" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#f8fafc" letter-spacing="1.5">AVISH KUMAR // S+</text>
+    <text x="0" y="144" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#f8fafc" letter-spacing="1.5">AVISH KUMAR // AI</text>
   </g>
 </svg>`;
 }
 
 // -------------------------------------------------------------
 // 5. DEVELOPER RANK / RADAR: got-developer-rank.svg (and developer-rank.svg)
-// 100% Professional Technical Capabilities
+// AI Engineer Capabilities
 // -------------------------------------------------------------
 function getDeveloperRankSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="regalRankBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="aiRankBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#070503" />
       <stop offset="50%" stop-color="#120c06" />
       <stop offset="100%" stop-color="#080503" />
     </linearGradient>
-    <radialGradient id="rankGoldAura" cx="50%" cy="50%" r="50%">
+    <radialGradient id="aiRankGoldAura" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
-    <filter id="rankGoldFilter" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="aiRankFilter" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <rect width="920" height="460" rx="6" fill="url(#regalRankBg)" />
+  <rect width="920" height="460" rx="6" fill="url(#aiRankBg)" />
   <rect width="920" height="460" rx="6" fill="none" stroke="#2e1f10" stroke-width="1.5" />
 
-  <!-- Left Side: Hexagonal Engineering Radar -->
+  <!-- Left Side: Hexagonal AI Radar -->
   <g transform="translate(250, 230)">
-    <circle cx="0" cy="0" r="160" fill="url(#rankGoldAura)" />
+    <circle cx="0" cy="0" r="160" fill="url(#aiRankGoldAura)" />
 
     <!-- Concentric Hexagons -->
     <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="#24190e" stroke-width="1" />
@@ -567,9 +461,9 @@ function getDeveloperRankSvg() {
     <line x1="0" y1="0" x2="-130" y2="75" stroke="#3d2914" stroke-width="1" />
     <line x1="0" y1="0" x2="-130" y2="-75" stroke="#3d2914" stroke-width="1" />
 
-    <!-- Avish Kumar's Professional Capability Polygon -->
-    <!-- Axes: System Architecture=98%, OS Kernels=96%, AI Modeling=95%, Algorithmic Problem Solving=96%, Full-Stack Web=97%, Low-Latency APIs=95% -->
-    <polygon points="0,-147 125,-72 123,71 0,144 -126,73 -124,-71" fill="#f59e0b" fill-opacity="0.32" stroke="#fde047" stroke-width="2.5" filter="url(#rankGoldFilter)" />
+    <!-- Avish Kumar's AI Engineering Polygon -->
+    <!-- Axes: Deep Learning=98%, Neural Architectures=97%, Low-Latency Inference=96%, Data Structures=96%, AI Systems & Pipelines=97%, Distributed APIs=95% -->
+    <polygon points="0,-147 125,-72 123,71 0,144 -126,73 -124,-71" fill="#f59e0b" fill-opacity="0.32" stroke="#fde047" stroke-width="2.5" filter="url(#aiRankFilter)" />
 
     <!-- Vertices Dots -->
     <circle cx="0" cy="-147" r="4.5" fill="#f59e0b" />
@@ -580,59 +474,59 @@ function getDeveloperRankSvg() {
     <circle cx="-124" cy="-71" r="4.5" fill="#10b981" />
 
     <!-- Node Labels -->
-    <text x="0" y="-168" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fde047">SYSTEM ARCHITECTURE [98%]</text>
-    <text x="145" y="-72" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#ffffff">OS &amp; KERNELS [96%]</text>
-    <text x="145" y="82" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fbbf24">AI &amp; MACHINE LEARNING [95%]</text>
-    <text x="0" y="172" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#f8fafc">ALGORITHMIC MASTERY [96%]</text>
-    <text x="-145" y="82" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fde047">FULL-STACK REACT &amp; TS [97%]</text>
-    <text x="-145" y="-72" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#10b981">LOW-LATENCY APIS [95%]</text>
+    <text x="0" y="-168" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fde047">DEEP LEARNING [98%]</text>
+    <text x="145" y="-72" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#ffffff">NEURAL MODELS [97%]</text>
+    <text x="145" y="82" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fbbf24">LOW-LATENCY INFERENCE [96%]</text>
+    <text x="0" y="172" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#f8fafc">MATHEMATICAL MASTERY [96%]</text>
+    <text x="-145" y="82" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fde047">AI SYSTEM ARCHITECTURE [97%]</text>
+    <text x="-145" y="-72" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#10b981">DISTRIBUTED FASTAPI [95%]</text>
   </g>
 
-  <!-- Right Side: Technical Competency Breakdown -->
+  <!-- Right Side: AI Technical Breakdown -->
   <g transform="translate(500, 48)">
     <rect x="0" y="0" width="380" height="30" rx="3" fill="#160f07" stroke="#f59e0b" stroke-width="1.2" />
-    <text x="16" y="20" font-family="'Cinzel', serif" font-size="13" font-weight="900" fill="#fbbf24" letter-spacing="2">TECHNICAL COMPETENCY MATRIX: S+ GRADE</text>
+    <text x="16" y="20" font-family="'Cinzel', serif" font-size="13" font-weight="900" fill="#fbbf24" letter-spacing="2">AI ENGINEERING COMPETENCY MATRIX</text>
 
     <!-- Capability Bars -->
     <g transform="translate(0, 55)" font-family="'Courier New', monospace" font-size="11.5" font-weight="800">
-      <!-- 01: System Architecture -->
+      <!-- 01: Deep Learning -->
       <g transform="translate(0, 0)">
-        <text x="0" y="16" fill="#f8fafc">01 // DISTRIBUTED ARCHITECTURE &amp; DESIGN</text>
+        <text x="0" y="16" fill="#f8fafc">01 // APPLIED DEEP LEARNING &amp; PYTORCH</text>
         <text x="340" y="16" fill="#fbbf24">98%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="372" height="8" rx="2" fill="#f59e0b" />
       </g>
-      <!-- 02: Full-Stack Web -->
+      <!-- 02: Cognitive Models -->
       <g transform="translate(0, 52)">
-        <text x="0" y="16" fill="#f8fafc">02 // REACT 19, NEXT.JS &amp; STRICT TYPESCRIPT</text>
+        <text x="0" y="16" fill="#f8fafc">02 // HEALTH AI &amp; DIAGNOSTICS (Nutri-ai)</text>
         <text x="340" y="16" fill="#fde047">97%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="368" height="8" rx="2" fill="#fde047" />
       </g>
-      <!-- 03: OS & Kernels -->
+      <!-- 03: OS AI Kernel -->
       <g transform="translate(0, 104)">
-        <text x="0" y="16" fill="#f8fafc">03 // PYTHON KERNEL &amp; POSIX ISOLATION</text>
+        <text x="0" y="16" fill="#f8fafc">03 // AI WORKLOAD OS KERNEL (AquaOS)</text>
         <text x="340" y="16" fill="#ffffff">96%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="365" height="8" rx="2" fill="#ffffff" />
       </g>
-      <!-- 04: AI & Diagnostics -->
+      <!-- 04: Real-time UI -->
       <g transform="translate(0, 156)">
-        <text x="0" y="16" fill="#f8fafc">04 // MACHINE LEARNING &amp; HEALTH AI</text>
-        <text x="340" y="16" fill="#fbbf24">95%</text>
+        <text x="0" y="16" fill="#f8fafc">04 // TELEMETRY COMPILATION (Live Markdown)</text>
+        <text x="340" y="16" fill="#fbbf24">96%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
-        <rect x="0" y="24" width="361" height="8" rx="2" fill="#f59e0b" />
+        <rect x="0" y="24" width="365" height="8" rx="2" fill="#f59e0b" />
       </g>
       <!-- 05: Microservices & APIs -->
       <g transform="translate(0, 208)">
-        <text x="0" y="16" fill="#f8fafc">05 // SUB-MS RESTFUL MICROSERVICES</text>
+        <text x="0" y="16" fill="#f8fafc">05 // SUB-MS AI REST APIS (first-flaskapp)</text>
         <text x="340" y="16" fill="#10b981">95%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="361" height="8" rx="2" fill="#10b981" />
       </g>
       <!-- 06: Data Structures -->
       <g transform="translate(0, 260)">
-        <text x="0" y="16" fill="#f8fafc">06 // ALGORITHMS &amp; DATA STRUCTURES</text>
+        <text x="0" y="16" fill="#f8fafc">06 // ALGORITHMS &amp; TENSOR MATHEMATICS</text>
         <text x="340" y="16" fill="#f8fafc">96%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="365" height="8" rx="2" fill="#cbd5e1" />
@@ -673,7 +567,7 @@ function getValyrianDividerSvg(reverse) {
 
 // -------------------------------------------------------------
 // 7. SYSTEM TELEMETRY GRID: got-telemetry-grid.svg
-// Professional Engineering Metrics in Royal Gold Theme
+// AI Engineering Metrics in Royal Gold Theme
 // -------------------------------------------------------------
 function getTelemetryGridSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
@@ -691,72 +585,72 @@ function getTelemetryGridSvg() {
   <g transform="translate(24, 20)">
     <rect x="0" y="0" width="872" height="42" rx="4" fill="#140d06" stroke="#f59e0b" stroke-width="1.2" />
     <circle cx="24" cy="21" r="5" fill="#f59e0b" />
-    <text x="42" y="26" font-family="'Cinzel', serif" font-size="14" font-weight="900" fill="#f8fafc" letter-spacing="2">SYSTEM TELEMETRY &amp; ARCHITECTURAL CADENCE &#8226; AVISH KUMAR (@AVISH2142005)</text>
+    <text x="42" y="26" font-family="'Cinzel', serif" font-size="14" font-weight="900" fill="#f8fafc" letter-spacing="2">AI MODEL INFERENCE &amp; SYSTEM TELEMETRY &#8226; AVISH KUMAR (@AVISH2142005)</text>
     <text x="840" y="26" text-anchor="end" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#10b981">LIVE // MONITORED</text>
   </g>
 
   <!-- 3 Big Metric Columns -->
   <g transform="translate(24, 80)">
-    <!-- Column 1: Systems Architecture -->
+    <!-- Column 1: Cognitive Health AI -->
     <g transform="translate(0, 0)">
       <rect x="0" y="0" width="276" height="260" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <rect x="0" y="0" width="276" height="34" rx="4" fill="#1a1107" />
-      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#fbbf24" letter-spacing="1">⚙️ SYSTEMS ARCHITECTURE</text>
+      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#fbbf24" letter-spacing="1">🧠 COGNITIVE HEALTH AI</text>
 
       <g transform="translate(20, 60)" font-family="'Courier New', monospace">
-        <text x="0" y="0" font-size="11" fill="#a1a1aa">CORE KERNEL</text>
-        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">AquaOS Platform</text>
+        <text x="0" y="0" font-size="11" fill="#a1a1aa">HEALTH AI MODEL</text>
+        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">Nutri-ai Platform</text>
         
         <text x="0" y="65" font-size="11" fill="#a1a1aa">ENGINEERING TRAITS</text>
-        <text x="0" y="85" font-size="12" font-weight="800" fill="#fbbf24">&#8226; POSIX Process Isolation</text>
-        <text x="0" y="105" font-size="12" font-weight="800" fill="#fde047">&#8226; Modular Shell Dispatching</text>
-        <text x="0" y="125" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Python Low-Level Engine</text>
-        <text x="0" y="145" font-size="12" font-weight="800" fill="#fde047">&#8226; Clean Memory Abstractions</text>
+        <text x="0" y="85" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Biomarker Neural Parsing</text>
+        <text x="0" y="105" font-size="12" font-weight="800" fill="#fde047">&#8226; Dietary Diagnostics ML</text>
+        <text x="0" y="125" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Sub-ms JSON Inference</text>
+        <text x="0" y="145" font-size="12" font-weight="800" fill="#fde047">&#8226; Automated Model Calibration</text>
 
         <rect x="0" y="165" width="236" height="24" rx="2" fill="#160f07" stroke="#f59e0b" stroke-width="0.8" />
-        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#fbbf24">&gt; ZERO MEMORY LEAKS</text>
+        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#fbbf24">&gt; 1.2MS INFERENCE RESPONSE</text>
       </g>
     </g>
 
-    <!-- Column 2: Full-Stack Web -->
+    <!-- Column 2: Systems Core for AI -->
     <g transform="translate(298, 0)">
       <rect x="0" y="0" width="276" height="260" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <rect x="0" y="0" width="276" height="34" rx="4" fill="#1a1107" />
-      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#ffffff" letter-spacing="1">📜 REACTIVE WEB FORTRESSES</text>
+      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#ffffff" letter-spacing="1">⚙️ AI COMPUTE KERNEL</text>
 
       <g transform="translate(20, 60)" font-family="'Courier New', monospace">
-        <text x="0" y="0" font-size="11" fill="#a1a1aa">PRODUCTION STUDIO</text>
-        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">Live Markdown AST</text>
+        <text x="0" y="0" font-size="11" fill="#a1a1aa">OPERATING KERNEL</text>
+        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">AquaOS Architecture</text>
         
         <text x="0" y="65" font-size="11" fill="#a1a1aa">ENGINEERING TRAITS</text>
-        <text x="0" y="85" font-size="12" font-weight="800" fill="#e2e8f0">&#8226; Synchronous AST Compiler</text>
-        <text x="0" y="105" font-size="12" font-weight="800" fill="#ffffff">&#8226; React 19 &amp; TypeScript</text>
-        <text x="0" y="125" font-size="12" font-weight="800" fill="#e2e8f0">&#8226; Dual-Pane Real-Time UI</text>
-        <text x="0" y="145" font-size="12" font-weight="800" fill="#ffffff">&#8226; Modular Parser Architecture</text>
+        <text x="0" y="85" font-size="12" font-weight="800" fill="#e2e8f0">&#8226; POSIX Process Sandboxing</text>
+        <text x="0" y="105" font-size="12" font-weight="800" fill="#ffffff">&#8226; Distributed Workload Shell</text>
+        <text x="0" y="125" font-size="12" font-weight="800" fill="#e2e8f0">&#8226; Zero Memory Leak Pools</text>
+        <text x="0" y="145" font-size="12" font-weight="800" fill="#ffffff">&#8226; Low-Level Task Scheduling</text>
 
         <rect x="0" y="165" width="236" height="24" rx="2" fill="#160f07" stroke="#ffffff" stroke-width="0.8" />
-        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#ffffff">&gt; ZERO-LATENCY RECONCILE</text>
+        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#ffffff">&gt; ZERO MEMORY LEAKS</text>
       </g>
     </g>
 
-    <!-- Column 3: AI & Microservices -->
+    <!-- Column 3: Full-Stack ML Dashboards -->
     <g transform="translate(596, 0)">
       <rect x="0" y="0" width="276" height="260" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <rect x="0" y="0" width="276" height="34" rx="4" fill="#1a1107" />
-      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#fde047" letter-spacing="1">🧠 COGNITIVE AI &amp; APIS</text>
+      <text x="18" y="22" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#fde047" letter-spacing="1">📜 ML UI &amp; APIS</text>
 
       <g transform="translate(20, 60)" font-family="'Courier New', monospace">
-        <text x="0" y="0" font-size="11" fill="#a1a1aa">AI HEALTH PLATFORM</text>
-        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">Nutri-ai Diagnostics</text>
+        <text x="0" y="0" font-size="11" fill="#a1a1aa">REACTIVE SUITE</text>
+        <text x="0" y="28" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc">Markdown &amp; Flask</text>
 
         <text x="0" y="65" font-size="11" fill="#a1a1aa">ENGINEERING TRAITS</text>
-        <text x="0" y="85" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Predictive AI Diagnostics</text>
-        <text x="0" y="105" font-size="12" font-weight="800" fill="#fde047">&#8226; Flask / FastAPI Endpoints</text>
-        <text x="0" y="125" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Sub-ms JSON Dispatch</text>
-        <text x="0" y="145" font-size="12" font-weight="800" fill="#fde047">&#8226; Cloud CI/CD Automation</text>
+        <text x="0" y="85" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Real-time AST Compilation</text>
+        <text x="0" y="105" font-size="12" font-weight="800" fill="#fde047">&#8226; React 19 &amp; Strict TypeScript</text>
+        <text x="0" y="125" font-size="12" font-weight="800" fill="#fbbf24">&#8226; Sub-ms API Endpoints</text>
+        <text x="0" y="145" font-size="12" font-weight="800" fill="#fde047">&#8226; Full-Stack ML Integration</text>
 
         <rect x="0" y="165" width="236" height="24" rx="2" fill="#160f07" stroke="#f59e0b" stroke-width="0.8" />
-        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#fde047">&gt; 1.2MS INFERENCE RESPONSE</text>
+        <text x="118" y="181" text-anchor="middle" font-size="10" font-weight="800" fill="#fde047">&gt; ZERO-LATENCY RECONCILE</text>
       </g>
     </g>
   </g>
@@ -779,45 +673,45 @@ function getTrophyRoomSvg() {
   <rect width="920" height="220" rx="6" fill="none" stroke="#2e1f10" stroke-width="1.5" />
 
   <g transform="translate(24, 25)">
-    <!-- Card 1: AquaOS -->
+    <!-- Card 1: Nutri-ai -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="26">⚙️</text>
-      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">AquaOS</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24">SYSTEMS KERNEL</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#a1a1aa">POSIX ISOLATION</text>
-      <line x1="20" y1="142" x2="180" y2="142" stroke="#24190e" />
-      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">UNBROKEN CORE</text>
-    </g>
-
-    <!-- Card 2: Live Markdown -->
-    <g transform="translate(224, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="26">📜</text>
-      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Markdown</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#ffffff">AST COMPILER</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#a1a1aa">REACT 19 STUDIO</text>
-      <line x1="20" y1="142" x2="180" y2="142" stroke="#24190e" />
-      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#fbbf24">SUB-MS AST PARSING</text>
-    </g>
-
-    <!-- Card 3: Nutri-ai -->
-    <g transform="translate(448, 0)">
       <rect x="0" y="0" width="200" height="170" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <text x="100" y="38" text-anchor="middle" font-size="26">🧠</text>
       <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Nutri-ai</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fde047">HEALTH AI MODEL</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#a1a1aa">DIAGNOSTIC ENGINE</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24">AI HEALTH ORACLE</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#a1a1aa">COGNITIVE MODEL</text>
       <line x1="20" y1="142" x2="180" y2="142" stroke="#24190e" />
-      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#f59e0b">INTELLIGENT MODELS</text>
+      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">SUB-MS INFERENCE</text>
     </g>
 
-    <!-- Card 4: Enterprise Grade S+ -->
+    <!-- Card 2: AquaOS -->
+    <g transform="translate(224, 0)">
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="26">⚙️</text>
+      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">AquaOS</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#ffffff">SYSTEMS KERNEL</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#a1a1aa">POSIX ISOLATION</text>
+      <line x1="20" y1="142" x2="180" y2="142" stroke="#24190e" />
+      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#fbbf24">UNBROKEN CORE</text>
+    </g>
+
+    <!-- Card 3: Live Markdown -->
+    <g transform="translate(448, 0)">
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="26">📜</text>
+      <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Markdown</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fde047">AST COMPILER</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#a1a1aa">REACT 19 STUDIO</text>
+      <line x1="20" y1="142" x2="180" y2="142" stroke="#24190e" />
+      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#f59e0b">ZERO-LATENCY AST</text>
+    </g>
+
+    <!-- Card 4: AI Grade S+ -->
     <g transform="translate(672, 0)">
       <rect x="0" y="0" width="200" height="170" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <text x="100" y="38" text-anchor="middle" font-size="26">🏆</text>
       <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Grade S+</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#10b981">ENTERPRISE CODE</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#10b981">AI ENGINEER S+</text>
       <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#a1a1aa">AVISH KUMAR</text>
       <line x1="20" y1="142" x2="180" y2="142" stroke="#24190e" />
       <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">ZERO TECHNICAL DEBT</text>
@@ -827,16 +721,16 @@ function getTrophyRoomSvg() {
 }
 
 // -------------------------------------------------------------
-// 9. TECHNICAL CHALLENGES OVERCOME (Battle Roster): got-battle-roster.svg
+// 9. AI ENGINEERING CHALLENGES (Battle Roster): got-battle-roster.svg
 // -------------------------------------------------------------
 function getBattleRosterSvg() {
   const challenges = [
-    { title: "MEMORY CONSTRAINTS", problem: "HEAP FRAGMENTATION IN PYTHON", solution: "RESOLVED WITH AQUAOS MEMORY POOLS" },
-    { title: "RACE CONDITIONS", problem: "CONCURRENT ASYNC THREAD COLLISIONS", solution: "ISOLATED WITH POSIX PROCESS LOCKS" },
-    { title: "AST COMPILATION BOTTLENECK", problem: "REAL-TIME MARKDOWN LAG", solution: "OPTIMIZED VIA REACT 19 RECONCILIATION" },
-    { title: "DATABASE THROUGHPUT", problem: "SLOW HIGH-VOLUME SQL JOINS", solution: "INDEXED WITH POSTGRESQL POOLING" },
-    { title: "AI INFERENCE DRIFT", problem: "MODEL ACCURACY DECAY OVER TIME", solution: "CALIBRATED WITH NUTRI-AI TELEMETRY" },
-    { title: "UNCAUGHT RUNTIME FAULTS", problem: "SERVICE DEPENDENCY OUTAGES", solution: "AUTOMATED VIA CI/CD FAILSAFE PIPELINES" }
+    { title: "INFERENCE DRIFT", problem: "MODEL ACCURACY DECAY IN PRODUCTION", solution: "RESOLVED WITH NUTRI-AI CONTINUOUS CALIBRATION" },
+    { title: "COMPUTE PROCESS COLLISIONS", problem: "PARALLEL INFERENCE LOCKOUT", solution: "ISOLATED WITH POSIX KERNEL WORKERS IN AQUAOS" },
+    { title: "REAL-TIME AST COMPILATION", problem: "TELEMETRY RENDERING LAG", solution: "OPTIMIZED VIA REACT 19 VIRTUAL RECONCILIATION" },
+    { title: "HIGH-THROUGHPUT ML APIS", problem: "SLOW HIGH-VOLUME JSON DISPATCH", solution: "DEPLOYED WITH ASYNCHRONOUS FASTAPI & FLASK" },
+    { title: "HEAP ALLOCATION OVERFLOW", problem: "MEMORY SPIKES IN PYTHON LOOPS", solution: "RESOLVED VIA CUSTOM MEMORY POOLING" },
+    { title: "UNCAUGHT RUNTIME FAULTS", problem: "SERVICE DEPENDENCY BREAKS", solution: "AUTOMATED VIA CONTAINERIZED CI/CD PIPELINES" }
   ];
 
   let cardsXml = "";
@@ -879,7 +773,7 @@ function getBattleRosterSvg() {
 }
 
 // -------------------------------------------------------------
-// 10. DEVELOPER COMMAND TERMINAL: got-terminal.svg & terminal-contact.svg
+// 10. AI DEVELOPER COMMAND TERMINAL: got-terminal.svg & terminal-contact.svg
 // -------------------------------------------------------------
 function getGotTerminalSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
@@ -899,17 +793,17 @@ function getGotTerminalSvg() {
     <circle cx="20" cy="17" r="5" fill="#ef4444" />
     <circle cx="36" cy="17" r="5" fill="#f59e0b" />
     <circle cx="52" cy="17" r="5" fill="#10b981" />
-    <text x="460" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#fbbf24">AVISH KUMAR // DEVELOPER WORKSTATION // SHELL: BASH</text>
+    <text x="460" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#fbbf24">AVISH KUMAR // AI WORKSTATION // SHELL: BASH // PYTHON 3.12</text>
   </g>
 
   <!-- Shell Output -->
   <g transform="translate(24, 60)" font-family="'Courier New', monospace" font-size="12" font-weight="700">
-    <text x="0" y="0" fill="#f59e0b">avish@workstation:~$ <tspan fill="#f8fafc">systemctl status engineering-suite --verbose</tspan></text>
-    <text x="0" y="24" fill="#a1a1aa">&gt; [KERNEL] AquaOS Framework: Modular POSIX isolation verified. [ONLINE]</text>
-    <text x="0" y="46" fill="#fbbf24">&gt; [WEB]    Live Markdown Studio: React 19 AST compilation active. [0ms LAG]</text>
-    <text x="0" y="68" fill="#fde047">&gt; [AI]     Nutri-ai Engine: Cognitive diagnostics model loaded. [1.2ms RESP]</text>
-    <text x="0" y="92" fill="#10b981">&gt; STATUS: ALL PRODUCTION SYSTEMS OPERATIONAL. 0 COMPILATION WARNINGS.</text>
-    <text x="0" y="118" fill="#f59e0b">avish@workstation:~$ <tspan fill="#f8fafc">echo "Open for high-impact software engineering opportunities."</tspan> █</text>
+    <text x="0" y="0" fill="#f59e0b">avish@ai-workstation:~$ <tspan fill="#f8fafc">python3 -m ai_suite --evaluate-models</tspan></text>
+    <text x="0" y="24" fill="#a1a1aa">&gt; [AI-ENGINE] Nutri-ai Model: Inference latency 1.2ms. Accuracy 99.4%. [OPTIMAL]</text>
+    <text x="0" y="46" fill="#fbbf24">&gt; [KERNEL]    AquaOS Sandbox: POSIX process isolation active. [RUNNING]</text>
+    <text x="0" y="68" fill="#fde047">&gt; [WEB-AST]   Live Markdown: Synchronous dual-pane compiler ready. [SYNCED]</text>
+    <text x="0" y="92" fill="#10b981">&gt; STATUS: ALL AI INFERENCE PIPELINES ARMED. ZERO COMPILATION WARNINGS.</text>
+    <text x="0" y="118" fill="#f59e0b">avish@ai-workstation:~$ <tspan fill="#f8fafc">echo "Ready for high-impact AI engineering roles."</tspan> █</text>
   </g>
 </svg>`;
 }
@@ -944,19 +838,44 @@ function getGotFooterSvg() {
 
   <!-- Monolithic Signature -->
   <g transform="translate(800, 130)" text-anchor="middle">
-    <text x="0" y="0" font-family="'Cinzel', serif" font-size="24" font-weight="900" fill="url(#regalFooterGold)" letter-spacing="4">AVISH KUMAR &#8226; SOFTWARE ENGINEER &amp; SYSTEMS ARCHITECT</text>
-    <text x="0" y="30" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#a1a1aa" letter-spacing="2">CLEAN ARCHITECTURAL ABSTRACTIONS &#8226; STRICT TYPE SAFETY &#8226; ENTERPRISE PERFORMANCE</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="24" font-weight="900" fill="url(#regalFooterGold)" letter-spacing="4">AVISH KUMAR &#8226; ARTIFICIAL INTELLIGENCE ENGINEER</text>
+    <text x="0" y="30" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#a1a1aa" letter-spacing="2">DEEP LEARNING ARCHITECTURES &#8226; AUTONOMOUS AGENTS &#8226; SUB-MS INFERENCE</text>
   </g>
 
   <!-- Coordinates & Build Stamp -->
   <g transform="translate(800, 195)" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#71717a" letter-spacing="1.5">
-    <text x="0" y="0">[ AVISH2142005 // PROFESSIONAL REPOSITORY SUITE // ROYAL GOLD THEME // GRADE S+ ]</text>
+    <text x="0" y="0">[ AVISH2142005 // AI ENGINEER PORTFOLIO // REALISTIC LION EMBLEM // ROYAL GOLD S+ ]</text>
   </g>
 </svg>`;
 }
 
 // -------------------------------------------------------------
-// 12. LIVE GITHUB STATS: live-github-stats.svg
+// 12. STANDALONE CIRCULAR LOGO: assets/ai-lion-logo.svg
+// -------------------------------------------------------------
+function getStandaloneLionLogoSvg() {
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <defs>
+    <radialGradient id="standaloneLogoHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.35" />
+      <stop offset="70%" stop-color="#f59e0b" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <clipPath id="standaloneLionClip">
+      <circle cx="160" cy="160" r="142" />
+    </clipPath>
+  </defs>
+  <circle cx="160" cy="160" r="158" fill="url(#standaloneLogoHalo)" />
+  <circle cx="160" cy="160" r="150" fill="#0d0804" stroke="#3d2914" stroke-width="2" />
+  <circle cx="160" cy="160" r="145" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="10 6" />
+  <g clip-path="url(#standaloneLionClip)">
+    <image href="${lionDataUri}" x="12" y="10" width="300" height="315" preserveAspectRatio="xMidYMid slice" />
+  </g>
+  <circle cx="160" cy="160" r="142" fill="none" stroke="#fbbf24" stroke-width="3" />
+</svg>`;
+}
+
+// -------------------------------------------------------------
+// 13. LIVE GITHUB STATS: live-github-stats.svg
 // -------------------------------------------------------------
 function getLiveStatsSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 195" width="495" height="195">
@@ -969,7 +888,7 @@ function getLiveStatsSvg() {
   <rect width="495" height="195" rx="4.5" fill="url(#regalStatsBg)" stroke="#2e1f10" stroke-width="1.2" />
   
   <g transform="translate(25, 35)">
-    <text x="0" y="0" font-family="'Cinzel', serif" font-size="16" font-weight="900" fill="#fbbf24" letter-spacing="1.5">AVISH KUMAR // ENGINEERING METRICS</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="16" font-weight="900" fill="#fbbf24" letter-spacing="1.5">AVISH KUMAR // AI ENGINEERING METRICS</text>
     
     <g transform="translate(0, 30)" font-family="'Courier New', monospace" font-size="12.5" font-weight="700">
       <text x="0" y="0" fill="#a1a1aa">TOTAL COMMITS:</text>
@@ -981,17 +900,15 @@ function getLiveStatsSvg() {
       <text x="0" y="52" fill="#a1a1aa">CODE REVIEW PURITY:</text>
       <text x="240" y="52" fill="#10b981" font-weight="900">100% VERIFIED</text>
       
-      <text x="0" y="78" fill="#a1a1aa">DELIVERY CADENCE:</text>
-      <text x="240" y="78" fill="#fde047" font-weight="900">CONTINUOUS (CI/CD)</text>
+      <text x="0" y="78" fill="#a1a1aa">INFERENCE PIPELINE:</text>
+      <text x="240" y="78" fill="#fde047" font-weight="900">SUB-MS CONTINUOUS</text>
     </g>
   </g>
 </svg>`;
 }
 
 // -------------------------------------------------------------
-// 13. CONTRIBUTION GRID: contribution-grid.svg
-// Professional 52-Week Cadence with Royal Gold Palette
-// (Preserves lethal strikes string & VS emblem for validation suite)
+// 14. CONTRIBUTION GRID: contribution-grid.svg
 // -------------------------------------------------------------
 function getGotContributionGridSvg() {
   let cachedData = null;
@@ -1060,7 +977,7 @@ function getGotContributionGridSvg() {
 
   <!-- Header Info -->
   <g transform="translate(24, 24)">
-    <text x="0" y="0" font-family="'Cinzel', serif" font-size="16" font-weight="900" fill="#fbbf24" letter-spacing="1.5">52-WEEK DEVELOPMENT CADENCE &#8226; CONTINUOUS DELIVERY</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="16" font-weight="900" fill="#fbbf24" letter-spacing="1.5">52-WEEK AI DEVELOPMENT CADENCE &#8226; CONTINUOUS DELIVERY</text>
     <text x="0" y="20" font-family="'Courier New', monospace" font-size="11" fill="#a1a1aa">234 CONFIRMED LETHAL STRIKES // ANNUAL CODE LOG</text>
   </g>
 
@@ -1119,19 +1036,20 @@ const files = [
   { path: "ronin-hero-mobile-v2.svg", content: getHeroBannerSvg() },
   { path: "got-status-badges.svg", content: getStatusBadgesSvg() },
   { path: "samurai-status-badges.svg", content: getStatusBadgesSvg() },
+  { path: "ai-lion-logo.svg", content: getStandaloneLionLogoSvg() },
   
-  // Section Headers (Professional titles in Royal Gold Theme)
-  { path: "header-profile.svg", content: getGotSectionHeaderSvg("01", "PROFESSIONAL ENGINEERING DOSSIER", "AVISH KUMAR // FULL-STACK &amp; SYSTEMS ARCHITECT") },
-  { path: "header-arsenal.svg", content: getGotSectionHeaderSvg("02", "TECHNICAL ARSENAL // LANGUAGES, FRAMEWORKS &amp; TOOLS", "CURATED TECHNOLOGY STACK &amp; PRODUCTION WEAPONRY") },
-  { path: "header-project-database.svg", content: getGotSectionHeaderSvg("03", "PRODUCTION REPOSITORIES // SOFTWARE SUITE", "AQUAOS (KERNEL) &#8226; NUTRI-AI (AI) &#8226; LIVE MARKDOWN (WEB)") },
-  { path: "header-commit-radar.svg", content: getGotSectionHeaderSvg("04", "DEVELOPMENT CADENCE // COMMIT TELEMETRY", "CONTINUOUS DEPLOYMENT &amp; CODE RELIABILITY") },
-  { path: "header-contributions.svg", content: getGotSectionHeaderSvg("05", "52-WEEK DEVELOPMENT MATRIX // ANNUAL ACTIVITY", "PRODUCTION COMMITS ACROSS OPEN-SOURCE REPOSITORIES") },
-  { path: "header-roadmap.svg", content: getGotSectionHeaderSvg("06", "PROFESSIONAL ROADMAP // 2026 OBJECTIVES", "STRATEGIC MILESTONES &amp; ARCHITECTURAL GOALS") },
-  { path: "header-trophy-room.svg", content: getGotSectionHeaderSvg("07", "KEY ACHIEVEMENTS // ENGINEERING FEATS", "SYSTEM EFFICIENCY, SCALE &amp; TYPE-SAFE PURITY") },
+  // Section Headers
+  { path: "header-profile.svg", content: getGotSectionHeaderSvg("01", "AI ENGINEERING DOSSIER", "AVISH KUMAR // ARTIFICIAL INTELLIGENCE ENGINEER") },
+  { path: "header-arsenal.svg", content: getGotSectionHeaderSvg("02", "TECHNICAL ARSENAL // AI, ML, SYSTEMS &amp; FRAMEWORKS", "PYTORCH &#8226; FASTAPI &#8226; DEEP LEARNING &#8226; LINUX") },
+  { path: "header-project-database.svg", content: getGotSectionHeaderSvg("03", "AI &amp; SOFTWARE REPOSITORIES // PRODUCTION SUITE", "NUTRI-AI (HEALTH AI) &#8226; AQUAOS (KERNEL) &#8226; MARKDOWN (UI)") },
+  { path: "header-commit-radar.svg", content: getGotSectionHeaderSvg("04", "DEVELOPMENT CADENCE // INFERENCE &amp; REPO ACTIVITY", "CONTINUOUS INTEGRATION &amp; MODEL DEPLOYMENTS") },
+  { path: "header-contributions.svg", content: getGotSectionHeaderSvg("05", "52-WEEK DEVELOPMENT MATRIX // ANNUAL ACTIVITY", "PRODUCTION COMMITS ACROSS AI &amp; SYSTEMS REPOSITORIES") },
+  { path: "header-roadmap.svg", content: getGotSectionHeaderSvg("06", "AI ENGINEERING ROADMAP // 2026 OBJECTIVES", "AUTONOMOUS AGENTS &#8226; LOW-LATENCY INFERENCE") },
+  { path: "header-trophy-room.svg", content: getGotSectionHeaderSvg("07", "KEY ACHIEVEMENTS // AI &amp; SYSTEM MILESTONES", "MODEL ACCURACY, SUB-MS INFERENCE &amp; SCALE") },
   { path: "header-badges.svg", content: getGotSectionHeaderSvg("★", "CERTIFICATIONS &amp; ACCREDITATIONS", "VERIFIED INDUSTRY CREDENTIALS &amp; SECURITY BADGES") },
-  { path: "header-telemetry.svg", content: getGotSectionHeaderSvg("08", "SYSTEM TELEMETRY // REAL-TIME METRICS", "CODE QUALITY, UPTIME &amp; REPOSITORY HEALTH") },
-  { path: "header-connect.svg", content: getGotSectionHeaderSvg("09", "PROFESSIONAL CONTACT &amp; NETWORKING", "CONNECT ACROSS DEVELOPER CHANNELS") },
-  { path: "header-terminal.svg", content: getGotSectionHeaderSvg("10", "DEVELOPER CONSOLE // TERMINAL INTERFACE", "DIRECT DISPATCH &amp; REPOSITORY STATUS") },
+  { path: "header-telemetry.svg", content: getGotSectionHeaderSvg("08", "AI TELEMETRY // REAL-TIME INFERENCE METRICS", "MODEL PERFORMANCE, ACCURACY &amp; REPOSITORY HEALTH") },
+  { path: "header-connect.svg", content: getGotSectionHeaderSvg("09", "PROFESSIONAL CONTACT &amp; NETWORKING", "CONNECT FOR AI ENGINEERING COLLABORATIONS") },
+  { path: "header-terminal.svg", content: getGotSectionHeaderSvg("10", "AI DEVELOPER CONSOLE // TERMINAL INTERFACE", "DIRECT DISPATCH &amp; MODEL EVALUATION") },
 
   // Dossiers & Radars
   { path: "operative-dossier-v2.svg", content: getOperativeDossierSvg() },
@@ -1165,4 +1083,4 @@ files.forEach(f => {
   console.log(`[generate-got-theme] Written ${f.path}`);
 });
 
-console.log("[generate-got-theme] All Royal Golden Lion Theme SVGs successfully created and updated!");
+console.log("[generate-got-theme] All AI Engineer Assets with Realistic Lion Logo successfully generated!");

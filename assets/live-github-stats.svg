@@ -8,7 +8,7 @@
   <rect width="495" height="195" rx="4.5" fill="url(#regalStatsBg)" stroke="#2e1f10" stroke-width="1.2" />
   
   <g transform="translate(25, 35)">
-    <text x="0" y="0" font-family="'Cinzel', serif" font-size="16" font-weight="900" fill="#fbbf24" letter-spacing="1.5">AVISH KUMAR // ENGINEERING METRICS</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="16" font-weight="900" fill="#fbbf24" letter-spacing="1.5">AVISH KUMAR // AI ENGINEERING METRICS</text>
     
     <g transform="translate(0, 30)" font-family="'Courier New', monospace" font-size="12.5" font-weight="700">
       <text x="0" y="0" fill="#a1a1aa">TOTAL COMMITS:</text>
@@ -20,8 +20,8 @@
       <text x="0" y="52" fill="#a1a1aa">CODE REVIEW PURITY:</text>
       <text x="240" y="52" fill="#10b981" font-weight="900">100% VERIFIED</text>
       
-      <text x="0" y="78" fill="#a1a1aa">DELIVERY CADENCE:</text>
-      <text x="240" y="78" fill="#fde047" font-weight="900">CONTINUOUS (CI/CD)</text>
+      <text x="0" y="78" fill="#a1a1aa">INFERENCE PIPELINE:</text>
+      <text x="240" y="78" fill="#fde047" font-weight="900">SUB-MS CONTINUOUS</text>
     </g>
   </g>
 </svg>

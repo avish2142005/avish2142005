@@ -24,12 +24,12 @@
 
   <!-- Monolithic Signature -->
   <g transform="translate(800, 130)" text-anchor="middle">
-    <text x="0" y="0" font-family="'Cinzel', serif" font-size="24" font-weight="900" fill="url(#regalFooterGold)" letter-spacing="4">AVISH KUMAR &#8226; SOFTWARE ENGINEER &amp; SYSTEMS ARCHITECT</text>
-    <text x="0" y="30" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#a1a1aa" letter-spacing="2">CLEAN ARCHITECTURAL ABSTRACTIONS &#8226; STRICT TYPE SAFETY &#8226; ENTERPRISE PERFORMANCE</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="24" font-weight="900" fill="url(#regalFooterGold)" letter-spacing="4">AVISH KUMAR &#8226; ARTIFICIAL INTELLIGENCE ENGINEER</text>
+    <text x="0" y="30" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#a1a1aa" letter-spacing="2">DEEP LEARNING ARCHITECTURES &#8226; AUTONOMOUS AGENTS &#8226; SUB-MS INFERENCE</text>
   </g>
 
   <!-- Coordinates & Build Stamp -->
   <g transform="translate(800, 195)" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#71717a" letter-spacing="1.5">
-    <text x="0" y="0">[ AVISH2142005 // PROFESSIONAL REPOSITORY SUITE // ROYAL GOLD THEME // GRADE S+ ]</text>
+    <text x="0" y="0">[ AVISH2142005 // AI ENGINEER PORTFOLIO // REALISTIC LION EMBLEM // ROYAL GOLD S+ ]</text>
   </g>
 </svg>

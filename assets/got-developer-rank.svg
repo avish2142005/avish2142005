@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="regalRankBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="aiRankBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#070503" />
       <stop offset="50%" stop-color="#120c06" />
       <stop offset="100%" stop-color="#080503" />
     </linearGradient>
-    <radialGradient id="rankGoldAura" cx="50%" cy="50%" r="50%">
+    <radialGradient id="aiRankGoldAura" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
-    <filter id="rankGoldFilter" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="aiRankFilter" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <rect width="920" height="460" rx="6" fill="url(#regalRankBg)" />
+  <rect width="920" height="460" rx="6" fill="url(#aiRankBg)" />
   <rect width="920" height="460" rx="6" fill="none" stroke="#2e1f10" stroke-width="1.5" />
 
-  <!-- Left Side: Hexagonal Engineering Radar -->
+  <!-- Left Side: Hexagonal AI Radar -->
   <g transform="translate(250, 230)">
-    <circle cx="0" cy="0" r="160" fill="url(#rankGoldAura)" />
+    <circle cx="0" cy="0" r="160" fill="url(#aiRankGoldAura)" />
 
     <!-- Concentric Hexagons -->
     <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="#24190e" stroke-width="1" />
@@ -37,9 +37,9 @@
     <line x1="0" y1="0" x2="-130" y2="75" stroke="#3d2914" stroke-width="1" />
     <line x1="0" y1="0" x2="-130" y2="-75" stroke="#3d2914" stroke-width="1" />
 
-    <!-- Avish Kumar's Professional Capability Polygon -->
-    <!-- Axes: System Architecture=98%, OS Kernels=96%, AI Modeling=95%, Algorithmic Problem Solving=96%, Full-Stack Web=97%, Low-Latency APIs=95% -->
-    <polygon points="0,-147 125,-72 123,71 0,144 -126,73 -124,-71" fill="#f59e0b" fill-opacity="0.32" stroke="#fde047" stroke-width="2.5" filter="url(#rankGoldFilter)" />
+    <!-- Avish Kumar's AI Engineering Polygon -->
+    <!-- Axes: Deep Learning=98%, Neural Architectures=97%, Low-Latency Inference=96%, Data Structures=96%, AI Systems & Pipelines=97%, Distributed APIs=95% -->
+    <polygon points="0,-147 125,-72 123,71 0,144 -126,73 -124,-71" fill="#f59e0b" fill-opacity="0.32" stroke="#fde047" stroke-width="2.5" filter="url(#aiRankFilter)" />
 
     <!-- Vertices Dots -->
     <circle cx="0" cy="-147" r="4.5" fill="#f59e0b" />
@@ -50,59 +50,59 @@
     <circle cx="-124" cy="-71" r="4.5" fill="#10b981" />
 
     <!-- Node Labels -->
-    <text x="0" y="-168" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fde047">SYSTEM ARCHITECTURE [98%]</text>
-    <text x="145" y="-72" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#ffffff">OS &amp; KERNELS [96%]</text>
-    <text x="145" y="82" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fbbf24">AI &amp; MACHINE LEARNING [95%]</text>
-    <text x="0" y="172" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#f8fafc">ALGORITHMIC MASTERY [96%]</text>
-    <text x="-145" y="82" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fde047">FULL-STACK REACT &amp; TS [97%]</text>
-    <text x="-145" y="-72" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#10b981">LOW-LATENCY APIS [95%]</text>
+    <text x="0" y="-168" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fde047">DEEP LEARNING [98%]</text>
+    <text x="145" y="-72" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#ffffff">NEURAL MODELS [97%]</text>
+    <text x="145" y="82" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fbbf24">LOW-LATENCY INFERENCE [96%]</text>
+    <text x="0" y="172" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#f8fafc">MATHEMATICAL MASTERY [96%]</text>
+    <text x="-145" y="82" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fde047">AI SYSTEM ARCHITECTURE [97%]</text>
+    <text x="-145" y="-72" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#10b981">DISTRIBUTED FASTAPI [95%]</text>
   </g>
 
-  <!-- Right Side: Technical Competency Breakdown -->
+  <!-- Right Side: AI Technical Breakdown -->
   <g transform="translate(500, 48)">
     <rect x="0" y="0" width="380" height="30" rx="3" fill="#160f07" stroke="#f59e0b" stroke-width="1.2" />
-    <text x="16" y="20" font-family="'Cinzel', serif" font-size="13" font-weight="900" fill="#fbbf24" letter-spacing="2">TECHNICAL COMPETENCY MATRIX: S+ GRADE</text>
+    <text x="16" y="20" font-family="'Cinzel', serif" font-size="13" font-weight="900" fill="#fbbf24" letter-spacing="2">AI ENGINEERING COMPETENCY MATRIX</text>
 
     <!-- Capability Bars -->
     <g transform="translate(0, 55)" font-family="'Courier New', monospace" font-size="11.5" font-weight="800">
-      <!-- 01: System Architecture -->
+      <!-- 01: Deep Learning -->
       <g transform="translate(0, 0)">
-        <text x="0" y="16" fill="#f8fafc">01 // DISTRIBUTED ARCHITECTURE &amp; DESIGN</text>
+        <text x="0" y="16" fill="#f8fafc">01 // APPLIED DEEP LEARNING &amp; PYTORCH</text>
         <text x="340" y="16" fill="#fbbf24">98%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="372" height="8" rx="2" fill="#f59e0b" />
       </g>
-      <!-- 02: Full-Stack Web -->
+      <!-- 02: Cognitive Models -->
       <g transform="translate(0, 52)">
-        <text x="0" y="16" fill="#f8fafc">02 // REACT 19, NEXT.JS &amp; STRICT TYPESCRIPT</text>
+        <text x="0" y="16" fill="#f8fafc">02 // HEALTH AI &amp; DIAGNOSTICS (Nutri-ai)</text>
         <text x="340" y="16" fill="#fde047">97%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="368" height="8" rx="2" fill="#fde047" />
       </g>
-      <!-- 03: OS & Kernels -->
+      <!-- 03: OS AI Kernel -->
       <g transform="translate(0, 104)">
-        <text x="0" y="16" fill="#f8fafc">03 // PYTHON KERNEL &amp; POSIX ISOLATION</text>
+        <text x="0" y="16" fill="#f8fafc">03 // AI WORKLOAD OS KERNEL (AquaOS)</text>
         <text x="340" y="16" fill="#ffffff">96%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="365" height="8" rx="2" fill="#ffffff" />
       </g>
-      <!-- 04: AI & Diagnostics -->
+      <!-- 04: Real-time UI -->
       <g transform="translate(0, 156)">
-        <text x="0" y="16" fill="#f8fafc">04 // MACHINE LEARNING &amp; HEALTH AI</text>
-        <text x="340" y="16" fill="#fbbf24">95%</text>
+        <text x="0" y="16" fill="#f8fafc">04 // TELEMETRY COMPILATION (Live Markdown)</text>
+        <text x="340" y="16" fill="#fbbf24">96%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
-        <rect x="0" y="24" width="361" height="8" rx="2" fill="#f59e0b" />
+        <rect x="0" y="24" width="365" height="8" rx="2" fill="#f59e0b" />
       </g>
       <!-- 05: Microservices & APIs -->
       <g transform="translate(0, 208)">
-        <text x="0" y="16" fill="#f8fafc">05 // SUB-MS RESTFUL MICROSERVICES</text>
+        <text x="0" y="16" fill="#f8fafc">05 // SUB-MS AI REST APIS (first-flaskapp)</text>
         <text x="340" y="16" fill="#10b981">95%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="361" height="8" rx="2" fill="#10b981" />
       </g>
       <!-- 06: Data Structures -->
       <g transform="translate(0, 260)">
-        <text x="0" y="16" fill="#f8fafc">06 // ALGORITHMS &amp; DATA STRUCTURES</text>
+        <text x="0" y="16" fill="#f8fafc">06 // ALGORITHMS &amp; TENSOR MATHEMATICS</text>
         <text x="340" y="16" fill="#f8fafc">96%</text>
         <rect x="0" y="24" width="380" height="8" rx="2" fill="#1c1208" />
         <rect x="0" y="24" width="365" height="8" rx="2" fill="#cbd5e1" />

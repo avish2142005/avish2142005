@@ -72,7 +72,7 @@ function getPreviewHtml(readmeMd) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avish Kumar (@avish2142005) // King in the North GitHub Profile</title>
+  <title>Avish Kumar (@avish2142005) // Artificial Intelligence Engineer &amp; Machine Learning Systems Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -464,8 +464,8 @@ function getPreviewHtml(readmeMd) {
     <div class="brand-group">
       <div class="brand-sigil">🦁</div>
       <div>
-        <div class="brand-title">AVISH KUMAR // SOFTWARE ENGINEER &amp; SYSTEMS ARCHITECT</div>
-        <div class="brand-subtitle">avish2142005 / README.md &bull; Professional Portfolio Preview</div>
+        <div class="brand-title">AVISH KUMAR // ARTIFICIAL INTELLIGENCE ENGINEER</div>
+        <div class="brand-subtitle">avish2142005 / README.md &bull; Professional AI Portfolio Preview</div>
       </div>
     </div>
     <div class="action-controls">
@@ -486,12 +486,12 @@ function getPreviewHtml(readmeMd) {
         <div class="user-handle">avish2142005</div>
       </div>
       <div class="user-bio">
-        "Software Engineer &amp; Full-Stack Systems Architect. Focused on scalable web fortresses, modular OS kernels, and cognitive AI integration."
+        "Artificial Intelligence Engineer &amp; Machine Learning Systems Architect. Engineering deep learning inference pipelines, autonomous agents, and cognitive diagnostics."
       </div>
       <ul class="user-details">
-        <li>💻 <strong>Full-Stack:</strong> React 19, TypeScript, Next.js</li>
-        <li>⚙️ <strong>Systems:</strong> AquaOS Kernel (Python/POSIX)</li>
-        <li>🧠 <strong>AI Models:</strong> Nutri-ai Diagnostics Platform</li>
+        <li>🧠 <strong>AI Systems:</strong> Deep Learning, PyTorch, Autonomous Agents</li>
+        <li>⚙️ <strong>Inference Engine:</strong> FastAPI Sub-ms Dispatch, CUDA, Docker</li>
+        <li>🔬 <strong>Production Flagship:</strong> Nutri-ai Diagnostics Platform</li>
         <li>🏆 <strong>Code Rating:</strong> Enterprise Grade S+</li>
       </ul>
     </aside>
@@ -504,7 +504,7 @@ function getPreviewHtml(readmeMd) {
           <span>/</span>
           <strong>README.md</strong>
         </div>
-        <span style="color: #fbbf24; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace;">● ROYAL GOLD PROFESSIONAL THEME ACTIVE</span>
+        <span style="color: #fbbf24; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace;">● ROYAL GOLD AI THEME ACTIVE</span>
       </div>
 
       <article class="readme-content" id="readme-article">
@@ -521,7 +521,7 @@ function getPreviewHtml(readmeMd) {
 
     function copyMarkdown() {
       navigator.clipboard.writeText(rawMarkdown).then(() => {
-        showToast("✓ Copied raw Game of Thrones README.md!");
+        showToast("✓ Copied raw AI Engineer README.md!");
       }).catch(err => {
         console.error("Failed to copy:", err);
         showToast("Error copying to clipboard");

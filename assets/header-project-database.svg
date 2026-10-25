@@ -34,8 +34,8 @@
 
   <!-- Main Title & Hierarchy -->
   <g transform="translate(108, 32)">
-    <text x="0" y="0" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc" letter-spacing="2.5">PRODUCTION REPOSITORIES // SOFTWARE SUITE</text>
-    <text x="0" y="24" font-family="'Courier New', monospace" font-size="11.5" font-weight="700" fill="#fde047" letter-spacing="1.5">AQUAOS (KERNEL) &#8226; NUTRI-AI (AI) &#8226; LIVE MARKDOWN (WEB)</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc" letter-spacing="2.5">AI &amp; SOFTWARE REPOSITORIES // PRODUCTION SUITE</text>
+    <text x="0" y="24" font-family="'Courier New', monospace" font-size="11.5" font-weight="700" fill="#fde047" letter-spacing="1.5">NUTRI-AI (HEALTH AI) &#8226; AQUAOS (KERNEL) &#8226; MARKDOWN (UI)</text>
   </g>
 
   <!-- Royal Embellishment Emblem (Right) -->

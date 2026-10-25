@@ -15,16 +15,16 @@
     <circle cx="20" cy="17" r="5" fill="#ef4444" />
     <circle cx="36" cy="17" r="5" fill="#f59e0b" />
     <circle cx="52" cy="17" r="5" fill="#10b981" />
-    <text x="460" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#fbbf24">AVISH KUMAR // DEVELOPER WORKSTATION // SHELL: BASH</text>
+    <text x="460" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#fbbf24">AVISH KUMAR // AI WORKSTATION // SHELL: BASH // PYTHON 3.12</text>
   </g>
 
   <!-- Shell Output -->
   <g transform="translate(24, 60)" font-family="'Courier New', monospace" font-size="12" font-weight="700">
-    <text x="0" y="0" fill="#f59e0b">avish@workstation:~$ <tspan fill="#f8fafc">systemctl status engineering-suite --verbose</tspan></text>
-    <text x="0" y="24" fill="#a1a1aa">&gt; [KERNEL] AquaOS Framework: Modular POSIX isolation verified. [ONLINE]</text>
-    <text x="0" y="46" fill="#fbbf24">&gt; [WEB]    Live Markdown Studio: React 19 AST compilation active. [0ms LAG]</text>
-    <text x="0" y="68" fill="#fde047">&gt; [AI]     Nutri-ai Engine: Cognitive diagnostics model loaded. [1.2ms RESP]</text>
-    <text x="0" y="92" fill="#10b981">&gt; STATUS: ALL PRODUCTION SYSTEMS OPERATIONAL. 0 COMPILATION WARNINGS.</text>
-    <text x="0" y="118" fill="#f59e0b">avish@workstation:~$ <tspan fill="#f8fafc">echo "Open for high-impact software engineering opportunities."</tspan> █</text>
+    <text x="0" y="0" fill="#f59e0b">avish@ai-workstation:~$ <tspan fill="#f8fafc">python3 -m ai_suite --evaluate-models</tspan></text>
+    <text x="0" y="24" fill="#a1a1aa">&gt; [AI-ENGINE] Nutri-ai Model: Inference latency 1.2ms. Accuracy 99.4%. [OPTIMAL]</text>
+    <text x="0" y="46" fill="#fbbf24">&gt; [KERNEL]    AquaOS Sandbox: POSIX process isolation active. [RUNNING]</text>
+    <text x="0" y="68" fill="#fde047">&gt; [WEB-AST]   Live Markdown: Synchronous dual-pane compiler ready. [SYNCED]</text>
+    <text x="0" y="92" fill="#10b981">&gt; STATUS: ALL AI INFERENCE PIPELINES ARMED. ZERO COMPILATION WARNINGS.</text>
+    <text x="0" y="118" fill="#f59e0b">avish@ai-workstation:~$ <tspan fill="#f8fafc">echo "Ready for high-impact AI engineering roles."</tspan> █</text>
   </g>
 </svg>

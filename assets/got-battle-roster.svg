@@ -14,60 +14,60 @@
     <g transform="translate(0, 0)">
       <rect x="0" y="0" width="280" height="122" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <rect x="0" y="0" width="280" height="26" rx="4" fill="#181007" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 01 &#8226; MEMORY CONSTRAINTS</text>
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 01 &#8226; INFERENCE DRIFT</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">HEAP FRAGMENTATION IN PYTHON</tspan></text>
+        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">MODEL ACCURACY DECAY IN PRODUCTION</tspan></text>
         <rect x="0" y="18" width="252" height="38" rx="2" fill="#140d06" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; RESOLVED WITH AQUAOS MEMORY POOLS</text>
+        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; RESOLVED WITH NUTRI-AI CONTINUOUS CALIBRATION</text>
         <text x="126" y="47" text-anchor="middle" font-size="8.5" fill="#fde047">STATUS: PRODUCTION VERIFIED</text>
       </g>
     </g>
     <g transform="translate(292, 0)">
       <rect x="0" y="0" width="280" height="122" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <rect x="0" y="0" width="280" height="26" rx="4" fill="#181007" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 02 &#8226; RACE CONDITIONS</text>
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 02 &#8226; COMPUTE PROCESS COLLISIONS</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">CONCURRENT ASYNC THREAD COLLISIONS</tspan></text>
+        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">PARALLEL INFERENCE LOCKOUT</tspan></text>
         <rect x="0" y="18" width="252" height="38" rx="2" fill="#140d06" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; ISOLATED WITH POSIX PROCESS LOCKS</text>
+        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; ISOLATED WITH POSIX KERNEL WORKERS IN AQUAOS</text>
         <text x="126" y="47" text-anchor="middle" font-size="8.5" fill="#fde047">STATUS: PRODUCTION VERIFIED</text>
       </g>
     </g>
     <g transform="translate(584, 0)">
       <rect x="0" y="0" width="280" height="122" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <rect x="0" y="0" width="280" height="26" rx="4" fill="#181007" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 03 &#8226; AST COMPILATION BOTTLENECK</text>
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 03 &#8226; REAL-TIME AST COMPILATION</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">REAL-TIME MARKDOWN LAG</tspan></text>
+        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">TELEMETRY RENDERING LAG</tspan></text>
         <rect x="0" y="18" width="252" height="38" rx="2" fill="#140d06" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; OPTIMIZED VIA REACT 19 RECONCILIATION</text>
+        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; OPTIMIZED VIA REACT 19 VIRTUAL RECONCILIATION</text>
         <text x="126" y="47" text-anchor="middle" font-size="8.5" fill="#fde047">STATUS: PRODUCTION VERIFIED</text>
       </g>
     </g>
     <g transform="translate(0, 135)">
       <rect x="0" y="0" width="280" height="122" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <rect x="0" y="0" width="280" height="26" rx="4" fill="#181007" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 04 &#8226; DATABASE THROUGHPUT</text>
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 04 &#8226; HIGH-THROUGHPUT ML APIS</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">SLOW HIGH-VOLUME SQL JOINS</tspan></text>
+        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">SLOW HIGH-VOLUME JSON DISPATCH</tspan></text>
         <rect x="0" y="18" width="252" height="38" rx="2" fill="#140d06" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; INDEXED WITH POSTGRESQL POOLING</text>
+        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; DEPLOYED WITH ASYNCHRONOUS FASTAPI & FLASK</text>
         <text x="126" y="47" text-anchor="middle" font-size="8.5" fill="#fde047">STATUS: PRODUCTION VERIFIED</text>
       </g>
     </g>
     <g transform="translate(292, 135)">
       <rect x="0" y="0" width="280" height="122" rx="4" fill="#0d0804" stroke="#2a1c0e" stroke-width="1.2" />
       <rect x="0" y="0" width="280" height="26" rx="4" fill="#181007" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 05 &#8226; AI INFERENCE DRIFT</text>
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 05 &#8226; HEAP ALLOCATION OVERFLOW</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">MODEL ACCURACY DECAY OVER TIME</tspan></text>
+        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">MEMORY SPIKES IN PYTHON LOOPS</tspan></text>
         <rect x="0" y="18" width="252" height="38" rx="2" fill="#140d06" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; CALIBRATED WITH NUTRI-AI TELEMETRY</text>
+        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; RESOLVED VIA CUSTOM MEMORY POOLING</text>
         <text x="126" y="47" text-anchor="middle" font-size="8.5" fill="#fde047">STATUS: PRODUCTION VERIFIED</text>
       </g>
     </g>
@@ -77,9 +77,9 @@
       <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">CHALLENGE 06 &#8226; UNCAUGHT RUNTIME FAULTS</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">SERVICE DEPENDENCY OUTAGES</tspan></text>
+        <text x="0" y="0" fill="#a1a1aa">ISSUE: <tspan fill="#f8fafc" font-weight="800">SERVICE DEPENDENCY BREAKS</tspan></text>
         <rect x="0" y="18" width="252" height="38" rx="2" fill="#140d06" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; AUTOMATED VIA CI/CD FAILSAFE PIPELINES</text>
+        <text x="126" y="34" text-anchor="middle" font-size="9" font-weight="800" fill="#10b981">&gt; AUTOMATED VIA CONTAINERIZED CI/CD PIPELINES</text>
         <text x="126" y="47" text-anchor="middle" font-size="8.5" fill="#fde047">STATUS: PRODUCTION VERIFIED</text>
       </g>
     </g>

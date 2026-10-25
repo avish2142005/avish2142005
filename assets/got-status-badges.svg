@@ -23,26 +23,26 @@
       <text x="136" y="20" text-anchor="middle" fill="#090502">AVISH KUMAR</text>
     </g>
 
-    <!-- 02: SPECIALTY -->
+    <!-- 02: ROLE: AI ENGINEER -->
     <g transform="translate(206, 0)">
       <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">DOMAIN</text>
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">ROLE</text>
       <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#goldStatusGrad)" />
-      <text x="116" y="20" text-anchor="middle" fill="#090502">FULL-STACK</text>
+      <text x="116" y="20" text-anchor="middle" fill="#090502">AI ENGINEER</text>
     </g>
 
-    <!-- 03: ARCHITECTURE -->
+    <!-- 03: MODELS -->
     <g transform="translate(385, 0)">
       <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">SYSTEMS</text>
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">MODELS</text>
       <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#ivoryStatusGrad)" />
-      <text x="116" y="20" text-anchor="middle" fill="#090502">OS KERNELS</text>
+      <text x="116" y="20" text-anchor="middle" fill="#090502">DEEP LEARNING</text>
     </g>
 
-    <!-- 04: PERFORMANCE -->
+    <!-- 04: INFERENCE SPEED -->
     <g transform="translate(564, 0)">
       <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">LATENCY</text>
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">INFERENCE</text>
       <rect x="65" y="0" width="98" height="32" rx="3" fill="url(#goldStatusGrad)" />
       <text x="114" y="20" text-anchor="middle" fill="#090502">SUB-MS</text>
     </g>
