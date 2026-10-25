@@ -1,36 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 240" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020409" />
-      <stop offset="50%" stop-color="#060c18" />
-      <stop offset="100%" stop-color="#020408" />
+    <linearGradient id="apexFooterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="50%" stop-color="#050a14" />
+      <stop offset="100%" stop-color="#000000" />
     </linearGradient>
-    <linearGradient id="footerGold" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#06b6d4" />
+    <linearGradient id="apexFooterGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f59e0b" />
     </linearGradient>
   </defs>
 
-  <rect width="1600" height="240" fill="url(#footerBg)" />
-  <line x1="0" y1="0" x2="1600" y2="0" stroke="#162942" stroke-width="1.5" />
-  <line x1="300" y1="0" x2="700" y2="0" stroke="#38bdf8" stroke-width="2" />
-  <line x1="700" y1="0" x2="1100" y2="0" stroke="#f59e0b" stroke-width="2" />
-  <line x1="1100" y1="0" x2="1300" y2="0" stroke="#06b6d4" stroke-width="2" />
+  <rect width="1600" height="240" fill="url(#apexFooterBg)" />
+  <rect x="16" y="16" width="1568" height="208" rx="4" fill="none" stroke="#162234" stroke-width="1.2" />
 
-  <!-- Center Tri-Sigil Vector Crest -->
-  <g transform="translate(800, 60)">
-    <circle cx="0" cy="0" r="32" fill="#08101d" stroke="#38bdf8" stroke-width="1.5" />
-    <circle cx="-10" cy="-4" r="3.5" fill="#38bdf8" />
-    <circle cx="0" cy="8" r="3.5" fill="#f59e0b" />
-    <circle cx="10" cy="-4" r="3.5" fill="#06b6d4" />
-    <polygon points="-10,-4 10,-4 0,8" fill="none" stroke="#f8fafc" stroke-width="1" />
+  <!-- Central Raptor Wing Lines -->
+  <g transform="translate(800, 70)">
+    <!-- Wings Vector -->
+    <path d="M 0 0 C -80 -40 -240 -30 -360 10 C -240 0 -120 5 0 20 C 120 5 240 0 360 10 C 240 -30 80 -40 0 0 Z" fill="#0b1320" stroke="#f59e0b" stroke-width="1.2" />
+    
+    <!-- Central Eagle Eye -->
+    <ellipse cx="0" cy="8" rx="14" ry="8" fill="#d97706" />
+    <circle cx="0" cy="8" r="4" fill="#000000" />
+    <circle cx="-2" cy="6" r="1.5" fill="#ffffff" />
   </g>
 
-  <!-- Royal Signature Text -->
-  <g transform="translate(800, 135)" text-anchor="middle">
-    <text x="0" y="0" font-family="'Cinzel', 'Palatino', serif" font-size="24" font-weight="900" fill="url(#footerGold)" letter-spacing="4">THE TRI-APEX REALM &#8226; AVISH KUMAR</text>
-    <text x="0" y="30" font-family="'Georgia', serif" font-style="italic" font-size="14" fill="#94a3b8" letter-spacing="2">🐺 THE PACK SURVIVES &#8226; 🦁 THE PRIDE REIGNS &#8226; 🦅 THE SKY WATCHES &#8226; GITHUB.COM/AVISH2142005</text>
-    <text x="0" y="56" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1">[ TRANSMISSION SEALED // TRI-APEX COMMAND PROTOCOL 0x777 // VALYRIAN CODE ARMED ]</text>
+  <!-- Monolithic Signature -->
+  <g transform="translate(800, 130)" text-anchor="middle">
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="24" font-weight="900" fill="url(#apexFooterGold)" letter-spacing="4">AVISH KUMAR &#8226; THE APEX RAPTOR OF CODE</text>
+    <text x="0" y="30" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="2">EYES ON THE HORIZON &#8226; TALONS ON THE TARGET &#8226; SOLITARY RULER OF THE STRATOSPHERE</text>
+  </g>
+
+  <!-- Coordinates & Build Stamp -->
+  <g transform="translate(800, 195)" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#64748b" letter-spacing="1.5">
+    <text x="0" y="0">[ AQUILA-01 // PROTOCOL 0x777 // OBSIDIAN CHASM &amp; AMBER TALONS // GRADE S+ ]</text>
   </g>
 </svg>

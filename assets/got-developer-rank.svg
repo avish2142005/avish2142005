@@ -1,111 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="rankBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040812" />
-      <stop offset="50%" stop-color="#07101e" />
-      <stop offset="100%" stop-color="#020409" />
+    <linearGradient id="apexRankBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="50%" stop-color="#060c18" />
+      <stop offset="100%" stop-color="#020408" />
     </linearGradient>
-    <radialGradient id="radarRadarGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    <radialGradient id="rankAmberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
-    <filter id="rankGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="rankGlowFilter" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <rect width="920" height="460" rx="6" fill="url(#rankBg)" />
-  <rect width="920" height="460" rx="6" fill="none" stroke="#162942" stroke-width="1.5" />
+  <rect width="920" height="460" rx="6" fill="url(#apexRankBg)" />
+  <rect width="920" height="460" rx="6" fill="none" stroke="#162234" stroke-width="1.5" />
 
-  <!-- Left Side: Hexagonal Tri-Apex Radar -->
+  <!-- Left Side: Hexagonal Stratospheric Combat Radar -->
   <g transform="translate(250, 230)">
-    <circle cx="0" cy="0" r="160" fill="url(#radarRadarGlow)" />
+    <circle cx="0" cy="0" r="160" fill="url(#rankAmberGlow)" />
 
     <!-- Concentric Hexagons (20%, 40%, 60%, 80%, 100%) -->
-    <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="#1a2d48" stroke-width="1" />
-    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="none" stroke="#1a2d48" stroke-width="1" />
-    <polygon points="0,-90 78,-45 78,45 0,90 -78,45 -78,-45" fill="none" stroke="#1e3656" stroke-width="1" />
-    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60" fill="none" stroke="#25436c" stroke-width="1" />
-    <polygon points="0,-150 130,-75 130,75 0,150 -130,75 -130,-75" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 4" />
+    <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="#162232" stroke-width="1" />
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="none" stroke="#162232" stroke-width="1" />
+    <polygon points="0,-90 78,-45 78,45 0,90 -78,45 -78,-45" fill="none" stroke="#1e2c40" stroke-width="1" />
+    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60" fill="none" stroke="#2a3c56" stroke-width="1" />
+    <polygon points="0,-150 130,-75 130,75 0,150 -130,75 -130,-75" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 4" />
 
-    <!-- Radial Axis Spoke Lines -->
-    <line x1="0" y1="0" x2="0" y2="-150" stroke="#284670" stroke-width="1" />
-    <line x1="0" y1="0" x2="130" y2="-75" stroke="#284670" stroke-width="1" />
-    <line x1="0" y1="0" x2="130" y2="75" stroke="#284670" stroke-width="1" />
-    <line x1="0" y1="0" x2="0" y2="150" stroke="#284670" stroke-width="1" />
-    <line x1="0" y1="0" x2="-130" y2="75" stroke="#284670" stroke-width="1" />
-    <line x1="0" y1="0" x2="-130" y2="-75" stroke="#284670" stroke-width="1" />
+    <!-- Spoke Lines -->
+    <line x1="0" y1="0" x2="0" y2="-150" stroke="#25354c" stroke-width="1" />
+    <line x1="0" y1="0" x2="130" y2="-75" stroke="#25354c" stroke-width="1" />
+    <line x1="0" y1="0" x2="130" y2="75" stroke="#25354c" stroke-width="1" />
+    <line x1="0" y1="0" x2="0" y2="150" stroke="#25354c" stroke-width="1" />
+    <line x1="0" y1="0" x2="-130" y2="75" stroke="#25354c" stroke-width="1" />
+    <line x1="0" y1="0" x2="-130" y2="-75" stroke="#25354c" stroke-width="1" />
 
-    <!-- Avish Kumar's Actual Tri-Apex Combat Polygon -->
-    <!-- Points: Wolf(OS)=96%(-144), Eagle(AI)=93%(121,-70), Lion(FullStack)=95%(123,71), Algorithms=91%(0,136), DevOps=89%(-115,67), Architecture=95%(-124,-71) -->
-    <polygon points="0,-144 121,-70 123,71 0,136 -115,67 -124,-71" fill="#38bdf8" fill-opacity="0.3" stroke="#7dd3fc" stroke-width="2.5" filter="url(#rankGlow)" />
+    <!-- Avish Kumar's Actual Raptor Radar Combat Polygon -->
+    <!-- Axes: Macro Architecture=98%(-147), OS Kernels=96%(125,-72), AI Cognition=95%(123,71), Algorithms=96%(0,144), Full-Stack=97%(-126,73), Low-Latency=95%(-124,-71) -->
+    <polygon points="0,-147 125,-72 123,71 0,144 -126,73 -124,-71" fill="#f59e0b" fill-opacity="0.3" stroke="#fbbf24" stroke-width="2.5" filter="url(#rankGlowFilter)" />
 
     <!-- Vertices Dots -->
-    <circle cx="0" cy="-144" r="4.5" fill="#38bdf8" />
-    <circle cx="121" cy="-70" r="4.5" fill="#06b6d4" />
-    <circle cx="123" cy="71" r="4.5" fill="#f59e0b" />
-    <circle cx="0" cy="136" r="4.5" fill="#f8fafc" />
-    <circle cx="-115" cy="67" r="4.5" fill="#10b981" />
-    <circle cx="-124" cy="-71" r="4.5" fill="#f8fafc" />
+    <circle cx="0" cy="-147" r="4.5" fill="#f59e0b" />
+    <circle cx="125" cy="-72" r="4.5" fill="#ffffff" />
+    <circle cx="123" cy="71" r="4.5" fill="#38bdf8" />
+    <circle cx="0" cy="144" r="4.5" fill="#f8fafc" />
+    <circle cx="-126" cy="73" r="4.5" fill="#fbbf24" />
+    <circle cx="-124" cy="-71" r="4.5" fill="#10b981" />
 
     <!-- Node Labels -->
-    <text x="0" y="-165" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#38bdf8">🐺 WOLF: OS &amp; KERNELS [96%]</text>
-    <text x="145" y="-72" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#06b6d4">🦅 EAGLE: AI ORACLE [93%]</text>
-    <text x="145" y="82" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#f59e0b">🦁 LION: FULL-STACK [95%]</text>
-    <text x="0" y="172" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#f8fafc">ALGORITHMS [91%]</text>
-    <text x="-145" y="82" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#10b981">INFRASTRUCTURE [89%]</text>
-    <text x="-145" y="-72" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#f8fafc">SYSTEM RELIABILITY [95%]</text>
+    <text x="0" y="-168" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fbbf24">MACRO ARCHITECTURE [98%]</text>
+    <text x="145" y="-72" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#ffffff">OS KERNELS [96%]</text>
+    <text x="145" y="82" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#38bdf8">AI COGNITION [95%]</text>
+    <text x="0" y="172" text-anchor="middle" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#f8fafc">ALGORITHMIC LETHALITY [96%]</text>
+    <text x="-145" y="82" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#fbbf24">REACTIVE FORTRESSES [97%]</text>
+    <text x="-145" y="-72" text-anchor="end" font-family="'Cinzel', serif" font-size="11.5" font-weight="900" fill="#10b981">LOW-LATENCY TALON [95%]</text>
   </g>
 
   <!-- Right Side: Tactical Mastery Matrix & Breakdown -->
   <g transform="translate(500, 48)">
-    <rect x="0" y="0" width="380" height="30" rx="3" fill="#0d1b30" stroke="#38bdf8" stroke-width="1.2" />
-    <text x="16" y="20" font-family="'Cinzel', serif" font-size="13" font-weight="900" fill="#38bdf8" letter-spacing="2">TRI-APEX COMBAT RATING: S+ GRADE</text>
+    <rect x="0" y="0" width="380" height="30" rx="3" fill="#080e18" stroke="#f59e0b" stroke-width="1.2" />
+    <text x="16" y="20" font-family="'Cinzel', serif" font-size="13" font-weight="900" fill="#fbbf24" letter-spacing="2">APEX RAPTOR MASTERY: S+ GRADE</text>
 
     <!-- Capability Bars -->
     <g transform="translate(0, 55)" font-family="'Courier New', monospace" font-size="11.5" font-weight="800">
-      <!-- 01: Wolf (Python / AquaOS) -->
+      <!-- 01: Macro Architecture -->
       <g transform="translate(0, 0)">
-        <text x="0" y="16" fill="#f8fafc">01 // 🐺 THE WOLF: OS KERNEL (AquaOS)</text>
-        <text x="340" y="16" fill="#38bdf8">96%</text>
-        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0f1f35" />
-        <rect x="0" y="24" width="365" height="8" rx="2" fill="#38bdf8" />
+        <text x="0" y="16" fill="#f8fafc">01 // 👁️ 30,000-FT MACRO ARCHITECTURE</text>
+        <text x="340" y="16" fill="#fbbf24">98%</text>
+        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0c1420" />
+        <rect x="0" y="24" width="372" height="8" rx="2" fill="#f59e0b" />
       </g>
-      <!-- 02: Lion (TypeScript / Full-Stack) -->
+      <!-- 02: OS Kernels -->
       <g transform="translate(0, 52)">
-        <text x="0" y="16" fill="#f8fafc">02 // 🦁 THE LION: FULL-STACK CITADELS</text>
-        <text x="340" y="16" fill="#f59e0b">95%</text>
-        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0f1f35" />
-        <rect x="0" y="24" width="361" height="8" rx="2" fill="#f59e0b" />
+        <text x="0" y="16" fill="#f8fafc">02 // ⚡ LOW-LEVEL KERNELS (AquaOS)</text>
+        <text x="340" y="16" fill="#ffffff">96%</text>
+        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0c1420" />
+        <rect x="0" y="24" width="365" height="8" rx="2" fill="#ffffff" />
       </g>
-      <!-- 03: Eagle (Nutri-ai / AI Models) -->
+      <!-- 03: Full-Stack Fortresses -->
       <g transform="translate(0, 104)">
-        <text x="0" y="16" fill="#f8fafc">03 // 🦅 THE EAGLE: COGNITIVE AI (Nutri-ai)</text>
-        <text x="340" y="16" fill="#06b6d4">93%</text>
-        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0f1f35" />
-        <rect x="0" y="24" width="353" height="8" rx="2" fill="#06b6d4" />
+        <text x="0" y="16" fill="#f8fafc">03 // 🏰 REACTIVE FORTRESSES (Markdown)</text>
+        <text x="340" y="16" fill="#fbbf24">97%</text>
+        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0c1420" />
+        <rect x="0" y="24" width="368" height="8" rx="2" fill="#d97706" />
       </g>
-      <!-- 04: Backend & APIs (Flask, REST) -->
+      <!-- 04: AI Cognition -->
       <g transform="translate(0, 156)">
-        <text x="0" y="16" fill="#f8fafc">04 // ⚔️ BACKEND SERVICES &amp; REST APIS</text>
-        <text x="340" y="16" fill="#38bdf8">92%</text>
-        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0f1f35" />
-        <rect x="0" y="24" width="350" height="8" rx="2" fill="#0284c7" />
+        <text x="0" y="16" fill="#f8fafc">04 // 🧠 COGNITIVE AI TELEMETRY (Nutri-ai)</text>
+        <text x="340" y="16" fill="#38bdf8">95%</text>
+        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0c1420" />
+        <rect x="0" y="24" width="361" height="8" rx="2" fill="#0ea5e9" />
       </g>
-      <!-- 05: Linux & Tooling -->
+      <!-- 05: Microservices & APIs -->
       <g transform="translate(0, 208)">
-        <text x="0" y="16" fill="#f8fafc">05 // 🛡️ LINUX, DOCKER &amp; CI/CD PIPES</text>
-        <text x="340" y="16" fill="#10b981">90%</text>
-        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0f1f35" />
-        <rect x="0" y="24" width="342" height="8" rx="2" fill="#10b981" />
+        <text x="0" y="16" fill="#f8fafc">05 // 🛰️ SUB-MS APIS (first-flaskapp)</text>
+        <text x="340" y="16" fill="#10b981">94%</text>
+        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0c1420" />
+        <rect x="0" y="24" width="357" height="8" rx="2" fill="#10b981" />
       </g>
-      <!-- 06: Data Structures & Algorithms -->
+      <!-- 06: Data Structures -->
       <g transform="translate(0, 260)">
-        <text x="0" y="16" fill="#f8fafc">06 // 💎 ADVANCED DATA STRUCTURES</text>
-        <text x="340" y="16" fill="#f8fafc">91%</text>
-        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0f1f35" />
-        <rect x="0" y="24" width="346" height="8" rx="2" fill="#f8fafc" />
+        <text x="0" y="16" fill="#f8fafc">06 // 💎 ALGORITHMIC PROBLEM SOLVING</text>
+        <text x="340" y="16" fill="#f8fafc">96%</text>
+        <rect x="0" y="24" width="380" height="8" rx="2" fill="#0c1420" />
+        <rect x="0" y="24" width="365" height="8" rx="2" fill="#e2e8f0" />
       </g>
     </g>
   </g>

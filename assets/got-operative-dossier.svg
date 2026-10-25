@@ -1,30 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 490" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="gotDosBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712" />
-      <stop offset="50%" stop-color="#070e1c" />
-      <stop offset="100%" stop-color="#020509" />
+    <linearGradient id="apexDosBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="50%" stop-color="#060b14" />
+      <stop offset="100%" stop-color="#020408" />
     </linearGradient>
-    <linearGradient id="gotBlueText" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#93c5fd" />
-    </linearGradient>
-    <radialGradient id="avatarFrostGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    <radialGradient id="dosAmberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
-    <filter id="dosGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="dosLaserFilter" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <rect width="920" height="490" rx="6" fill="url(#gotDosBg)" />
-  <rect width="920" height="490" rx="6" fill="none" stroke="#1a2f4c" stroke-width="1.5" />
-  <rect width="910" height="480" x="5" y="5" rx="4" fill="none" stroke="#0e1b2c" stroke-width="1" />
+  <rect width="920" height="490" rx="6" fill="url(#apexDosBg)" />
+  <rect width="920" height="490" rx="6" fill="none" stroke="#182232" stroke-width="1.5" />
+  <rect width="910" height="480" x="5" y="5" rx="4" fill="none" stroke="#0a0f18" stroke-width="1" />
 
-  <!-- Corner Brackets -->
-  <g stroke="#38bdf8" stroke-width="2" fill="none">
+  <!-- Tactical Corner Brackets -->
+  <g stroke="#f59e0b" stroke-width="2" fill="none">
     <path d="M 5 35 L 5 5 L 35 5" />
     <path d="M 915 35 L 915 5 L 885 5" />
     <path d="M 5 455 L 5 485 L 35 485" />
@@ -34,97 +30,143 @@
   <!-- Left Column: Dossier Intel Text -->
   <g transform="translate(36, 45)">
     <!-- Header Stamp -->
-    <rect x="0" y="0" width="360" height="28" rx="3" fill="#081424" stroke="#38bdf8" stroke-width="1" />
-    <text x="14" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="2">CITADEL DOSSIER // TRI-APEX COMMAND</text>
+    <rect x="0" y="0" width="380" height="28" rx="3" fill="#080e18" stroke="#f59e0b" stroke-width="1" />
+    <text x="14" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="2">AERO-DOSSIER // APEX RAPTOR COMMAND</text>
 
     <!-- Name & Titles -->
     <text x="0" y="65" font-family="'Cinzel', 'Palatino', serif" font-size="28" font-weight="900" fill="#f8fafc" letter-spacing="2">AVISH KUMAR</text>
-    <text x="0" y="92" font-family="'Cinzel', serif" font-size="13" font-weight="700" fill="url(#gotBlueText)" letter-spacing="1.5">TRI-APEX ARCHITECT &#8226; WOLF &#8226; LION &#8226; EAGLE</text>
+    <text x="0" y="92" font-family="'Cinzel', serif" font-size="13" font-weight="700" fill="#fbbf24" letter-spacing="1.5">SOVEREIGN OF THE CODE STRATOSPHERE // S+ MASTER</text>
 
     <!-- Key-Value Fields -->
     <g transform="translate(0, 125)" font-family="'Courier New', monospace" font-size="12">
-      <!-- 01 -->
-      <text x="0" y="0" fill="#64748b" font-weight="800">ALLEGIANCE:</text>
-      <text x="140" y="0" fill="#f8fafc" font-weight="800">The Westeros Triad (Winterfell &#8226; Casterly &#8226; Eyrie)</text>
+      <text x="0" y="0" fill="#64748b" font-weight="800">CALLSIGN:</text>
+      <text x="140" y="0" fill="#fbbf24" font-weight="800">AQUILA-01 [The Apex Raptor]</text>
 
-      <!-- 02 -->
-      <text x="0" y="28" fill="#64748b" font-weight="800">CODENAME:</text>
-      <text x="140" y="28" fill="#38bdf8" font-weight="800">avish2142005 [Tri-Sigil Shield]</text>
+      <text x="0" y="28" fill="#64748b" font-weight="800">OPERATIONAL FLIGHT:</text>
+      <text x="140" y="28" fill="#f8fafc" font-weight="800">35,000 FT (Stratospheric Altitude)</text>
 
-      <!-- 03 -->
-      <text x="0" y="56" fill="#64748b" font-weight="800">CORE ARSENAL:</text>
-      <text x="140" y="56" fill="#f8fafc" font-weight="800">Python &#8226; TypeScript &#8226; React 19 &#8226; AI Models</text>
+      <text x="0" y="56" fill="#64748b" font-weight="800">MACRO VISION:</text>
+      <text x="140" y="56" fill="#38bdf8" font-weight="800">360° System Topologies &amp; Zero Blind Spots</text>
 
-      <!-- 04 -->
-      <text x="0" y="84" fill="#64748b" font-weight="800">TRI-FORTRESSES:</text>
-      <text x="140" y="84" fill="#38bdf8" font-weight="800">AquaOS (Wolf) &#8226; Markdown (Lion) &#8226; Nutri-ai (Eagle)</text>
+      <text x="0" y="84" fill="#64748b" font-weight="800">TALON ARSENAL:</text>
+      <text x="140" y="84" fill="#f8fafc" font-weight="800">AquaOS (Kernel) &#8226; Nutri-ai (AI) &#8226; Markdown</text>
 
-      <!-- 05 -->
-      <text x="0" y="112" fill="#64748b" font-weight="800">CITADEL MASTERY:</text>
-      <text x="140" y="112" fill="#f8fafc" font-weight="800">Systems, Full-Stack Citadels &amp; Cognitive AI</text>
+      <text x="0" y="112" fill="#64748b" font-weight="800">EXECUTION SPEED:</text>
+      <text x="140" y="112" fill="#fbbf24" font-weight="800">Sub-Millisecond Terminal Dive Strike</text>
 
-      <!-- 06 -->
-      <text x="0" y="140" fill="#64748b" font-weight="800">CURRENT CAMPAIGN:</text>
-      <text x="140" y="140" fill="#10b981" font-weight="800">Fortifying Northern Repositories // 2026</text>
+      <text x="0" y="140" fill="#64748b" font-weight="800">ACTIVE MISSIONS:</text>
+      <text x="140" y="140" fill="#10b981" font-weight="800">2026 Stratospheric Campaigns // Continuous</text>
     </g>
 
-    <!-- Sacred Tri-Apex Directive -->
+    <!-- The Raptor Creed Box -->
     <g transform="translate(0, 310)">
-      <rect x="0" y="0" width="530" height="95" rx="4" fill="#06101c" stroke="#1d3557" stroke-width="1.2" />
-      <rect x="0" y="0" width="4" height="95" fill="#38bdf8" />
-      <text x="18" y="24" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#38bdf8" letter-spacing="1">THE TRI-APEX CREED:</text>
-      <text x="18" y="48" font-family="'Georgia', serif" font-style="italic" font-size="13" fill="#cbd5e1">"The Wolf hunts in the dark. The Lion reigns over the fortress.</text>
-      <text x="18" y="68" font-family="'Georgia', serif" font-style="italic" font-size="13" fill="#cbd5e1">The Eagle watches from the sky. Three disciplines, one engineer."</text>
-      <text x="18" y="86" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#7dd3fc">&gt; SHIPPING BULLETPROOF CODE ACROSS EVERY DIMENSION.</text>
+      <rect x="0" y="0" width="530" height="95" rx="4" fill="#060c16" stroke="#1e2c40" stroke-width="1.2" />
+      <rect x="0" y="0" width="4" height="95" fill="#f59e0b" />
+      <text x="18" y="24" font-family="'Cinzel', serif" font-size="12" font-weight="900" fill="#fbbf24" letter-spacing="1">THE RAPTOR'S CODE CREED:</text>
+      <text x="18" y="48" font-family="'Georgia', serif" font-style="italic" font-size="13" fill="#cbd5e1">"From the obsidian void we rise. With piercing vision we strike.</text>
+      <text x="18" y="68" font-family="'Georgia', serif" font-style="italic" font-size="13" fill="#cbd5e1">Seeing the whole sky before diving at terminal velocity."</text>
+      <text x="18" y="86" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" fill="#f59e0b">&gt; CODE PURITY: GRADE S+ ZERO TECHNICAL DEBT.</text>
     </g>
   </g>
 
-  <!-- Right Column: Pure Vector Tri-Sigil Heraldic Seal (No photos!) -->
-  <g transform="translate(745, 230)">
-    <!-- Outer Frost Glow -->
-    <circle cx="0" cy="0" r="120" fill="url(#avatarFrostGlow)" />
+  <!-- Right Column: Vector Eagle Heraldic Crest -->
+  <g transform="translate(745, 225)">
+    <circle cx="0" cy="0" r="120" fill="url(#dosAmberGlow)" />
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="92" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="16 8" />
+    <circle cx="0" cy="0" r="84" fill="#020408" stroke="#f59e0b" stroke-width="2" filter="url(#dosLaserFilter)" />
 
-    <!-- Concentric Decorative Rings -->
-    <circle cx="0" cy="0" r="98" fill="none" stroke="#1d3557" stroke-width="1.5" />
-    <circle cx="0" cy="0" r="90" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="16 8" />
-    <circle cx="0" cy="0" r="82" fill="#040812" stroke="#38bdf8" stroke-width="2.5" filter="url(#dosGlow)" />
+    <!-- Centered Vector Eagle Artwork -->
+    
+  <g transform="translate(-75, -95) scale(0.72)">
+    
 
-    <!-- Inner Heraldic Triad Glyphs -->
-    <!-- 🐺 Wolf Emblem (Top) -->
-    <g transform="translate(0, -32) scale(0.65)">
-      <path d="M 0 -45 L 14 -30 L 28 -34 L 20 -15 L 36 -6 L 42 10 L 30 18 L 38 32 L 20 36 L 14 48 L 0 40 L -14 48 L -20 36 L -38 32 L -30 18 L -42 10 L -36 -6 L -20 -15 L -28 -34 L -14 -30 Z" fill="#0c1b2c" stroke="#38bdf8" stroke-width="2" />
-      <circle cx="-8" cy="-5" r="2.5" fill="#7dd3fc" />
-      <circle cx="8" cy="-5" r="2.5" fill="#7dd3fc" />
+    <!-- Shadow Silhouette Backdrop -->
+    <path d="M -40 220 C -20 160 -10 100 20 50 C 40 20 80 -10 130 -20 C 180 -10 210 20 230 70 C 245 110 250 160 260 220 Z" fill="#020306" />
+
+    <!-- Crown & Brow Plumage (Chiaroscuro Illuminated White & Silver Feathers) -->
+    <!-- Layer 1: Dark feather undertones -->
+    <path d="M 30 70 L 60 30 L 100 5 L 145 -5 L 185 10 L 210 40 L 215 80 L 195 95 L 170 70 L 140 75 L 115 60 L 80 75 Z" fill="#334155" />
+    <path d="M 40 85 L 75 45 L 120 20 L 160 15 L 190 35 L 195 75 L 175 80 L 145 65 L 110 70 L 80 85 Z" fill="#64748b" />
+    
+    <!-- Layer 2: Mid-tone silver plumage -->
+    <path d="M 25 110 L 55 70 L 95 40 L 140 28 L 175 42 L 180 85 L 160 90 L 130 75 L 95 82 L 60 100 Z" fill="#94a3b8" />
+    <path d="M 15 140 L 45 95 L 80 65 L 125 50 L 160 60 L 165 95 L 145 95 L 115 85 L 75 98 L 40 130 Z" fill="#cbd5e1" />
+
+    <!-- Layer 3: High-contrast illuminated white crest feathers -->
+    <path d="M 10 170 L 35 120 L 70 85 L 110 68 L 145 75 L 150 102 L 130 102 L 100 90 L 60 108 L 25 160 Z" fill="#e2e8f0" />
+    <path d="M 5 200 L 25 150 L 55 110 L 95 88 L 130 92 L 135 115 L 115 112 L 85 102 L 45 125 L 15 190 Z" fill="#f8fafc" />
+    <path d="M 45 130 L 70 95 L 105 82 L 125 86 L 120 105 L 95 98 L 65 115 Z" fill="#ffffff" />
+    <path d="M 65 60 L 100 35 L 135 30 L 160 45 L 150 65 L 125 50 L 95 55 Z" fill="#ffffff" />
+    <path d="M 85 30 L 115 15 L 145 12 L 165 25 L 155 38 L 135 25 L 110 25 Z" fill="#ffffff" />
+
+    <!-- Feather detail streaks (Fine razor texture) -->
+    <g stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-linecap="round">
+      <line x1="80" y1="35" x2="65" y2="55" />
+      <line x1="105" y1="25" x2="90" y2="50" />
+      <line x1="130" y1="20" x2="115" y2="45" />
+      <line x1="150" y1="30" x2="135" y2="55" />
+      <line x1="70" y1="70" x2="55" y2="95" />
+      <line x1="95" y1="65" x2="80" y2="90" />
+      <line x1="120" y1="60" x2="105" y2="85" />
+      <line x1="55" y1="110" x2="40" y2="135" />
+      <line x1="80" y1="105" x2="65" y2="130" />
+      <line x1="40" y1="150" x2="25" y2="175" />
     </g>
 
-    <!-- 🦁 Lion Emblem (Bottom-Left) -->
-    <g transform="translate(-32, 28) scale(0.65)">
-      <circle cx="0" cy="0" r="32" fill="#141708" stroke="#f59e0b" stroke-width="2" />
-      <path d="M 0 -20 C 12 -20 20 -10 20 4 C 20 15 10 22 0 22 C -10 22 -20 15 -20 4 C -20 -10 -12 -20 0 -20 Z" fill="#241e06" stroke="#fbbf24" stroke-width="1.5" />
-      <path d="M -7 -4 L 0 -11 L 7 -4 L 5 7 L 0 11 L -5 7 Z" fill="#f59e0b" />
+    <!-- Menacing Deep Brow Overhang (Shadow casting over the eye) -->
+    <path d="M 75 88 C 95 82 120 84 140 92 L 148 105 C 125 96 95 96 75 105 Z" fill="#0f172a" />
+    <path d="M 85 92 C 102 88 122 90 138 98 L 142 104 C 122 98 100 97 85 103 Z" fill="#020617" />
+
+    <!-- PIERCING PREDATOR AMBER EYE (The Focal Soul of the Character) -->
+    <g transform="translate(108, 106)">
+      <!-- Eye socket dark rim -->
+      <path d="M -22 0 C -12 -12 12 -12 24 2 C 12 12 -12 10 -22 0 Z" fill="#090d16" stroke="#1e293b" stroke-width="1.5" />
+      
+      <!-- Glowing amber iris -->
+      <ellipse cx="2" cy="0" rx="13" ry="8" fill="#d97706" />
+      <ellipse cx="2" cy="0" rx="10" ry="7" fill="#f59e0b" />
+      <ellipse cx="2" cy="0" rx="7" ry="5.5" fill="#fbbf24" />
+
+      <!-- Razor focused predator pupil -->
+      <circle cx="2" cy="0" r="4" fill="#030712" />
+      <circle cx="3" cy="-0.5" r="1.5" fill="#000000" />
+
+      <!-- Specular high-contrast catchlight -->
+      <circle cx="-1" cy="-2.5" r="2" fill="#ffffff" />
+      <circle cx="5" cy="1" r="1" fill="#fef08a" />
+      
+      <!-- Eye contour razor eyeliner -->
+      <path d="M -22 0 C -10 -9 10 -9 24 2" fill="none" stroke="#000000" stroke-width="2.5" />
+      <path d="M -22 0 C -10 8 10 7 24 2" fill="none" stroke="#0f172a" stroke-width="1.5" />
     </g>
 
-    <!-- 🦅 Eagle Emblem (Bottom-Right) -->
-    <g transform="translate(32, 28) scale(0.65)">
-      <circle cx="0" cy="0" r="32" fill="#061720" stroke="#06b6d4" stroke-width="2" />
-      <path d="M -16 -12 L 8 -18 L 18 -6 L 8 16 L -10 18 L -18 6 Z" fill="#0d2430" stroke="#67e8f9" stroke-width="1.5" />
-      <path d="M 8 -4 Q 22 2 16 16 Q 10 12 8 8 Z" fill="#f59e0b" stroke="#fde047" stroke-width="1.2" />
-      <circle cx="0" cy="-4" r="2.5" fill="#fbbf24" />
-    </g>
+    <!-- Hooked Amber Beak Base / Cere -->
+    <path d="M 125 100 C 135 98 145 102 152 110 L 148 122 C 140 118 132 116 125 118 Z" fill="#b45309" />
+    <ellipse cx="140" cy="112" rx="3.5" ry="2" fill="#451a03" />
 
-    <!-- Center Longclaw Valyrian Star -->
-    <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#f8fafc" filter="url(#dosGlow)" />
+    <!-- HOOKED AMBER TALON-BEAK (Razor sharp, illuminated top, shadowed underside) -->
+    <!-- Beak upper illuminated amber curve -->
+    <path d="M 132 104 C 160 100 195 110 215 130 C 228 142 235 160 236 178 C 235 195 224 208 214 212 C 218 198 218 180 208 165 C 195 148 175 140 150 142 L 134 135 Z" fill="#f59e0b" stroke="#fde047" stroke-width="0.8" />
+    <!-- Beak bright ridge highlight -->
+    <path d="M 135 105 C 162 102 195 112 214 132 C 224 144 230 160 232 178 C 230 162 222 148 210 136 C 192 118 162 108 135 105 Z" fill="#fde047" />
+    <path d="M 160 110 C 185 118 205 132 218 148 C 224 156 227 166 228 175 C 226 166 222 158 216 150 C 204 136 185 122 160 110 Z" fill="#ffffff" opacity="0.6" />
+    
+    <!-- Beak dark under-hook shadow -->
+    <path d="M 214 212 C 210 214 205 210 202 202 C 196 186 195 170 190 156 C 180 148 165 144 148 144 L 140 148 L 138 135 C 165 135 188 144 202 160 C 212 174 215 194 214 212 Z" fill="#9a3412" />
+    <!-- Hook tip needle point -->
+    <path d="M 224 195 C 222 205 218 212 214 212 C 216 208 218 200 218 192 Z" fill="#451a03" />
 
-    <!-- Cardinal Runes -->
-    <g fill="#38bdf8" font-family="'Cinzel', serif" font-size="10" font-weight="900" text-anchor="middle">
-      <text x="0" y="-105">🐺</text>
-      <text x="110" y="4">🦅</text>
-      <text x="0" y="115">⚔️</text>
-      <text x="-110" y="4">🦁</text>
-    </g>
+    <!-- Lower Jaw / Beak Gape -->
+    <path d="M 132 145 L 165 145 C 180 148 190 158 195 170 C 185 164 175 160 160 158 L 130 155 Z" fill="#78350f" />
+
+    <!-- Throat & Neck Feathers Fading into Absolute Pitch Black (#000000) -->
+    <path d="M 15 220 L 40 170 L 75 145 L 110 140 L 135 155 L 130 185 L 115 210 L 90 230 L 45 240 Z" fill="#1e293b" opacity="0.6" />
+    <path d="M 35 240 L 65 195 L 95 175 L 125 170 L 120 205 L 95 235 L 60 250 Z" fill="#0f172a" opacity="0.8" />
+  </g>
 
     <!-- Seal Tag Under Vector Crest -->
-    <rect x="-95" y="130" width="190" height="28" rx="3" fill="#081424" stroke="#38bdf8" stroke-width="1.2" />
-    <text x="0" y="149" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#f8fafc" letter-spacing="1.5">TRI-APEX ARCHITECT</text>
+    <rect x="-95" y="125" width="190" height="28" rx="3" fill="#080e18" stroke="#f59e0b" stroke-width="1.2" />
+    <text x="0" y="144" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#f8fafc" letter-spacing="1.5">AQUILA PRIME // S+</text>
   </g>
 </svg>

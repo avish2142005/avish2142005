@@ -1,86 +1,86 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="rosterBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040710" />
-      <stop offset="100%" stop-color="#071120" />
+    <linearGradient id="apexRosterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#060c18" />
     </linearGradient>
   </defs>
 
-  <rect width="920" height="330" rx="6" fill="url(#rosterBg)" />
-  <rect width="920" height="330" rx="6" fill="none" stroke="#162942" stroke-width="1.5" />
+  <rect width="920" height="330" rx="6" fill="url(#apexRosterBg)" />
+  <rect width="920" height="330" rx="6" fill="none" stroke="#162234" stroke-width="1.5" />
 
   <g transform="translate(24, 25)">
     
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
-      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 1 &#8226; WHITE WALKERS</text>
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0b1320" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">PREY 1 &#8226; MEMORY LEAK KRAKEN</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">LEGACY CRUST &amp; DEPRECATION</tspan></text>
-        <text x="0" y="20" fill="#64748b">THREAT: CRYOGENIC CODE FREEZE</text>
-        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🐺 SLAIN WITH WOLF PYTHON KERNEL</text>
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">UNCHECKED HEAP ALLOCATIONS</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: VOLATILE RAM CONSUMPTION</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#08101a" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🦅 HUNTED BY AQUAOS MEMORY ENGINE</text>
       </g>
     </g>
     <g transform="translate(292, 0)">
-      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
-      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 2 &#8226; THE NIGHT KING</text>
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0b1320" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">PREY 2 &#8226; RACE CONDITION HYDRA</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">RACE CONDITIONS &amp; DEADLOCKS</tspan></text>
-        <text x="0" y="20" fill="#64748b">THREAT: INFINITE RECURSIVE HORDE</text>
-        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🐺 SHATTERED WITH POSIX ISOLATION</text>
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">ASYNC THREAD DEADLOCKS</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: THREAD DESYNCHRONIZATION</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#08101a" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; ⚡ SHATTERED WITH POSIX ISOLATION</text>
       </g>
     </g>
     <g transform="translate(584, 0)">
-      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
-      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 3 &#8226; LANNISTER DEBT</text>
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0b1320" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">PREY 3 &#8226; SPAGHETTI AST BEHEMOTH</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">SPAGHETTI LOGIC &amp; UNTYPED STATE</tspan></text>
-        <text x="0" y="20" fill="#64748b">THREAT: UNCONTROLLED FRONTEND BLOWOUT</text>
-        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🦁 REIGNED IN WITH STRICT TYPESCRIPT</text>
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">UNSTRUCTURED FRONTEND STATE</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: UNCONTROLLED UI REGRESSION</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#08101a" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🦅 ANCHORED BY REACT 19 & TYPESCRIPT</text>
       </g>
     </g>
     <g transform="translate(0, 135)">
-      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
-      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 4 &#8226; IRON FLEET HORDE</text>
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0b1320" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">PREY 4 &#8226; DATABASE CONGESTION TITAN</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">DATABASE CONGESTION &amp; SCALE DROPS</tspan></text>
-        <text x="0" y="20" fill="#64748b">THREAT: HIGH PACKET STORMS</text>
-        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🦁 FORTIFIED WITH POSTGRES &amp; NEXT.JS</text>
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">UNINDEXED DISK BOTTLENECKS</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: SLOW QUERY ESCALATIONS</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#08101a" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; ⚡ FORTIFIED WITH OPTIMIZED POSTGRES</text>
       </g>
     </g>
     <g transform="translate(292, 135)">
-      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
-      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 5 &#8226; SKY DRIFT CHAOS</text>
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0b1320" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">PREY 5 &#8226; AI COGNITIVE DRIFT CHAOS</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
-        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">AI MODEL DECAY &amp; LATENCY</tspan></text>
-        <text x="0" y="20" fill="#64748b">THREAT: DRIFTING DATA PATTERNS</text>
-        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🦅 ANCHORED BY NUTRI-AI COGNITION</text>
+        <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">MODEL ACCURACY DEGRADATION</tspan></text>
+        <text x="0" y="20" fill="#64748b">THREAT: DRIFTING DATA DISTRIBUTIONS</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#08101a" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🦅 PINPOINTED BY NUTRI-AI TELEMETRY</text>
       </g>
     </g>
     <g transform="translate(584, 135)">
-      <rect x="0" y="0" width="280" height="122" rx="4" fill="#070e1c" stroke="#1a3150" stroke-width="1.2" />
-      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0d1b30" />
-      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8" letter-spacing="1">BOSS 6 &#8226; CERSEI'S WILDFIRE</text>
+      <rect x="0" y="0" width="280" height="122" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <rect x="0" y="0" width="280" height="26" rx="4" fill="#0b1320" />
+      <text x="14" y="17" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="1">PREY 6 &#8226; SERVER CRASH WILDFIRE</text>
       
       <g transform="translate(14, 46)" font-family="'Courier New', monospace" font-size="10.5">
         <text x="0" y="0" fill="#94a3b8">FOE: <tspan fill="#f8fafc" font-weight="800">UNHANDLED EXCEPTION CASCADES</tspan></text>
-        <text x="0" y="20" fill="#64748b">THREAT: VOLATILE SERVER OUTAGES</text>
-        <rect x="0" y="32" width="252" height="24" rx="2" fill="#0c182c" stroke="#10b981" stroke-width="0.8" />
-        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; 🦅 MONITORED BY REAL-TIME TELEMETRY</text>
+        <text x="0" y="20" fill="#64748b">THREAT: OUTAGE SERVICE STORMS</text>
+        <rect x="0" y="32" width="252" height="24" rx="2" fill="#08101a" stroke="#10b981" stroke-width="0.8" />
+        <text x="126" y="48" text-anchor="middle" font-size="9.5" font-weight="800" fill="#10b981">&gt; ⚡ SUB-MS CI/CD FAILSAFE PIPELINES</text>
       </g>
     </g>
   </g>

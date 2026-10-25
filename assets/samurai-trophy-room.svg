@@ -1,57 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="trophyBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040812" />
-      <stop offset="100%" stop-color="#071120" />
+    <linearGradient id="apexTrophyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#060c18" />
     </linearGradient>
   </defs>
 
-  <rect width="920" height="220" rx="6" fill="url(#trophyBg)" />
-  <rect width="920" height="220" rx="6" fill="none" stroke="#162942" stroke-width="1.5" />
+  <rect width="920" height="220" rx="6" fill="url(#apexTrophyBg)" />
+  <rect width="920" height="220" rx="6" fill="none" stroke="#162234" stroke-width="1.5" />
 
   <g transform="translate(24, 25)">
-    <!-- 4 Trophies Cards -->
-    <!-- 01: The Wolf Feat -->
+    <!-- Card 1: AquaOS -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#060e1a" stroke="#1e3a5f" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="28">🐺</text>
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="26">⚡</text>
       <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">AquaOS</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8">WOLF RESILIENCE</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">OS KERNEL &amp; POSIX</text>
-      <line x1="20" y1="142" x2="180" y2="142" stroke="#162942" />
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24">KERNEL RAPTOR</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">POSIX PROCESS CORE</text>
+      <line x1="20" y1="142" x2="180" y2="142" stroke="#162234" />
       <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">UNBROKEN KERNEL</text>
     </g>
 
-    <!-- 02: The Lion Feat -->
+    <!-- Card 2: Live Markdown -->
     <g transform="translate(224, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#0d1109" stroke="#5a3d08" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="28">🦁</text>
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="26">📜</text>
       <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Markdown</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#f59e0b">LION DOMINION</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">FULL-STACK CASTLE</text>
-      <line x1="20" y1="142" x2="180" y2="142" stroke="#162942" />
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#ffffff">AST COMPILER</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">REACTIVE PARSER</text>
+      <line x1="20" y1="142" x2="180" y2="142" stroke="#162234" />
       <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#fbbf24">SUB-MS AST PARSING</text>
     </g>
 
-    <!-- 03: The Eagle Feat -->
+    <!-- Card 3: Nutri-ai -->
     <g transform="translate(448, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#04121a" stroke="#0e5a6f" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="28">🦅</text>
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="26">🧠</text>
       <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Nutri-ai</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#06b6d4">EAGLE VISION</text>
-      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">COGNITIVE AI ORACLE</text>
-      <line x1="20" y1="142" x2="180" y2="142" stroke="#162942" />
-      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#06b6d4">DEEP MODEL DIAGNOSTICS</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#38bdf8">COGNITIVE AI</text>
+      <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">DIAGNOSTIC ORACLE</text>
+      <line x1="20" y1="142" x2="180" y2="142" stroke="#162234" />
+      <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#0ea5e9">INTELLIGENT MODELS</text>
     </g>
 
-    <!-- 04: The Citadel S+ Master -->
+    <!-- Card 4: Apex S+ Master -->
     <g transform="translate(672, 0)">
-      <rect x="0" y="0" width="200" height="170" rx="4" fill="#080e1a" stroke="#1e3557" stroke-width="1.2" />
-      <text x="100" y="38" text-anchor="middle" font-size="28">⚔️</text>
+      <rect x="0" y="0" width="200" height="170" rx="4" fill="#04070e" stroke="#1e2c40" stroke-width="1.2" />
+      <text x="100" y="38" text-anchor="middle" font-size="26">🦅</text>
       <text x="100" y="78" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="900" fill="#f8fafc">Grade S+</text>
-      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#10b981">TRI-APEX MASTER</text>
+      <text x="100" y="104" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#10b981">APEX MASTER</text>
       <text x="100" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#94a3b8">AVISH KUMAR</text>
-      <line x1="20" y1="142" x2="180" y2="142" stroke="#162942" />
+      <line x1="20" y1="142" x2="180" y2="142" stroke="#162234" />
       <text x="100" y="156" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="700" fill="#10b981">ZERO TECHNICAL DEBT</text>
     </g>
   </g>

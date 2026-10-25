@@ -462,14 +462,14 @@ function getPreviewHtml(readmeMd) {
   <!-- Top Action Header -->
   <header class="top-bar">
     <div class="brand-group">
-      <div class="brand-sigil">🐺 🦁 🦅</div>
+      <div class="brand-sigil">🦅</div>
       <div>
-        <div class="brand-title">TRI-APEX ARCHITECT // WOLF • LION • EAGLE</div>
-        <div class="brand-subtitle">avish2142005 / README.md &bull; Live Preview</div>
+        <div class="brand-title">THE APEX RAPTOR // AQUILA PRIME</div>
+        <div class="brand-subtitle">avish2142005 / README.md &bull; Live Stratospheric Preview</div>
       </div>
     </div>
     <div class="action-controls">
-      <button class="btn btn-secondary" onclick="toggleSnow()">❄️ Toggle Snow</button>
+      <button class="btn btn-secondary" onclick="toggleSnow()">✨ Toggle Atmosphere</button>
       <button class="btn btn-secondary" onclick="copyMarkdown()">📋 Copy Markdown</button>
       <a class="btn btn-primary" href="https://github.com/avish2142005" target="_blank">🌐 GitHub Profile</a>
     </div>
@@ -479,20 +479,20 @@ function getPreviewHtml(readmeMd) {
     <!-- Left Sidebar: GitHub User Card -->
     <aside class="sidebar-profile">
       <div class="avatar-wrapper">
-        <img src="https://avatars.githubusercontent.com/u/192861318?v=4" alt="Avish Kumar Avatar" class="avatar-img" onerror="this.src='./assets/got-jon-snow-commander.png'">
+        <img src="https://avatars.githubusercontent.com/u/192861318?v=4" alt="Avish Kumar Avatar" class="avatar-img" onerror="this.src='./assets/got-hero-banner.svg'">
       </div>
       <div class="user-names">
         <div class="user-fullname">Avish Kumar</div>
         <div class="user-handle">avish2142005</div>
       </div>
       <div class="user-bio">
-        "Tri-Apex Architect of Code. Unifying Low-Level OS Kernels (Wolf), Sovereign Full-Stack Citadels (Lion), and Cognitive AI Telemetry (Eagle)."
+        "The Apex Raptor of Code. Sovereign of the Stratosphere. 30,000-ft Macro-Vision, Terminal Dive-Strike Latency &amp; Cognitive AI Telemetry."
       </div>
       <ul class="user-details">
-        <li>🐺 <strong>The Wolf:</strong> AquaOS Kernel Engine</li>
-        <li>🦁 <strong>The Lion:</strong> Live Markdown Fortress</li>
-        <li>🦅 <strong>The Eagle:</strong> Nutri-ai Cognitive Models</li>
-        <li>👑 <strong>Mastery:</strong> Tri-Apex Grade S+</li>
+        <li>👁️ <strong>Macro-Vision:</strong> 360° Topology Clarity</li>
+        <li>⚡ <strong>Talon Strike:</strong> AquaOS Kernel (Python/POSIX)</li>
+        <li>🧠 <strong>AI Oracle:</strong> Nutri-ai Cognitive Models</li>
+        <li>👑 <strong>Combat Rank:</strong> Apex Raptor Grade S+</li>
       </ul>
     </aside>
 
@@ -504,7 +504,7 @@ function getPreviewHtml(readmeMd) {
           <span>/</span>
           <strong>README.md</strong>
         </div>
-        <span style="color: #10b981; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace;">● GAME OF THRONES THEME ACTIVE</span>
+        <span style="color: #fbbf24; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace;">● APEX RAPTOR THEME ACTIVE</span>
       </div>
 
       <article class="readme-content" id="readme-article">

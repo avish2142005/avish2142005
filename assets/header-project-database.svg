@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 86" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="gotHdrBg_03" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#040914" />
-      <stop offset="50%" stop-color="#081224" />
-      <stop offset="100%" stop-color="#03060c" />
+    <linearGradient id="apexHdrBg_03" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="50%" stop-color="#080e18" />
+      <stop offset="100%" stop-color="#000000" />
     </linearGradient>
-    <filter id="hdrGlow_03" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="hdrLaser_03" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
@@ -21,35 +21,33 @@
     </style>
   </defs>
 
-  <!-- Background Slab -->
-  <rect width="920" height="86" rx="4" fill="url(#gotHdrBg_03)" />
-  <rect width="920" height="86" rx="4" fill="none" stroke="#16253c" stroke-width="1.2" />
-  <rect width="920" height="86" rx="4" fill="none" stroke="#38bdf8" stroke-width="2" class="laser-edge_03" filter="url(#hdrGlow_03)" />
+  <!-- Background Obsidian Slab -->
+  <rect width="920" height="86" rx="4" fill="url(#apexHdrBg_03)" />
+  <rect width="920" height="86" rx="4" fill="none" stroke="#162232" stroke-width="1.2" />
+  <rect width="920" height="86" rx="4" fill="none" stroke="#f59e0b" stroke-width="2" class="laser-edge_03" filter="url(#hdrLaser_03)" />
 
   <!-- Section Number Badge -->
   <g transform="translate(20, 20)">
-    <rect x="0" y="0" width="70" height="46" rx="3" fill="#0c182c" stroke="#38bdf8" stroke-width="1.5" />
-    <path d="M 0 0 L 10 0 L 0 10 Z" fill="#38bdf8" />
-    <text x="35" y="30" text-anchor="middle" font-family="'Cinzel', monospace" font-size="20" font-weight="900" fill="#38bdf8">03</text>
+    <rect x="0" y="0" width="70" height="46" rx="3" fill="#090f1a" stroke="#f59e0b" stroke-width="1.5" />
+    <path d="M 0 0 L 10 0 L 0 10 Z" fill="#f59e0b" />
+    <text x="35" y="30" text-anchor="middle" font-family="'Cinzel', monospace" font-size="20" font-weight="900" fill="#fbbf24">03</text>
   </g>
 
   <!-- Main Title & Hierarchy -->
   <g transform="translate(108, 32)">
-    <text x="0" y="0" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc" letter-spacing="2.5">CITADEL VAULTS // REALM REPOSITORIES</text>
-    <text x="0" y="24" font-family="'Courier New', monospace" font-size="11.5" font-weight="700" fill="#7dd3fc" letter-spacing="1.5">AQUAOS (WOLF) &#8226; LIVE MARKDOWN (LION) &#8226; NUTRI-AI (EAGLE)</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="20" font-weight="900" fill="#f8fafc" letter-spacing="2.5">STRATOSPHERIC VAULTS // CODE REPOSITORIES</text>
+    <text x="0" y="24" font-family="'Courier New', monospace" font-size="11.5" font-weight="700" fill="#fbbf24" letter-spacing="1.5">NUTRI-AI (ORACLE) &#8226; AQUAOS (KERNEL) &#8226; LIVE MARKDOWN (AST)</text>
   </g>
 
-  <!-- Tri-Sigil Embellishment (Right: Wolf, Lion, Eagle Vector) -->
+  <!-- Eagle Eye Glyphic Embellishment (Right) -->
   <g transform="translate(850, 43)">
-    <circle cx="0" cy="0" r="22" fill="#0a1424" stroke="#1e3a5f" stroke-width="1.5" />
-    <!-- Triad Glyph Points -->
-    <circle cx="0" cy="-8" r="3" fill="#38bdf8" />
-    <circle cx="-7" cy="6" r="3" fill="#f59e0b" />
-    <circle cx="7" cy="6" r="3" fill="#06b6d4" />
-    <polygon points="0,-8 7,6 -7,6" fill="none" stroke="#64748b" stroke-width="0.8" />
+    <circle cx="0" cy="0" r="22" fill="#070c14" stroke="#f59e0b" stroke-width="1.5" />
+    <ellipse cx="0" cy="0" rx="12" ry="7" fill="#d97706" />
+    <circle cx="0" cy="0" r="3.5" fill="#000000" />
+    <circle cx="-2" cy="-2" r="1.2" fill="#ffffff" />
   </g>
 
-  <!-- Valyrian Blade Underline -->
-  <line x1="108" y1="68" x2="800" y2="68" stroke="#162a45" stroke-width="1" />
-  <line x1="108" y1="68" x2="320" y2="68" stroke="#38bdf8" stroke-width="1.5" />
+  <!-- Talon Underline -->
+  <line x1="108" y1="68" x2="800" y2="68" stroke="#162232" stroke-width="1" />
+  <line x1="108" y1="68" x2="320" y2="68" stroke="#f59e0b" stroke-width="1.5" />
 </svg>

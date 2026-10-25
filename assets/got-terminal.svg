@@ -1,30 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#03060c" />
-      <stop offset="100%" stop-color="#070e1c" />
+    <linearGradient id="apexTermBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#060c18" />
     </linearGradient>
   </defs>
 
-  <rect width="920" height="220" rx="6" fill="url(#termBg)" />
-  <rect width="920" height="220" rx="6" fill="none" stroke="#162942" stroke-width="1.5" />
+  <rect width="920" height="220" rx="6" fill="url(#apexTermBg)" />
+  <rect width="920" height="220" rx="6" fill="none" stroke="#162234" stroke-width="1.5" />
 
   <!-- Terminal Top Bar -->
   <g transform="translate(0, 0)">
-    <rect width="920" height="34" rx="6" fill="#08101f" />
+    <rect width="920" height="34" rx="6" fill="#090f1a" />
     <circle cx="20" cy="17" r="5" fill="#ef4444" />
     <circle cx="36" cy="17" r="5" fill="#f59e0b" />
     <circle cx="52" cy="17" r="5" fill="#10b981" />
-    <text x="460" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#7dd3fc">TRI-APEX TERMINAL // SHELL: BASH // REALM: AVISH2142005</text>
+    <text x="460" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#fbbf24">AQUILA TERMINAL // SHELL: BASH // REALM: AVISH2142005</text>
   </g>
 
   <!-- Shell Output -->
   <g transform="translate(24, 60)" font-family="'Courier New', monospace" font-size="12" font-weight="700">
-    <text x="0" y="0" fill="#38bdf8">root@westeros:~# <tspan fill="#f8fafc">tri-apex-status --all-disciplines</tspan></text>
-    <text x="0" y="24" fill="#94a3b8">&gt; [WOLF]  Systems Engine: AquaOS Kernel loaded. POSIX Isolation active. [OK]</text>
-    <text x="0" y="46" fill="#f59e0b">&gt; [LION]  Full-Stack Core: Live Markdown AST compiled. React 19 deployed. [OK]</text>
-    <text x="0" y="68" fill="#06b6d4">&gt; [EAGLE] AI Telemetry: Nutri-ai models calibrated. Latency: 1.2ms. [OK]</text>
-    <text x="0" y="92" fill="#10b981">&gt; STATUS: ALL 3 ARCHETYPES OPERATIONAL. ZERO REGRESSIONS DETECTED.</text>
-    <text x="0" y="118" fill="#38bdf8">root@westeros:~# <tspan fill="#f8fafc">echo "Ready for enterprise conquests."</tspan> █</text>
+    <text x="0" y="0" fill="#f59e0b">root@aquila-prime:~# <tspan fill="#f8fafc">aquila-telemetry --status --all-disciplines</tspan></text>
+    <text x="0" y="24" fill="#94a3b8">&gt; [RADAR] Stratospheric scan complete. 360° perimeter clear.</text>
+    <text x="0" y="46" fill="#fbbf24">&gt; [TALON] Kernel isolation active: AquaOS loaded. Zero memory leaks. [OK]</text>
+    <text x="0" y="68" fill="#38bdf8">&gt; [VISION] Cognitive models armed: Nutri-ai operational. Latency: 1.2ms. [OK]</text>
+    <text x="0" y="92" fill="#10b981">&gt; STATUS: APEX PREDATOR READY. ZERO TECHNICAL DEBT DETECTED.</text>
+    <text x="0" y="118" fill="#f59e0b">root@aquila-prime:~# <tspan fill="#f8fafc">echo "Eyes on the horizon. Ready to build."</tspan> █</text>
   </g>
 </svg>
