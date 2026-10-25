@@ -24,30 +24,31 @@
 
 
 <!-- ======================================================== -->
-<!-- JON SNOW // THE WHITE WOLF OF CODE CHRONICLES            -->
+<!-- SIGILS OF WESTEROS // APEX GUARDIANS OF THE REALM        -->
 <!-- ======================================================== -->
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="25%" align="center" valign="middle">
-      <img src="./assets/got-jon-snow-commander.png" width="94%" style="border-radius: 8px; border: 1px solid #1e3a5f;" alt="Jon Snow - Lord Commander of the Night's Watch" />
+    <td width="33.3%" align="center" valign="middle">
+      <img src="./assets/got-sigil-direwolf.png" width="92%" style="border-radius: 8px; border: 1.5px solid #38bdf8;" alt="House Stark - The White Direwolf of Winterfell" />
       <br/>
-      <sub><strong style="color: #38bdf8;">I. THE LORD COMMANDER</strong></sub>
+      <sub><strong style="color: #38bdf8; font-size: 13px;">I. THE DIREWOLF // HOUSE STARK</strong></sub>
+      <br/>
+      <sub><strong style="color: #cbd5e1;">"Winter Is Coming • The White Wolf of Code"</strong></sub>
     </td>
-    <td width="25%" align="center" valign="middle">
-      <img src="./assets/got-jon-snow-blade.png" width="94%" style="border-radius: 8px; border: 1px solid #1e3a5f;" alt="Jon Snow - Longclaw Valyrian Steel Blade" />
+    <td width="33.3%" align="center" valign="middle">
+      <img src="./assets/got-sigil-lion.png" width="92%" style="border-radius: 8px; border: 1.5px solid #f59e0b;" alt="House Lannister - The Golden Lion of Casterly Rock" />
       <br/>
-      <sub><strong style="color: #94a3b8;">II. VALYRIAN STEEL</strong></sub>
+      <sub><strong style="color: #f59e0b; font-size: 13px;">II. THE GOLDEN LION // HOUSE LANNISTER</strong></sub>
+      <br/>
+      <sub><strong style="color: #cbd5e1;">"Hear Me Roar • Unyielding Bastion Strength"</strong></sub>
     </td>
-    <td width="25%" align="center" valign="middle">
-      <img src="./assets/got-jon-snow-bastards.png" width="94%" style="border-radius: 8px; border: 1px solid #1e3a5f;" alt="Jon Snow - Battle of the Bastards" />
+    <td width="33.3%" align="center" valign="middle">
+      <img src="./assets/got-sigil-eagle.png" width="92%" style="border-radius: 8px; border: 1.5px solid #38bdf8;" alt="House Arryn - The High Eagle of the Eyrie" />
       <br/>
-      <sub><strong style="color: #38bdf8;">III. THE STAND</strong></sub>
-    </td>
-    <td width="25%" align="center" valign="middle">
-      <img src="./assets/got-jon-snow-vigil.png" width="94%" style="border-radius: 8px; border: 1px solid #1e3a5f;" alt="Jon Snow - Night Vigil on The Wall" />
+      <sub><strong style="color: #38bdf8; font-size: 13px;">III. THE HIGH EAGLE // HOUSE ARRYN</strong></sub>
       <br/>
-      <sub><strong style="color: #94a3b8;">IV. THE WALL VIGIL</strong></sub>
+      <sub><strong style="color: #cbd5e1;">"As High As Honor • Apex Vision & Precision"</strong></sub>
     </td>
   </tr>
 </table>

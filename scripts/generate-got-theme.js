@@ -5,11 +5,13 @@ const assetsDir = path.resolve(__dirname, "../assets");
 
 console.log("[generate-got-theme] Crafting Game of Thrones Valyrian Theme for Avish Kumar (@avish2142005)...");
 
-// Read Jon Snow commander image as base64 for embedding in the SVG dossier
-const commanderImgPath = path.join(assetsDir, "got-jon-snow-commander.png");
+// Read Direwolf / Commander image as base64 for embedding in the SVG dossier
+const wolfImgPath = fs.existsSync(path.join(assetsDir, "got-sigil-direwolf.png"))
+  ? path.join(assetsDir, "got-sigil-direwolf.png")
+  : path.join(assetsDir, "got-jon-snow-commander.png");
 let commanderBase64 = "";
-if (fs.existsSync(commanderImgPath)) {
-  const buf = fs.readFileSync(commanderImgPath);
+if (fs.existsSync(wolfImgPath)) {
+  const buf = fs.readFileSync(wolfImgPath);
   commanderBase64 = `data:image/png;base64,${buf.toString("base64")}`;
 }
 
@@ -411,7 +413,7 @@ function getGotSectionHeaderSvg(num, title, subtitle) {
 function getOperativeDossierSvg() {
   const avatarImageXml = commanderBase64
     ? `<image href="${commanderBase64}" xlink:href="${commanderBase64}" x="-76" y="-76" width="152" height="152" preserveAspectRatio="xMidYMid slice" clip-path="url(#wolfAvatarClip)" />`
-    : `<image href="got-jon-snow-commander.png" xlink:href="got-jon-snow-commander.png" x="-76" y="-76" width="152" height="152" preserveAspectRatio="xMidYMid slice" clip-path="url(#wolfAvatarClip)" />`;
+    : `<image href="got-sigil-direwolf.png" xlink:href="got-sigil-direwolf.png" x="-76" y="-76" width="152" height="152" preserveAspectRatio="xMidYMid slice" clip-path="url(#wolfAvatarClip)" />`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 920 490" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
