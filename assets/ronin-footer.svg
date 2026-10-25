@@ -1,39 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 240" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="apexFooterBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#000000" />
-      <stop offset="50%" stop-color="#050a14" />
-      <stop offset="100%" stop-color="#000000" />
+    <linearGradient id="regalFooterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070503" />
+      <stop offset="50%" stop-color="#120c06" />
+      <stop offset="100%" stop-color="#070503" />
     </linearGradient>
-    <linearGradient id="apexFooterGold" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="regalFooterGold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#fef3c7" />
       <stop offset="100%" stop-color="#f59e0b" />
     </linearGradient>
   </defs>
 
-  <rect width="1600" height="240" fill="url(#apexFooterBg)" />
-  <rect x="16" y="16" width="1568" height="208" rx="4" fill="none" stroke="#162234" stroke-width="1.2" />
+  <rect width="1600" height="240" fill="url(#regalFooterBg)" />
+  <rect x="16" y="16" width="1568" height="208" rx="4" fill="none" stroke="#2e1f10" stroke-width="1.2" />
 
-  <!-- Central Raptor Wing Lines -->
-  <g transform="translate(800, 70)">
-    <!-- Wings Vector -->
-    <path d="M 0 0 C -80 -40 -240 -30 -360 10 C -240 0 -120 5 0 20 C 120 5 240 0 360 10 C 240 -30 80 -40 0 0 Z" fill="#0b1320" stroke="#f59e0b" stroke-width="1.2" />
-    
-    <!-- Central Eagle Eye -->
-    <ellipse cx="0" cy="8" rx="14" ry="8" fill="#d97706" />
-    <circle cx="0" cy="8" r="4" fill="#000000" />
-    <circle cx="-2" cy="6" r="1.5" fill="#ffffff" />
+  <g transform="translate(800, 68)">
+    <line x1="-320" y1="0" x2="-30" y2="0" stroke="#f59e0b" stroke-width="1.2" />
+    <polygon points="0,-10 10,0 0,10 -10,0" fill="#fbbf24" />
+    <circle cx="0" cy="0" r="3" fill="#ffffff" />
+    <line x1="30" y1="0" x2="320" y2="0" stroke="#f59e0b" stroke-width="1.2" />
   </g>
 
   <!-- Monolithic Signature -->
   <g transform="translate(800, 130)" text-anchor="middle">
-    <text x="0" y="0" font-family="'Cinzel', serif" font-size="24" font-weight="900" fill="url(#apexFooterGold)" letter-spacing="4">AVISH KUMAR &#8226; THE APEX RAPTOR OF CODE</text>
-    <text x="0" y="30" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="2">EYES ON THE HORIZON &#8226; TALONS ON THE TARGET &#8226; SOLITARY RULER OF THE STRATOSPHERE</text>
+    <text x="0" y="0" font-family="'Cinzel', serif" font-size="24" font-weight="900" fill="url(#regalFooterGold)" letter-spacing="4">AVISH KUMAR &#8226; SOFTWARE ENGINEER &amp; SYSTEMS ARCHITECT</text>
+    <text x="0" y="30" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#a1a1aa" letter-spacing="2">CLEAN ARCHITECTURAL ABSTRACTIONS &#8226; STRICT TYPE SAFETY &#8226; ENTERPRISE PERFORMANCE</text>
   </g>
 
   <!-- Coordinates & Build Stamp -->
-  <g transform="translate(800, 195)" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#64748b" letter-spacing="1.5">
-    <text x="0" y="0">[ AQUILA-01 // PROTOCOL 0x777 // OBSIDIAN CHASM &amp; AMBER TALONS // GRADE S+ ]</text>
+  <g transform="translate(800, 195)" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#71717a" letter-spacing="1.5">
+    <text x="0" y="0">[ AVISH2142005 // PROFESSIONAL REPOSITORY SUITE // ROYAL GOLD THEME // GRADE S+ ]</text>
   </g>
 </svg>

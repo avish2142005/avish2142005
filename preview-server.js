@@ -462,10 +462,10 @@ function getPreviewHtml(readmeMd) {
   <!-- Top Action Header -->
   <header class="top-bar">
     <div class="brand-group">
-      <div class="brand-sigil">🦅</div>
+      <div class="brand-sigil">🦁</div>
       <div>
-        <div class="brand-title">THE APEX RAPTOR // AQUILA PRIME</div>
-        <div class="brand-subtitle">avish2142005 / README.md &bull; Live Stratospheric Preview</div>
+        <div class="brand-title">AVISH KUMAR // SOFTWARE ENGINEER &amp; SYSTEMS ARCHITECT</div>
+        <div class="brand-subtitle">avish2142005 / README.md &bull; Professional Portfolio Preview</div>
       </div>
     </div>
     <div class="action-controls">
@@ -486,13 +486,13 @@ function getPreviewHtml(readmeMd) {
         <div class="user-handle">avish2142005</div>
       </div>
       <div class="user-bio">
-        "The Apex Raptor of Code. Sovereign of the Stratosphere. 30,000-ft Macro-Vision, Terminal Dive-Strike Latency &amp; Cognitive AI Telemetry."
+        "Software Engineer &amp; Full-Stack Systems Architect. Focused on scalable web fortresses, modular OS kernels, and cognitive AI integration."
       </div>
       <ul class="user-details">
-        <li>👁️ <strong>Macro-Vision:</strong> 360° Topology Clarity</li>
-        <li>⚡ <strong>Talon Strike:</strong> AquaOS Kernel (Python/POSIX)</li>
-        <li>🧠 <strong>AI Oracle:</strong> Nutri-ai Cognitive Models</li>
-        <li>👑 <strong>Combat Rank:</strong> Apex Raptor Grade S+</li>
+        <li>💻 <strong>Full-Stack:</strong> React 19, TypeScript, Next.js</li>
+        <li>⚙️ <strong>Systems:</strong> AquaOS Kernel (Python/POSIX)</li>
+        <li>🧠 <strong>AI Models:</strong> Nutri-ai Diagnostics Platform</li>
+        <li>🏆 <strong>Code Rating:</strong> Enterprise Grade S+</li>
       </ul>
     </aside>
 
@@ -504,7 +504,7 @@ function getPreviewHtml(readmeMd) {
           <span>/</span>
           <strong>README.md</strong>
         </div>
-        <span style="color: #fbbf24; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace;">● APEX RAPTOR THEME ACTIVE</span>
+        <span style="color: #fbbf24; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace;">● ROYAL GOLD PROFESSIONAL THEME ACTIVE</span>
       </div>
 
       <article class="readme-content" id="readme-article">

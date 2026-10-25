@@ -1,301 +1,290 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Background: Pitch Black Obsidian Void (0x000000) -->
-    <linearGradient id="apexVoidBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#000000" />
-      <stop offset="35%" stop-color="#020408" />
-      <stop offset="70%" stop-color="#050a12" />
-      <stop offset="100%" stop-color="#000000" />
+    <!-- Deep Espresso & Obsidian Canvas -->
+    <linearGradient id="regalCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070503" />
+      <stop offset="35%" stop-color="#0e0a06" />
+      <stop offset="70%" stop-color="#140f09" />
+      <stop offset="100%" stop-color="#080604" />
     </linearGradient>
 
-    <!-- Glowing Amber Gold Gradient (Eagle's Eye & Beak) -->
-    <linearGradient id="raptorAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Royal Sunlit Gold Gradient -->
+    <linearGradient id="royalGold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="40%" stop-color="#fbbf24" />
+      <stop offset="70%" stop-color="#fde047" />
       <stop offset="100%" stop-color="#d97706" />
     </linearGradient>
 
-    <!-- Diamond Silver Plumage Gradient -->
-    <linearGradient id="featherSilver" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Metallic Platinum / Warm Ivory -->
+    <linearGradient id="platinumText" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="40%" stop-color="#f1f5f9" />
-      <stop offset="75%" stop-color="#cbd5e1" />
-      <stop offset="100%" stop-color="#94a3b8" />
+      <stop offset="50%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#cbd5e1" />
     </linearGradient>
 
-    <!-- Stratosphere Atmosphere Gradient -->
-    <linearGradient id="stratosphereSky" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0ea5e9" />
-      <stop offset="100%" stop-color="#38bdf8" />
-    </linearGradient>
+    <!-- Warm Amber Glow Filter -->
+    <filter id="royalGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
 
-    <!-- Ambient Predator Lighting Aura -->
-    <radialGradient id="predatorAura" cx="20%" cy="45%" r="60%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.18" />
-      <stop offset="30%" stop-color="#0ea5e9" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Subtle Stealth Grid -->
-    <pattern id="stealthGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0a121e" stroke-width="0.8" opacity="0.6" />
-      <circle cx="40" cy="40" r="1" fill="#f59e0b" opacity="0.25" />
+    <pattern id="regalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#24190e" stroke-width="0.8" opacity="0.6" />
+      <circle cx="40" cy="40" r="1.2" fill="#f59e0b" opacity="0.3" />
     </pattern>
 
-    <!-- Amber Predator Eye Glow Filter -->
-    <filter id="eyeGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-    <filter id="laserGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
     <style>
-      @keyframes amberLaserScan {
+      @keyframes goldLaserTrace {
         0% { stroke-dashoffset: 4400; }
         100% { stroke-dashoffset: 0; }
       }
-      @keyframes radarSweep {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-      @keyframes eyePulse {
-        0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 4px #fbbf24); }
-        50% { opacity: 1; filter: drop-shadow(0 0 16px #f59e0b); }
-      }
-      .laser-amber-border {
+      .laser-gold-border {
         stroke-dasharray: 260 4140;
-        animation: amberLaserScan 9s linear infinite;
+        animation: goldLaserTrace 8s linear infinite;
       }
-      .eye-pulse { animation: eyePulse 3.5s ease-in-out infinite; }
-      .radar-arm { transform-origin: 220px 240px; animation: radarSweep 12s linear infinite; }
     </style>
   </defs>
 
-  <!-- Pitch Black Void Base -->
-  <rect width="1600" height="520" fill="url(#apexVoidBg)" />
-  <rect width="1600" height="520" fill="url(#stealthGrid)" />
-  <circle cx="280" cy="260" r="480" fill="url(#predatorAura)" />
+  <!-- Base Canvas -->
+  <rect width="1600" height="520" fill="url(#regalCanvasBg)" />
+  <rect width="1600" height="520" fill="url(#regalGrid)" />
 
-  <!-- Perimeter Obsidian & Amber Hairline Border -->
-  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#182232" stroke-width="1.5" />
-  <rect x="22" y="22" width="1556" height="476" rx="4" fill="none" stroke="#0a0f18" stroke-width="1" />
-  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#f59e0b" stroke-width="2" class="laser-amber-border" filter="url(#laserGlow)" />
+  <!-- Ambient Radiant Glow Well Behind Lion -->
+  <circle cx="280" cy="260" r="380" fill="#f59e0b" opacity="0.12" filter="url(#royalGlow)" />
+  <circle cx="1200" cy="180" r="320" fill="#fbbf24" opacity="0.08" filter="url(#royalGlow)" />
 
-  <!-- Tactical HUD Corner Brackets -->
+  <!-- Perimeter Royal Gold Borders -->
+  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#2e1f10" stroke-width="1.5" />
+  <rect x="22" y="22" width="1556" height="476" rx="4" fill="none" stroke="#1c1208" stroke-width="1" />
+  <rect x="16" y="16" width="1568" height="488" rx="6" fill="none" stroke="#f59e0b" stroke-width="2" class="laser-gold-border" filter="url(#royalGlow)" />
+
+  <!-- Classical Royal Corner Ornaments -->
   <g fill="none" stroke="#f59e0b" stroke-width="1.8">
-    <path d="M 16 70 L 70 16 M 16 35 L 35 16 M 16 16 L 100 16 M 16 16 L 16 100" />
-    <circle cx="40" cy="40" r="3.5" fill="#f59e0b" />
+    <path d="M 16 65 L 65 16 M 16 35 L 35 16 M 16 16 L 90 16 M 16 16 L 16 90" />
+    <circle cx="38" cy="38" r="3.5" fill="#fbbf24" />
 
-    <path d="M 1584 70 L 1530 16 M 1584 35 L 1565 16 M 1584 16 L 1500 16 M 1584 16 L 1584 100" />
-    <circle cx="1560" cy="40" r="3.5" fill="#f59e0b" />
+    <path d="M 1584 65 L 1535 16 M 1584 35 L 1565 16 M 1584 16 L 1510 16 M 1584 16 L 1584 90" />
+    <circle cx="1562" cy="38" r="3.5" fill="#fbbf24" />
 
-    <path d="M 16 450 L 70 504 M 16 485 L 35 504 M 16 504 L 100 504 M 16 504 L 16 420" />
-    <circle cx="40" cy="480" r="3.5" fill="#38bdf8" />
+    <path d="M 16 455 L 65 504 M 16 485 L 35 504 M 16 504 L 90 504 M 16 504 L 16 430" />
+    <circle cx="38" cy="482" r="3.5" fill="#f59e0b" />
 
-    <path d="M 1584 450 L 1530 504 M 1584 485 L 1565 504 M 1584 504 L 1500 504 M 1584 504 L 1584 420" />
-    <circle cx="1560" cy="480" r="3.5" fill="#f59e0b" />
+    <path d="M 1584 455 L 1535 504 M 1584 485 L 1565 504 M 1584 504 L 1510 504 M 1584 504 L 1584 430" />
+    <circle cx="1562" cy="482" r="3.5" fill="#f59e0b" />
   </g>
 
-  <!-- LEFT HERO ARTWORK: The Majestic Chiaroscuro Eagle Emerging from the Black Void -->
-  <g transform="translate(60, 45)">
-    <!-- Concentric Stratospheric Radar Rings -->
-    <circle cx="220" cy="220" r="190" fill="none" stroke="#0f172a" stroke-width="1.5" />
-    <circle cx="220" cy="220" r="160" fill="none" stroke="#1e293b" stroke-width="1" stroke-dasharray="10 6" />
-    <circle cx="220" cy="220" r="130" fill="none" stroke="#0ea5e9" stroke-width="0.8" opacity="0.4" />
-    
-    <!-- Rotating Radar Sweep Line -->
-    <line x1="220" y1="220" x2="380" y2="220" stroke="#f59e0b" stroke-width="1" opacity="0.3" class="radar-arm" />
+  <!-- LEFT HERO ARTWORK: The Majestic Royal Lion Vector Artwork -->
+  <g transform="translate(70, 70)">
+    <!-- Decorative Royal Crest Frame -->
+    <circle cx="180" cy="190" r="175" fill="none" stroke="#3d2914" stroke-width="1.5" />
+    <circle cx="180" cy="190" r="165" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="8 6" opacity="0.6" />
+    <circle cx="180" cy="190" r="150" fill="#120c06" stroke="#f59e0b" stroke-width="2" />
 
-    <!-- Cardinal Coordinates -->
-    <g font-family="'Courier New', monospace" font-size="9" font-weight="900" fill="#64748b" text-anchor="middle">
-      <text x="220" y="24">360° STRATOSPHERE</text>
-      <text x="420" y="224">ALT 35K</text>
-      <text x="220" y="420">RADAR LOCK</text>
-      <text x="20" y="224">AQUILA</text>
-    </g>
-
-    <!-- The Chiaroscuro Eagle Artwork -->
+    <!-- Vector Lion Head Art -->
     
-  <g transform="translate(95, 75) scale(1.25)">
+  <g transform="translate(50, 45) scale(1.05)">
     
-    <!-- Ambient Predator Eye & Beak Glow -->
-    <radialGradient id="eagleEyeGlow_95_75" cx="55%" cy="38%" r="45%">
-      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.5" />
+    <!-- Ambient Sunlit Golden Glow -->
+    <radialGradient id="lionSunGlow_50_45" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.45" />
       <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.2" />
+      <stop offset="80%" stop-color="#b45309" stop-opacity="0.08" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
-    <circle cx="90" cy="70" r="140" fill="url(#eagleEyeGlow_95_75)" />
+    <circle cx="100" cy="110" r="160" fill="url(#lionSunGlow_50_45)" />
     
 
-    <!-- Shadow Silhouette Backdrop -->
-    <path d="M -40 220 C -20 160 -10 100 20 50 C 40 20 80 -10 130 -20 C 180 -10 210 20 230 70 C 245 110 250 160 260 220 Z" fill="#020306" />
-
-    <!-- Crown & Brow Plumage (Chiaroscuro Illuminated White & Silver Feathers) -->
-    <!-- Layer 1: Dark feather undertones -->
-    <path d="M 30 70 L 60 30 L 100 5 L 145 -5 L 185 10 L 210 40 L 215 80 L 195 95 L 170 70 L 140 75 L 115 60 L 80 75 Z" fill="#334155" />
-    <path d="M 40 85 L 75 45 L 120 20 L 160 15 L 190 35 L 195 75 L 175 80 L 145 65 L 110 70 L 80 85 Z" fill="#64748b" />
+    <!-- Mane Back Layer: Dark Tawny Espresso & Auburn Shadows -->
+    <path d="M 10 180 C -15 130 -20 70 5 20 C 30 -20 80 -45 135 -40 C 190 -45 235 -20 260 20 C 285 70 280 130 255 180 C 240 220 215 250 170 270 C 120 285 70 275 35 250 Z" fill="#261709" />
     
-    <!-- Layer 2: Mid-tone silver plumage -->
-    <path d="M 25 110 L 55 70 L 95 40 L 140 28 L 175 42 L 180 85 L 160 90 L 130 75 L 95 82 L 60 100 Z" fill="#94a3b8" />
-    <path d="M 15 140 L 45 95 L 80 65 L 125 50 L 160 60 L 165 95 L 145 95 L 115 85 L 75 98 L 40 130 Z" fill="#cbd5e1" />
-
-    <!-- Layer 3: High-contrast illuminated white crest feathers -->
-    <path d="M 10 170 L 35 120 L 70 85 L 110 68 L 145 75 L 150 102 L 130 102 L 100 90 L 60 108 L 25 160 Z" fill="#e2e8f0" />
-    <path d="M 5 200 L 25 150 L 55 110 L 95 88 L 130 92 L 135 115 L 115 112 L 85 102 L 45 125 L 15 190 Z" fill="#f8fafc" />
-    <path d="M 45 130 L 70 95 L 105 82 L 125 86 L 120 105 L 95 98 L 65 115 Z" fill="#ffffff" />
-    <path d="M 65 60 L 100 35 L 135 30 L 160 45 L 150 65 L 125 50 L 95 55 Z" fill="#ffffff" />
-    <path d="M 85 30 L 115 15 L 145 12 L 165 25 L 155 38 L 135 25 L 110 25 Z" fill="#ffffff" />
-
-    <!-- Feather detail streaks (Fine razor texture) -->
-    <g stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-linecap="round">
-      <line x1="80" y1="35" x2="65" y2="55" />
-      <line x1="105" y1="25" x2="90" y2="50" />
-      <line x1="130" y1="20" x2="115" y2="45" />
-      <line x1="150" y1="30" x2="135" y2="55" />
-      <line x1="70" y1="70" x2="55" y2="95" />
-      <line x1="95" y1="65" x2="80" y2="90" />
-      <line x1="120" y1="60" x2="105" y2="85" />
-      <line x1="55" y1="110" x2="40" y2="135" />
-      <line x1="80" y1="105" x2="65" y2="130" />
-      <line x1="40" y1="150" x2="25" y2="175" />
+    <!-- Outer Mane Strands (Voluminous Tawny Auburn & Rich Bronze) -->
+    <g fill="#451a03">
+      <path d="M 25 20 L 5 -5 L 45 -15 L 85 -35 L 125 -42 L 155 -38 L 195 -25 L 235 -5 L 215 25 L 255 50 L 275 95 L 260 145 L 245 185 L 225 220 L 195 245 L 165 260 L 130 265 L 95 255 L 65 240 L 40 205 L 20 155 L 15 105 L 30 65 Z" />
     </g>
 
-    <!-- Menacing Deep Brow Overhang (Shadow casting over the eye) -->
-    <path d="M 75 88 C 95 82 120 84 140 92 L 148 105 C 125 96 95 96 75 105 Z" fill="#0f172a" />
-    <path d="M 85 92 C 102 88 122 90 138 98 L 142 104 C 122 98 100 97 85 103 Z" fill="#020617" />
-
-    <!-- PIERCING PREDATOR AMBER EYE (The Focal Soul of the Character) -->
-    <g transform="translate(108, 106)">
-      <!-- Eye socket dark rim -->
-      <path d="M -22 0 C -12 -12 12 -12 24 2 C 12 12 -12 10 -22 0 Z" fill="#090d16" stroke="#1e293b" stroke-width="1.5" />
-      
-      <!-- Glowing amber iris -->
-      <ellipse cx="2" cy="0" rx="13" ry="8" fill="#d97706" />
-      <ellipse cx="2" cy="0" rx="10" ry="7" fill="#f59e0b" />
-      <ellipse cx="2" cy="0" rx="7" ry="5.5" fill="#fbbf24" />
-
-      <!-- Razor focused predator pupil -->
-      <circle cx="2" cy="0" r="4" fill="#030712" />
-      <circle cx="3" cy="-0.5" r="1.5" fill="#000000" />
-
-      <!-- Specular high-contrast catchlight -->
-      <circle cx="-1" cy="-2.5" r="2" fill="#ffffff" />
-      <circle cx="5" cy="1" r="1" fill="#fef08a" />
-      
-      <!-- Eye contour razor eyeliner -->
-      <path d="M -22 0 C -10 -9 10 -9 24 2" fill="none" stroke="#000000" stroke-width="2.5" />
-      <path d="M -22 0 C -10 8 10 7 24 2" fill="none" stroke="#0f172a" stroke-width="1.5" />
+    <g fill="#78350f">
+      <path d="M 35 30 L 15 10 L 55 -5 L 95 -25 L 135 -30 L 170 -18 L 210 5 L 235 40 L 250 85 L 240 135 L 225 175 L 205 205 L 180 230 L 150 245 L 120 248 L 85 235 L 55 210 L 35 170 L 30 120 L 40 75 Z" />
     </g>
 
-    <!-- Hooked Amber Beak Base / Cere -->
-    <path d="M 125 100 C 135 98 145 102 152 110 L 148 122 C 140 118 132 116 125 118 Z" fill="#b45309" />
-    <ellipse cx="140" cy="112" rx="3.5" ry="2" fill="#451a03" />
+    <!-- Mid-Mane Flowing Golden Amber Locks -->
+    <g fill="#b45309">
+      <path d="M 50 45 L 35 30 L 70 12 L 110 -5 L 145 -8 L 180 8 L 205 35 L 220 75 L 215 120 L 205 160 L 185 190 L 165 215 L 135 225 L 105 220 L 75 200 L 55 165 L 48 120 L 55 80 Z" />
+    </g>
 
-    <!-- HOOKED AMBER TALON-BEAK (Razor sharp, illuminated top, shadowed underside) -->
-    <!-- Beak upper illuminated amber curve -->
-    <path d="M 132 104 C 160 100 195 110 215 130 C 228 142 235 160 236 178 C 235 195 224 208 214 212 C 218 198 218 180 208 165 C 195 148 175 140 150 142 L 134 135 Z" fill="#f59e0b" stroke="#fde047" stroke-width="0.8" />
-    <!-- Beak bright ridge highlight -->
-    <path d="M 135 105 C 162 102 195 112 214 132 C 224 144 230 160 232 178 C 230 162 222 148 210 136 C 192 118 162 108 135 105 Z" fill="#fde047" />
-    <path d="M 160 110 C 185 118 205 132 218 148 C 224 156 227 166 228 175 C 226 166 222 158 216 150 C 204 136 185 122 160 110 Z" fill="#ffffff" opacity="0.6" />
-    
-    <!-- Beak dark under-hook shadow -->
-    <path d="M 214 212 C 210 214 205 210 202 202 C 196 186 195 170 190 156 C 180 148 165 144 148 144 L 140 148 L 138 135 C 165 135 188 144 202 160 C 212 174 215 194 214 212 Z" fill="#9a3412" />
-    <!-- Hook tip needle point -->
-    <path d="M 224 195 C 222 205 218 212 214 212 C 216 208 218 200 218 192 Z" fill="#451a03" />
+    <g fill="#d97706">
+      <path d="M 65 60 L 50 48 L 80 30 L 115 15 L 145 15 L 175 30 L 195 55 L 205 90 L 200 130 L 185 165 L 165 190 L 140 205 L 115 205 L 90 190 L 70 160 L 62 120 L 68 85 Z" />
+    </g>
 
-    <!-- Lower Jaw / Beak Gape -->
-    <path d="M 132 145 L 165 145 C 180 148 190 158 195 170 C 185 164 175 160 160 158 L 130 155 Z" fill="#78350f" />
+    <!-- Sunlit Golden Top Mane Tufts -->
+    <g fill="#f59e0b">
+      <path d="M 80 35 L 105 15 L 135 10 L 160 22 L 175 45 L 185 75 L 175 110 L 160 140 L 140 160 L 115 165 L 95 150 L 82 120 L 80 80 Z" />
+      <path d="M 45 95 L 60 70 L 75 90 L 68 115 Z" />
+      <path d="M 195 95 L 210 75 L 220 100 L 205 120 Z" />
+    </g>
 
-    <!-- Throat & Neck Feathers Fading into Absolute Pitch Black (#000000) -->
-    <path d="M 15 220 L 40 170 L 75 145 L 110 140 L 135 155 L 130 185 L 115 210 L 90 230 L 45 240 Z" fill="#1e293b" opacity="0.6" />
-    <path d="M 35 240 L 65 195 L 95 175 L 125 170 L 120 205 L 95 235 L 60 250 Z" fill="#0f172a" opacity="0.8" />
+    <!-- Flowing Hair Highlights (Fine Golden Wisps) -->
+    <g stroke="#fbbf24" stroke-width="1.4" opacity="0.85" stroke-linecap="round">
+      <line x1="100" y1="18" x2="85" y2="40" />
+      <line x1="120" y1="12" x2="110" y2="38" />
+      <line x1="145" y1="15" x2="135" y2="42" />
+      <line x1="165" y1="28" x2="155" y2="52" />
+      <line x1="75" y1="55" x2="60" y2="80" />
+      <line x1="185" y1="58" x2="175" y2="85" />
+      <line x1="65" y1="100" x2="52" y2="130" />
+      <line x1="195" y1="105" x2="185" y2="135" />
+      <line x1="85" y1="160" x2="75" y2="190" />
+      <line x1="170" y1="165" x2="160" y2="195" />
+      <line x1="115" y1="185" x2="105" y2="220" />
+      <line x1="140" y1="188" x2="135" y2="225" />
+    </g>
+
+    <!-- Lion Face Base (Tawny Tan & Sunlit Ochre) -->
+    <path d="M 85 85 C 80 65 110 55 135 55 C 160 55 190 65 185 85 C 190 105 185 130 180 150 C 165 170 145 178 135 178 C 125 178 105 170 90 150 C 85 130 80 105 85 85 Z" fill="#d97706" />
+    <path d="M 92 88 C 88 72 112 62 135 62 C 158 62 182 72 178 88 C 182 105 178 128 172 145 C 160 162 142 170 135 170 C 128 170 110 162 98 145 C 92 128 88 105 92 88 Z" fill="#ea580c" opacity="0.6" />
+
+    <!-- Forehead & Nose Bridge (Warm Ochre) -->
+    <polygon points="120,70 150,70 145,115 125,115" fill="#b45309" />
+    <polygon points="125,72 145,72 142,112 128,112" fill="#d97706" />
+
+    <!-- Noble Amber-Hazel Eyes (Calm, Regal & Serene) -->
+    <!-- Left Eye -->
+    <g transform="translate(108, 92)">
+      <ellipse cx="0" cy="0" rx="9" ry="6" fill="#1c1208" />
+      <ellipse cx="0" cy="0" rx="7" ry="5" fill="#f59e0b" />
+      <ellipse cx="0" cy="0" rx="5" ry="4" fill="#fbbf24" />
+      <circle cx="0" cy="0" r="3" fill="#090502" />
+      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" />
+      <!-- Eyelid contour -->
+      <path d="M -9 0 C -4 -6 4 -6 9 0" fill="none" stroke="#090502" stroke-width="1.8" />
+      <path d="M -9 0 C -4 4 4 4 9 0" fill="none" stroke="#261709" stroke-width="1" />
+    </g>
+
+    <!-- Right Eye -->
+    <g transform="translate(162, 92)">
+      <ellipse cx="0" cy="0" rx="9" ry="6" fill="#1c1208" />
+      <ellipse cx="0" cy="0" rx="7" ry="5" fill="#f59e0b" />
+      <ellipse cx="0" cy="0" rx="5" ry="4" fill="#fbbf24" />
+      <circle cx="0" cy="0" r="3" fill="#090502" />
+      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" />
+      <!-- Eyelid contour -->
+      <path d="M -9 0 C -4 -6 4 -6 9 0" fill="none" stroke="#090502" stroke-width="1.8" />
+      <path d="M -9 0 C -4 4 4 4 9 0" fill="none" stroke="#261709" stroke-width="1" />
+    </g>
+
+    <!-- White / Cream Eyebrow Accents -->
+    <path d="M 98 84 C 105 80 115 80 120 84" fill="none" stroke="#fef3c7" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 150 84 C 155 80 165 80 172 84" fill="none" stroke="#fef3c7" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Lion Nose & Muzzle -->
+    <g transform="translate(135, 122)">
+      <!-- Nose Leather -->
+      <path d="M -15 0 C -12 -5 12 -5 15 0 C 12 12 0 16 0 16 C 0 16 -12 12 -15 0 Z" fill="#1f1309" stroke="#0d0703" stroke-width="1.2" />
+      <circle cx="-6" cy="4" r="2.5" fill="#0d0703" />
+      <circle cx="6" cy="4" r="2.5" fill="#0d0703" />
+      <path d="M 0 6 L 0 15" stroke="#0d0703" stroke-width="1.5" />
+    </g>
+
+    <!-- White / Cream Chin & Whiskers Pad -->
+    <path d="M 112 135 C 115 145 125 152 135 152 C 145 152 155 145 158 135 C 160 148 152 165 135 168 C 118 165 110 148 112 135 Z" fill="#fef3c7" />
+    <path d="M 120 152 C 125 160 135 164 135 164 C 135 164 145 160 150 152 C 145 158 135 160 135 160 C 135 160 125 158 120 152 Z" fill="#e2e8f0" />
+
+    <!-- Whisker Dots -->
+    <g fill="#451a03">
+      <circle cx="120" cy="142" r="1.2" />
+      <circle cx="125" cy="145" r="1.2" />
+      <circle cx="118" cy="148" r="1.2" />
+      <circle cx="150" cy="142" r="1.2" />
+      <circle cx="145" cy="145" r="1.2" />
+      <circle cx="152" cy="148" r="1.2" />
+    </g>
+
+    <!-- Chest Mane Cascading Down (Royal Tawny Golden Flow) -->
+    <path d="M 70 200 L 90 270 L 135 285 L 180 270 L 200 200 L 165 240 L 135 250 L 105 240 Z" fill="#78350f" />
+    <path d="M 90 220 L 110 275 L 135 282 L 160 275 L 180 220 L 150 250 L 135 255 L 120 250 Z" fill="#b45309" />
+    <path d="M 110 240 L 125 280 L 135 282 L 145 280 L 160 240 L 142 260 L 135 262 L 128 260 Z" fill="#f59e0b" />
   </g>
 
-    <!-- Tactical Seal Badge Under the Eagle -->
-    <g transform="translate(100, 410)">
-      <rect x="0" y="0" width="240" height="30" rx="3" fill="#050a12" stroke="#f59e0b" stroke-width="1.2" />
-      <text x="120" y="20" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="2">APEX RAPTOR // AQUILA-01</text>
+    <!-- Professional Crest Seal Under Lion -->
+    <g transform="translate(60, 375)">
+      <rect x="0" y="0" width="240" height="30" rx="3" fill="#140d06" stroke="#f59e0b" stroke-width="1.2" />
+      <text x="120" y="20" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="2">SOFTWARE ENGINEER // S+</text>
     </g>
   </g>
 
-  <!-- RIGHT HERO HIERARCHY: Title, Creed, Tactical Flight Badges -->
-  <g transform="translate(560, 75)">
-    <!-- Tactical Category Callsign Badge -->
-    <g transform="translate(0, 20)">
-      <rect x="0" y="0" width="410" height="28" rx="3" fill="#080e18" stroke="#f59e0b" stroke-width="1.2" />
-      <circle cx="16" cy="14" r="4.5" fill="#f59e0b" class="eye-pulse" />
-      <text x="34" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="800" fill="#fbbf24" letter-spacing="2">AQUILA PRIME // SOVEREIGN OF THE STRATOSPHERE</text>
+  <!-- RIGHT HERO HIERARCHY: 100% Professional Content in Royal Gold Styling -->
+  <g transform="translate(540, 75)">
+    <!-- Top Professional Title Badge -->
+    <g transform="translate(0, 18)">
+      <rect x="0" y="0" width="450" height="28" rx="3" fill="#170f07" stroke="#f59e0b" stroke-width="1.2" />
+      <circle cx="16" cy="14" r="4.5" fill="#fbbf24" />
+      <text x="34" y="19" font-family="'Courier New', monospace" font-size="11" font-weight="800" fill="#fde047" letter-spacing="2">SENIOR SYSTEMS &amp; FULL-STACK SOFTWARE ENGINEER</text>
     </g>
 
-    <!-- Identity Title: AVISH KUMAR -->
-    <g transform="translate(0, 100)">
-      <!-- Amber ambient back-glow -->
-      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="#f59e0b" letter-spacing="6" opacity="0.3" filter="url(#eyeGlow)">AVISH KUMAR</text>
-      <!-- Main Feather Silver Title -->
-      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="url(#featherSilver)" letter-spacing="6">AVISH KUMAR</text>
+    <!-- Main Identity Title: AVISH KUMAR -->
+    <g transform="translate(0, 98)">
+      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="#f59e0b" letter-spacing="6" opacity="0.25" filter="url(#royalGlow)">AVISH KUMAR</text>
+      <text x="0" y="0" font-family="'Cinzel', 'Trajan Pro', serif" font-size="64" font-weight="900" fill="url(#platinumText)" letter-spacing="6">AVISH KUMAR</text>
     </g>
 
-    <!-- Subtitle: ARCHITECT OF CODE & APEX RAPTOR -->
+    <!-- Subtitle: Professional Engineering Disciplines -->
     <g transform="translate(4, 142)">
-      <text x="0" y="0" font-family="'Cinzel', serif" font-size="20" font-weight="800" fill="url(#raptorAmber)" letter-spacing="3.5">THE APEX RAPTOR &#8226; SOVEREIGN ARCHITECT OF CODE</text>
+      <text x="0" y="0" font-family="'Cinzel', serif" font-size="19" font-weight="800" fill="url(#royalGold)" letter-spacing="3">FULL-STACK ARCHITECT &#8226; SYSTEMS DEVELOPER &#8226; AI INTEGRATION</text>
     </g>
 
-    <!-- Amber Talon Razor Line -->
+    <!-- Royal Gold Divider Bar -->
     <g transform="translate(0, 165)">
-      <line x1="0" y1="0" x2="960" y2="0" stroke="#162234" stroke-width="1.5" />
-      <line x1="0" y1="0" x2="380" y2="0" stroke="#f59e0b" stroke-width="2.5" filter="url(#laserGlow)" />
-      <polygon points="380,-6 388,0 380,6 372,0" fill="#fbbf24" />
-      <line x1="388" y1="0" x2="620" y2="0" stroke="#ffffff" stroke-width="1.8" />
+      <line x1="0" y1="0" x2="980" y2="0" stroke="#2e1f10" stroke-width="1.5" />
+      <line x1="0" y1="0" x2="420" y2="0" stroke="#f59e0b" stroke-width="2.5" filter="url(#royalGlow)" />
+      <polygon points="420,-6 428,0 420,6 412,0" fill="#fde047" />
+      <line x1="428" y1="0" x2="680" y2="0" stroke="#fef3c7" stroke-width="1.8" />
     </g>
 
-    <!-- The Raptor's Creed Monologue -->
+    <!-- Professional Mission & Engineering Philosophy -->
     <g transform="translate(2, 206)">
-      <text x="0" y="0" font-family="'Georgia', serif" font-style="italic" font-size="15.5" fill="#f8fafc" letter-spacing="1">"From the obsidian void we rise. With piercing vision we strike. Zero blind spots. Absolute precision."</text>
-      <text x="0" y="26" font-family="'Georgia', serif" font-style="italic" font-size="15" fill="#94a3b8" letter-spacing="0.8">Mastering low-level OS kernels, resilient web fortresses, and cognitive AI telemetry.</text>
+      <text x="0" y="0" font-family="'Georgia', serif" font-style="italic" font-size="15.5" fill="#f8fafc" letter-spacing="0.8">"Architecting resilient distributed systems, sub-millisecond REST APIs, and modern reactive web fortresses."</text>
+      <text x="0" y="26" font-family="'Georgia', serif" font-style="italic" font-size="15" fill="#d4d4d8" letter-spacing="0.6">Dedicated to uncompromising code purity, modular decoupled architecture, and zero technical debt.</text>
     </g>
 
-    <!-- 4 Tactical Flight HUD Badges -->
+    <!-- 4 Professional Engineering Badges -->
     <g transform="translate(0, 270)">
-      <!-- Badge 1: Stratospheric Vision -->
+      <!-- Badge 1: Core Stack -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="220" height="62" rx="4" fill="#040810" stroke="#1e293b" stroke-width="1.2" />
+        <rect x="0" y="0" width="225" height="62" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
         <rect x="0" y="0" width="4" height="62" fill="#f59e0b" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fbbf24" letter-spacing="1">👁️ MACRO VISION</text>
-        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#f8fafc">360° TOPOLOGY</text>
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fbbf24" letter-spacing="1">💻 CORE STACK</text>
+        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">TS &#8226; REACT &#8226; PYTHON</text>
       </g>
 
-      <!-- Badge 2: Talon Dive Strike -->
-      <g transform="translate(240, 0)">
-        <rect x="0" y="0" width="220" height="62" rx="4" fill="#040810" stroke="#1e293b" stroke-width="1.2" />
-        <rect x="0" y="0" width="4" height="62" fill="#ffffff" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#e2e8f0" letter-spacing="1">⚡ DIVE STRIKE</text>
-        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#f8fafc">SUB-MS LATENCY</text>
+      <!-- Badge 2: Systems Architecture -->
+      <g transform="translate(245, 0)">
+        <rect x="0" y="0" width="225" height="62" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="62" fill="#fef3c7" />
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fde047" letter-spacing="1">⚙️ SYSTEMS CORE</text>
+        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">AquaOS KERNEL</text>
       </g>
 
-      <!-- Badge 3: Flight Ceiling -->
-      <g transform="translate(480, 0)">
-        <rect x="0" y="0" width="220" height="62" rx="4" fill="#040810" stroke="#1e293b" stroke-width="1.2" />
-        <rect x="0" y="0" width="4" height="62" fill="#38bdf8" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#7dd3fc" letter-spacing="1">🛰️ FLIGHT CEILING</text>
-        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#f8fafc">STRATOSPHERE</text>
+      <!-- Badge 3: AI Telemetry -->
+      <g transform="translate(490, 0)">
+        <rect x="0" y="0" width="225" height="62" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="62" fill="#d97706" />
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#fbbf24" letter-spacing="1">🧠 AI COGNITION</text>
+        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#ffffff">Nutri-ai MODELS</text>
       </g>
 
-      <!-- Badge 4: Predator Rank -->
-      <g transform="translate(720, 0)">
-        <rect x="0" y="0" width="230" height="62" rx="4" fill="#040810" stroke="#1e293b" stroke-width="1.2" />
+      <!-- Badge 4: Production Rank -->
+      <g transform="translate(735, 0)">
+        <rect x="0" y="0" width="235" height="62" rx="4" fill="#120c06" stroke="#3d2914" stroke-width="1.2" />
         <rect x="0" y="0" width="4" height="62" fill="#10b981" />
-        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#34d399" letter-spacing="1">⚔️ COMBAT STATUS</text>
-        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#fbbf24">APEX RAPTOR S+</text>
+        <text x="16" y="22" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#34d399" letter-spacing="1">🏆 PRODUCTION GRADE</text>
+        <text x="16" y="45" font-family="'Cinzel', serif" font-size="14.5" font-weight="800" fill="#fde047">ENTERPRISE S+</text>
       </g>
     </g>
 
-    <!-- Flight Telemetry Pin Link -->
+    <!-- Professional GitHub Pin -->
     <g transform="translate(0, 360)">
-      <rect x="0" y="0" width="340" height="32" rx="3" fill="#060c16" stroke="#f59e0b" stroke-width="1" />
-      <text x="16" y="21" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#fbbf24">&gt; GITHUB.COM/AVISH2142005</text>
+      <rect x="0" y="0" width="340" height="32" rx="3" fill="#160f07" stroke="#f59e0b" stroke-width="1" />
+      <text x="16" y="21" font-family="'Courier New', monospace" font-size="12" font-weight="800" fill="#fde047">&gt; GITHUB.COM/AVISH2142005</text>
       <circle cx="320" cy="16" r="4.5" fill="#10b981" />
     </g>
   </g>

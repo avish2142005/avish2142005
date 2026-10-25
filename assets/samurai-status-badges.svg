@@ -1,62 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 36" fill="none">
   <defs>
-    <linearGradient id="amberPill" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="goldStatusGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#b45309" />
       <stop offset="100%" stop-color="#f59e0b" />
     </linearGradient>
-    <linearGradient id="silverPill" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#475569" />
-      <stop offset="100%" stop-color="#cbd5e1" />
+    <linearGradient id="ivoryStatusGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#fde047" />
     </linearGradient>
-    <linearGradient id="skyPill" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0369a1" />
-      <stop offset="100%" stop-color="#38bdf8" />
-    </linearGradient>
-    <linearGradient id="emeraldPill" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="emeraldStatusGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#047857" />
       <stop offset="100%" stop-color="#10b981" />
     </linearGradient>
   </defs>
 
   <g transform="translate(6, 2)" font-family="'Cinzel', Consolas, monospace" font-size="10.5" font-weight="900" letter-spacing="1">
-    <!-- 01: IDENTITY -->
+    <!-- 01: ENGINEER -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="76" height="32" rx="3" fill="#04060a" stroke="#1e293b" stroke-width="1" />
-      <text x="38" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">ARCHITECT</text>
-      <rect x="79" y="0" width="115" height="32" rx="3" fill="url(#amberPill)" />
-      <text x="136" y="20" text-anchor="middle" fill="#040711">AVISH KUMAR</text>
+      <rect x="0" y="0" width="76" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
+      <text x="38" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">ENGINEER</text>
+      <rect x="79" y="0" width="115" height="32" rx="3" fill="url(#goldStatusGrad)" />
+      <text x="136" y="20" text-anchor="middle" fill="#090502">AVISH KUMAR</text>
     </g>
 
-    <!-- 02: PREDATOR SPECIES -->
+    <!-- 02: SPECIALTY -->
     <g transform="translate(206, 0)">
-      <rect x="0" y="0" width="62" height="32" rx="3" fill="#04060a" stroke="#1e293b" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">🦅 CLASS</text>
-      <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#amberPill)" />
-      <text x="116" y="20" text-anchor="middle" fill="#03060f">APEX RAPTOR</text>
+      <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">DOMAIN</text>
+      <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#goldStatusGrad)" />
+      <text x="116" y="20" text-anchor="middle" fill="#090502">FULL-STACK</text>
     </g>
 
-    <!-- 03: MACRO RADAR -->
+    <!-- 03: ARCHITECTURE -->
     <g transform="translate(385, 0)">
-      <rect x="0" y="0" width="62" height="32" rx="3" fill="#04060a" stroke="#1e293b" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">👁️ VISION</text>
-      <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#silverPill)" />
-      <text x="116" y="20" text-anchor="middle" fill="#03060f">360° RADAR</text>
+      <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">SYSTEMS</text>
+      <rect x="65" y="0" width="102" height="32" rx="3" fill="url(#ivoryStatusGrad)" />
+      <text x="116" y="20" text-anchor="middle" fill="#090502">OS KERNELS</text>
     </g>
 
-    <!-- 04: TALON VELOCITY -->
+    <!-- 04: PERFORMANCE -->
     <g transform="translate(564, 0)">
-      <rect x="0" y="0" width="62" height="32" rx="3" fill="#04060a" stroke="#1e293b" stroke-width="1" />
-      <text x="31" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">⚡ TALON</text>
-      <rect x="65" y="0" width="98" height="32" rx="3" fill="url(#skyPill)" />
-      <text x="114" y="20" text-anchor="middle" fill="#040711">SUB-MS</text>
+      <rect x="0" y="0" width="62" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
+      <text x="31" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">LATENCY</text>
+      <rect x="65" y="0" width="98" height="32" rx="3" fill="url(#goldStatusGrad)" />
+      <text x="114" y="20" text-anchor="middle" fill="#090502">SUB-MS</text>
     </g>
 
-    <!-- 05: RANK -->
+    <!-- 05: QUALITY -->
     <g transform="translate(735, 0)">
-      <rect x="0" y="0" width="68" height="32" rx="3" fill="#04060a" stroke="#1e293b" stroke-width="1" />
-      <text x="34" y="20" text-anchor="middle" fill="#94a3b8" font-size="9.5">RANK</text>
-      <rect x="71" y="0" width="100" height="32" rx="3" fill="url(#emeraldPill)" />
-      <text x="121" y="20" text-anchor="middle" fill="#03060f">APEX S+</text>
+      <rect x="0" y="0" width="68" height="32" rx="3" fill="#0d0804" stroke="#2a1c0e" stroke-width="1" />
+      <text x="34" y="20" text-anchor="middle" fill="#d4d4d8" font-size="9.5">QUALITY</text>
+      <rect x="71" y="0" width="100" height="32" rx="3" fill="url(#emeraldStatusGrad)" />
+      <text x="121" y="20" text-anchor="middle" fill="#090502">GRADE S+</text>
     </g>
   </g>
 </svg>
