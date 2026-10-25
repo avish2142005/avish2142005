@@ -26,64 +26,30 @@
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- THE APEX RAPTOR TRIAD // THREE HUNTING DISCIPLINES       -->
+<!-- THE APEX RAPTOR // STRATOSPHERIC SENTINEL                 -->
 <!-- (Pure Vector & Semantic Styling // Zero Photo Bloat)     -->
 <!-- ======================================================== -->
 
-<table width="100%" border="0" cellspacing="0" cellpadding="14">
+<table width="100%" border="0" cellspacing="0" cellpadding="16">
   <tr>
-    <!-- PILLAR I: AERIAL MACRO-VISION -->
-    <td width="33.3%" valign="top" style="background: #000000; border: 1.5px solid #27272a; border-radius: 8px;">
+    <!-- THE APEX RAPTOR: AERIAL MACRO-VISION -->
+    <td width="100%" valign="top" style="background: #000000; border: 1.5px solid #27272a; border-radius: 8px;">
       <div align="center">
-        <h3 style="color: #fbbf24; margin-bottom: 4px; font-family: 'Cinzel', serif;">👁️ AERIAL MACRO-VISION</h3>
-        <p style="color: #fde047; font-size: 11px; font-weight: 800; letter-spacing: 1px; margin-top: 0;">30,000-FT SYSTEM TOPOLOGY</p>
-        <p style="color: #94a3b8; font-style: italic; font-size: 12px; line-height: 1.4;">"Surveying every horizon before descending. Full system clarity, predictive bottleneck defense, zero blind spots."</p>
+        <h3 style="color: #fbbf24; margin-bottom: 4px; font-family: 'Cinzel', serif;">👁️ AERIAL MACRO-VISION // STRATOSPHERIC SENTINEL</h3>
+        <p style="color: #fde047; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; margin-top: 0;">30,000-FT SYSTEM TOPOLOGY &bull; ZERO BLIND SPOTS</p>
+        <p style="color: #94a3b8; font-style: italic; font-size: 12.5px; line-height: 1.5; max-width: 720px;">"Surveying every horizon before descending. Full architectural clarity, predictive bottleneck defense, and unyielding code purity."</p>
       </div>
-      <hr style="border: 0; border-top: 1px solid #18181b; margin: 10px 0;" />
-      <ul style="font-size: 12px; color: #cbd5e1; padding-left: 16px; line-height: 1.6;">
-        <li><strong>Character:</strong> Stratospheric Sentinel</li>
-        <li><strong>Discipline:</strong> Distributed Systems &amp; Topologies</li>
-        <li><strong>Perception:</strong> 360° Architectural Clarity</li>
-        <li><strong>Flagship:</strong> <a href="https://github.com/avish2142005/Nutri-ai"><code>Nutri-ai AI Oracle</code></a></li>
-        <li><strong>Arsenal:</strong> <code>System Design</code> <code>Cloud CI/CD</code> <code>REST</code></li>
-        <li><strong>Precision:</strong> Grade S+ High-Altitude Insight</li>
-      </ul>
-    </td>
-
-    <!-- PILLAR II: THE DIVE STRIKE -->
-    <td width="33.3%" valign="top" style="background: #000000; border: 1.5px solid #3f3f46; border-radius: 8px;">
+      <hr style="border: 0; border-top: 1px solid #18181b; margin: 14px 0;" />
       <div align="center">
-        <h3 style="color: #ffffff; margin-bottom: 4px; font-family: 'Cinzel', serif;">⚡ THE DIVE STRIKE</h3>
-        <p style="color: #e2e8f0; font-size: 11px; font-weight: 800; letter-spacing: 1px; margin-top: 0;">TERMINAL VELOCITY TALONS</p>
-        <p style="color: #94a3b8; font-style: italic; font-size: 12px; line-height: 1.4;">"Striking from the clouds at maximum speed. Clean POSIX process isolation, zero memory leaks, sub-ms execution."</p>
+        <ul style="font-size: 12.5px; color: #cbd5e1; line-height: 1.8; display: inline-block; text-align: left;">
+          <li><strong>Character:</strong> Stratospheric Sentinel &amp; Solitary Sovereign</li>
+          <li><strong>Discipline:</strong> Distributed Systems, OS Kernels &amp; Cognitive AI</li>
+          <li><strong>Perception:</strong> 360° Architectural Clarity // Zero Blind Spots</li>
+          <li><strong>Flagship:</strong> <a href="https://github.com/avish2142005/Nutri-ai"><code>Nutri-ai AI Oracle</code></a> &bull; <a href="https://github.com/avish2142005/AquaOS"><code>AquaOS Kernel</code></a> &bull; <a href="https://github.com/avish2142005/Live-Markdown-editor"><code>Live Markdown</code></a></li>
+          <li><strong>Arsenal:</strong> <code>System Design</code> <code>Python</code> <code>TypeScript</code> <code>React 19</code> <code>POSIX</code> <code>REST</code></li>
+          <li><strong>Precision:</strong> Grade S+ High-Altitude Insight &amp; Zero Technical Debt</li>
+        </ul>
       </div>
-      <hr style="border: 0; border-top: 1px solid #18181b; margin: 10px 0;" />
-      <ul style="font-size: 12px; color: #cbd5e1; padding-left: 16px; line-height: 1.6;">
-        <li><strong>Character:</strong> Lethal Hunter of the Deep</li>
-        <li><strong>Discipline:</strong> Low-Level Kernels &amp; Concurrency</li>
-        <li><strong>Perception:</strong> Sub-Millisecond Dispatch</li>
-        <li><strong>Flagship:</strong> <a href="https://github.com/avish2142005/AquaOS"><code>AquaOS Core Kernel</code></a></li>
-        <li><strong>Arsenal:</strong> <code>Python</code> <code>POSIX</code> <code>Linux</code> <code>Docker</code></li>
-        <li><strong>Precision:</strong> Zero Leaks &amp; Process Isolation</li>
-      </ul>
-    </td>
-
-    <!-- PILLAR III: SOVEREIGN DOMINION -->
-    <td width="33.3%" valign="top" style="background: #000000; border: 1.5px solid #27272a; border-radius: 8px;">
-      <div align="center">
-        <h3 style="color: #f59e0b; margin-bottom: 4px; font-family: 'Cinzel', serif;">🏰 SOVEREIGN DOMINION</h3>
-        <p style="color: #fbbf24; font-size: 11px; font-weight: 800; letter-spacing: 1px; margin-top: 0;">HIGH-ALTITUDE CITADEL</p>
-        <p style="color: #94a3b8; font-style: italic; font-size: 12px; line-height: 1.4;">"Commanding the high roost. Resilient enterprise web fortresses, real-time AST syntax parsing, and pure UX."</p>
-      </div>
-      <hr style="border: 0; border-top: 1px solid #18181b; margin: 10px 0;" />
-      <ul style="font-size: 12px; color: #cbd5e1; padding-left: 16px; line-height: 1.6;">
-        <li><strong>Character:</strong> Sovereign of the High Roost</li>
-        <li><strong>Discipline:</strong> Full-Stack Reactive Architecture</li>
-        <li><strong>Perception:</strong> Real-time AST Compilation</li>
-        <li><strong>Flagship:</strong> <a href="https://github.com/avish2142005/Live-Markdown-editor"><code>Live Markdown Studio</code></a></li>
-        <li><strong>Arsenal:</strong> <code>TypeScript</code> <code>React 19</code> <code>Postgres</code></li>
-        <li><strong>Precision:</strong> Bulletproof Scale &amp; Uptime</li>
-      </ul>
     </td>
   </tr>
 </table>
