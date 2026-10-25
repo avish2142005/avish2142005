@@ -1,14 +1,5 @@
 <div align="center">
 
-<!-- ======================================================== -->
-<!-- 00 // AI ENGINEER LOGO CREST // REALISTIC LION           -->
-<!-- ======================================================== -->
-
-<a href="https://github.com/avish2142005" target="_blank">
-  <img src="./assets/ai-lion-logo.svg" width="160" height="160" alt="Avish Kumar // AI Engineer Realistic Lion Crest" />
-</a>
-
-<br/><br/>
 
 <!-- ======================================================== -->
 <!-- 00 // HERO BANNER // ARTIFICIAL INTELLIGENCE ENGINEER     -->

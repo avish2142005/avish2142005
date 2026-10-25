@@ -462,7 +462,7 @@ function getPreviewHtml(readmeMd) {
   <!-- Top Action Header -->
   <header class="top-bar">
     <div class="brand-group">
-      <div class="brand-sigil">🦁</div>
+      <div class="brand-sigil">🧠</div>
       <div>
         <div class="brand-title">AVISH KUMAR // ARTIFICIAL INTELLIGENCE ENGINEER</div>
         <div class="brand-subtitle">avish2142005 / README.md &bull; Professional AI Portfolio Preview</div>
@@ -479,7 +479,7 @@ function getPreviewHtml(readmeMd) {
     <!-- Left Sidebar: GitHub User Card -->
     <aside class="sidebar-profile">
       <div class="avatar-wrapper">
-        <img src="./assets/ai-lion-logo.svg" alt="Avish Kumar Lion Avatar" class="avatar-img" onerror="this.src='./assets/got-sigil-lion.png'">
+        <img src="./assets/ai-lion-logo.svg" alt="Avish Kumar AI Avatar" class="avatar-img">
       </div>
       <div class="user-names">
         <div class="user-fullname">Avish Kumar</div>

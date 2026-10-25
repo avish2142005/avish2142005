@@ -14,8 +14,49 @@ if (fs.existsSync(lionPngPath)) {
 }
 
 // -------------------------------------------------------------
+// PURE VECTOR ROYAL AI NEURAL CREST (No Photo Image)
+// -------------------------------------------------------------
+function getVectorAiNeuralCrest(cx, cy, radius, showGlow = true) {
+  return `
+  <g transform="translate(${cx}, ${cy})">
+    ${showGlow ? `<circle cx="0" cy="0" r="${radius * 1.25}" fill="#f59e0b" opacity="0.16" filter="url(#aiRoyalGlow)" />` : ''}
+    <circle cx="0" cy="0" r="${radius}" fill="#0d0804" stroke="#3d2914" stroke-width="2" />
+    <circle cx="0" cy="0" r="${radius * 0.94}" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="10 5" opacity="0.75" />
+    <circle cx="0" cy="0" r="${radius * 0.86}" fill="#130d06" stroke="#f59e0b" stroke-width="2" />
+
+    <!-- Synaptic Neural Rays -->
+    <g stroke="#f59e0b" stroke-width="1.6" opacity="0.8">
+      <line x1="0" y1="${-radius * 0.72}" x2="0" y2="${radius * 0.72}" />
+      <line x1="${-radius * 0.72}" y1="0" x2="${radius * 0.72}" y2="0" />
+      <line x1="${-radius * 0.5}" y1="${-radius * 0.5}" x2="${radius * 0.5}" y2="${radius * 0.5}" />
+      <line x1="${-radius * 0.5}" y1="${radius * 0.5}" x2="${radius * 0.5}" y2="${-radius * 0.5}" />
+    </g>
+
+    <!-- Concentric Symmetrical Geometric Hexagons -->
+    <polygon points="0,${-radius * 0.58} ${radius * 0.5},${-radius * 0.29} ${radius * 0.5},${radius * 0.29} 0,${radius * 0.58} ${-radius * 0.5},${radius * 0.29} ${-radius * 0.5},${-radius * 0.29}" fill="none" stroke="#fbbf24" stroke-width="2" />
+    <polygon points="0,${-radius * 0.38} ${radius * 0.33},0 0,${radius * 0.38} ${-radius * 0.33},0" fill="#24160a" stroke="#fde047" stroke-width="1.8" />
+
+    <!-- Neural Synapse Nodes -->
+    <circle cx="0" cy="${-radius * 0.58}" r="5" fill="#fde047" stroke="#b45309" stroke-width="1.2" />
+    <circle cx="${radius * 0.5}" cy="${-radius * 0.29}" r="5" fill="#fde047" stroke="#b45309" stroke-width="1.2" />
+    <circle cx="${radius * 0.5}" cy="${radius * 0.29}" r="5" fill="#fde047" stroke="#b45309" stroke-width="1.2" />
+    <circle cx="0" cy="${radius * 0.58}" r="5" fill="#fde047" stroke="#b45309" stroke-width="1.2" />
+    <circle cx="${-radius * 0.5}" cy="${radius * 0.29}" r="5" fill="#fde047" stroke="#b45309" stroke-width="1.2" />
+    <circle cx="${-radius * 0.5}" cy="${-radius * 0.29}" r="5" fill="#fde047" stroke="#b45309" stroke-width="1.2" />
+
+    <!-- Radiant AI Core Nexus -->
+    <circle cx="0" cy="0" r="${radius * 0.22}" fill="#fbbf24" filter="url(#aiRoyalGlow)" />
+    <circle cx="0" cy="0" r="${radius * 0.14}" fill="#ffffff" />
+    <polygon points="0,${-radius * 0.16} ${radius * 0.14},0 0,${radius * 0.16} ${-radius * 0.14},0" fill="none" stroke="#120c06" stroke-width="1.5" />
+
+    <!-- Regal Crown Apex -->
+    <polygon points="0,${-radius * 0.88} 4,${-radius * 0.82} 10,${-radius * 0.78} 4,${-radius * 0.74} 0,${-radius * 0.68} -4,${-radius * 0.74} -10,${-radius * 0.78} -4,${-radius * 0.82}" fill="#fde047" />
+  </g>`;
+}
+
+// -------------------------------------------------------------
 // 1. HERO BANNER: got-hero-banner.svg (and ronin-hero-v2.svg)
-// AI Engineer Focus // Realistic Lion Logo
+// AI Engineer Focus // Vector AI Neural Crest (No Photo Logo)
 // -------------------------------------------------------------
 function getHeroBannerSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
@@ -99,21 +140,19 @@ function getHeroBannerSvg() {
     <circle cx="1562" cy="482" r="3.5" fill="#f59e0b" />
   </g>
 
-  <!-- LEFT HERO ARTWORK: The Realistic Lion Logo In Royal Frame -->
+  <!-- LEFT HERO ARTWORK: Pure Vector AI Neural Crest (No Photo Image) -->
   <g transform="translate(70, 70)">
     <!-- Decorative Royal Crest Frame Rings -->
     <circle cx="180" cy="190" r="176" fill="none" stroke="#3d2914" stroke-width="1.5" />
     <circle cx="180" cy="190" r="164" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.75" />
-    <circle cx="180" cy="190" r="152" fill="#120c06" stroke="#f59e0b" stroke-width="3" filter="url(#aiRoyalGlow)" />
 
-    <!-- REALISTIC LION IMAGE EMBEDDED WITH CIRCULAR CLIP -->
-    <g clip-path="url(#heroRealisticLionClip)">
-      <image href="${lionDataUri}" x="12" y="10" width="336" height="360" preserveAspectRatio="xMidYMid slice" />
-    </g>
+    <!-- Pure Vector AI Neural Crest -->
+    ${getVectorAiNeuralCrest(180, 190, 142, true)}
+
     <!-- Outer Beveled Gold Rim -->
     <circle cx="180" cy="190" r="148" fill="none" stroke="#fbbf24" stroke-width="2" />
 
-    <!-- Professional Seal Under Lion Logo -->
+    <!-- Professional Seal Under AI Crest -->
     <g transform="translate(60, 375)">
       <rect x="0" y="0" width="240" height="30" rx="3" fill="#140d06" stroke="#f59e0b" stroke-width="1.2" />
       <text x="120" y="20" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="900" fill="#fbbf24" letter-spacing="2">AI ENGINEER // GRADE S+</text>
@@ -398,17 +437,15 @@ function getOperativeDossierSvg() {
     </g>
   </g>
 
-  <!-- Right Column: Realistic Lion Logo Crest -->
+  <!-- Right Column: Vector AI Neural Crest (No Photo Logo) -->
   <g transform="translate(745, 225)">
     <circle cx="0" cy="0" r="120" fill="url(#aiDosGoldAura)" />
     <circle cx="0" cy="0" r="100" fill="none" stroke="#2e1f10" stroke-width="1.5" />
     <circle cx="0" cy="0" r="92" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="14 6" />
-    <circle cx="0" cy="0" r="84" fill="#120c06" stroke="#f59e0b" stroke-width="2.5" filter="url(#aiDosGlow)" />
 
-    <!-- REALISTIC LION IMAGE EMBEDDED WITH CIRCULAR CLIP -->
-    <g clip-path="url(#dosRealisticLionClip)">
-      <image href="${lionDataUri}" x="-95" y="-95" width="190" height="200" preserveAspectRatio="xMidYMid slice" />
-    </g>
+    <!-- Pure Vector AI Neural Crest -->
+    ${getVectorAiNeuralCrest(0, 0, 80, true)}
+
     <circle cx="0" cy="0" r="82" fill="none" stroke="#fbbf24" stroke-width="2" />
 
     <rect x="-95" y="125" width="190" height="28" rx="3" fill="#140d06" stroke="#f59e0b" stroke-width="1.2" />
@@ -855,22 +892,13 @@ function getGotFooterSvg() {
 function getStandaloneLionLogoSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
   <defs>
-    <radialGradient id="standaloneLogoHalo" cx="50%" cy="50%" r="50%">
+    <radialGradient id="aiRoyalGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.35" />
       <stop offset="70%" stop-color="#f59e0b" stop-opacity="0.1" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
-    <clipPath id="standaloneLionClip">
-      <circle cx="160" cy="160" r="142" />
-    </clipPath>
   </defs>
-  <circle cx="160" cy="160" r="158" fill="url(#standaloneLogoHalo)" />
-  <circle cx="160" cy="160" r="150" fill="#0d0804" stroke="#3d2914" stroke-width="2" />
-  <circle cx="160" cy="160" r="145" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="10 6" />
-  <g clip-path="url(#standaloneLionClip)">
-    <image href="${lionDataUri}" x="12" y="10" width="300" height="315" preserveAspectRatio="xMidYMid slice" />
-  </g>
-  <circle cx="160" cy="160" r="142" fill="none" stroke="#fbbf24" stroke-width="3" />
+  ${getVectorAiNeuralCrest(160, 160, 142, true)}
 </svg>`;
 }
 
