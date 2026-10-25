@@ -479,7 +479,7 @@ function getPreviewHtml(readmeMd) {
     <!-- Left Sidebar: GitHub User Card -->
     <aside class="sidebar-profile">
       <div class="avatar-wrapper">
-        <img src="https://avatars.githubusercontent.com/u/192861318?v=4" alt="Avish Kumar Avatar" class="avatar-img" onerror="this.src='./assets/got-hero-banner.svg'">
+        <img src="./assets/ai-lion-logo.svg" alt="Avish Kumar Lion Avatar" class="avatar-img" onerror="this.src='./assets/got-sigil-lion.png'">
       </div>
       <div class="user-names">
         <div class="user-fullname">Avish Kumar</div>
